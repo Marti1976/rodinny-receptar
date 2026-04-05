@@ -12,5 +12,4 @@ coverage/
 !.env.example
 
 # Ignore README.md everywhere
-README.md
-**/README.md
+/README.md
