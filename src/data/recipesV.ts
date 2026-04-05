@@ -1,9 +1,4 @@
 import { Category, Recipe } from "../types";
-import { recipesImages } from "./recipesImages";
-
-const recipeImages: Record<string, string> = {
-  ...recipesImages
-};
 
 export const recipesV: Recipe[] = [
   // ✅ Zkontrolováno.
@@ -11,7 +6,6 @@ export const recipesV: Recipe[] = [
     id: "1v",
     category: Category.VECERE,
     title: "Salát s drůbežími kousky a jogurtem",
-    image: recipeImages["1v"],
     instructions: "Maso nakrájíme na kousky a zakápneme sójovou omáčkou. Nakrájíme zeleninu a rozložíme ji na talíř. Opečeme maso na oleji a položíme ho na zeleninu. Přidáme jogurt a podáváme s nasucho opečeným pečivem.",
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 142, mamka: 80, unit: "g" },
@@ -35,7 +29,6 @@ export const recipesV: Recipe[] = [
     id: "2v",
     category: Category.VECERE,
     title: "Knäckebrot se sýrem, šunkou a zeleninou",
-    image: recipeImages["2v"],
     instructions: "Knäckebrot obložíme sýrem a šunkou. Podáváme společně se zeleninou.",
     ingredients: [
       { name: "žitný knäckebrot", syn: 47, mamka: 30, unit: "g", note: "4 ½ plátky / 3 plátky" },
@@ -54,7 +47,6 @@ export const recipesV: Recipe[] = [
     id: "3v",
     category: Category.VECERE,
     title: "Salát s kuřecími kousky, pečivo",
-    image: recipeImages["3v"],
     instructions: "Kuřecí maso nakrájíme na kousky a orestujeme na olivovém oleji dozlatova. Maso osolíme a opepříme a promícháme s nasekanou pažitkou. Zeleninu omyjeme, nakrájíme na kousky a přendáme na talíř. Na zeleninu dáme maso a podáváme s pečivem.",
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 162, mamka: 90, unit: "g" },
@@ -78,7 +70,6 @@ export const recipesV: Recipe[] = [
     id: "4v",
     category: Category.VECERE,
     title: "Hovězí vývar se zeleninou a rýžovými nudlemi",
-    image: recipeImages["4v"],
     instructions: "Maso omyjeme a osušíme. Zeleninu oloupeme a vložíme do kastrolu se studenou vodou spolu s masem a kořením a pomalu vaříme (cca 3 hodiny). Když je maso měkké, vyndáme jej a obereme z kostí. Samotné maso pak vrátíme zpět do polévky. Stejně tak zeleninu nakrájíme nadrobno a vrátíme do polévky. Osolíme, opepříme a vložíme nudle, které v polévce ještě asi 5 minut povaříme.",
     ingredients: [
       { name: "hovězí maso (ideálně žebra)", syn: 166, mamka: 92, unit: "g" },
@@ -102,7 +93,6 @@ export const recipesV: Recipe[] = [
     id: "5v",
     category: Category.VECERE,
     title: "Kuřecí plátek s pohankou, zelenina",
-    image: recipeImages["5v"],
     instructions: "Plátek masa osolíme a okořeníme dle chuti a zprudka opečeme z obou stran na pánvi s rozpáleným olejem. Pohanku uvaříme dle návodu doměkka. Vše podáváme s očištěnou a nakrájenou čerstvou zeleninou.",
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 152, mamka: 80, unit: "g" },
@@ -124,7 +114,6 @@ export const recipesV: Recipe[] = [
     id: "6v",
     category: Category.VECERE,
     title: "Volské oko se šunkou, pečivem a zeleninou",
-    image: recipeImages["6v"],
     instructions: "Na pánvi rozpálíme olej a vyklepneme vajíčka, ze kterých připravíme volská oka. Když jsou hotová, můžeme osolit a přendáme je na talíř, obložíme šunkou, zeleninou a posypeme semínky. Podáváme s celozrnným pečivem.",
     ingredients: [
       { name: "slepičí vejce", syn: 69, mamka: 38, unit: "g", note: "1 ½ ks / ¾ ks" },
@@ -146,7 +135,6 @@ export const recipesV: Recipe[] = [
     id: "7v",
     category: Category.VECERE,
     title: "Kuřecí maso na tymiánu s cuketovými placičkami",
-    image: recipeImages["7v"],
     instructions: "Kuřecí kousky osolíme, opepříme, pokapeme šťávou z citronu, podlijeme troškou vody a dáme péct do trouby předehřáté na 180°C. Mezitím oloupeme cuketu a bramboru, které nastrouháme do větší misky, podle potřeby slijeme vodu. Smícháme s vejcem a nasekanou cibulkou, osolíme, opepříme, dochutíme oreganem a zasypeme moukou. Tvoříme placičky a restujeme na trošce oleje.",
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 134, mamka: 74, unit: "g" },
@@ -174,7 +162,6 @@ export const recipesV: Recipe[] = [
     id: "8v",
     category: Category.VECERE,
     title: "Salát s tuňákem a cherry rajčaty, pečivo",
-    image: recipeImages["8v"],
     instructions: "Salát omyjeme a natrháme, rajčata a vejce nakrájíme na měsíčky a smícháme se salátem. Poté přidáme i zbytek ingrediencí a dobře promícháme. Podáváme s pečivem.",
     ingredients: [
       { name: "vejce vařené natvrdo", syn: 82, mamka: 46, unit: "g", note: "1 ½ ks / ¾ ks" },
@@ -195,7 +182,6 @@ export const recipesV: Recipe[] = [
     id: "9v",
     category: Category.VECERE,
     title: "Krůtí maso se salátem a ořechy",
-    image: recipeImages["9v"],
     instructions: "Na trošce olivového oleje orestujeme plátek masa, osolíme a opepříme. Míchaný salát opláchneme a smícháme jej s nadrcenými vlašskými ořechy, měsíčky grapefruitu, bílým jogurtem, citronem a dochutíme solí a pepřem. Podáváme s vařenými brambory.",
     ingredients: [
       { name: "krůtí maso", syn: 176, mamka: 98, unit: "g" },
@@ -220,7 +206,6 @@ export const recipesV: Recipe[] = [
     id: "10v",
     category: Category.VECERE,
     title: "Rychlý sýrový talíř se zeleninou",
-    image: recipeImages["10v"],
     instructions: "Všechnu zeleninu očistíme, spolu se sýry nakrájíme na malé kousky a narovnáme na talíř. Podáváme s pečivem.",
     ingredients: [
       { name: "olomoucké tvarůžky", syn: 66, mamka: 37, unit: "g" },
@@ -242,7 +227,6 @@ export const recipesV: Recipe[] = [
     id: "11v",
     category: Category.VECERE,
     title: "Čočková polévka s kuřecím masem a mrkví",
-    image: recipeImages["11v"],
     instructions: "Maso nakrájíme na kostičky, osolíme, opepříme a orestujeme na oleji tak, aby se zatáhlo. Poté přidáme protlak a promícháme. Dále přidáme čočku, zalijeme vodou, přidáme na kousky nakrájenou mrkev a vaříme přibližně 15 minut. Nakonec polévku dochutíme česnekem a bylinkami.",
     ingredients: [
       { name: "červená čočka", syn: 86, mamka: 48, unit: "g" },
@@ -254,7 +238,7 @@ export const recipesV: Recipe[] = [
       { name: "kuřecí prsa bez kůže", syn: 86, mamka: 48, unit: "g" },
       { name: "řepkový olej", syn: 14, mamka: 8, unit: "ml", note: "1 polévková lžíce / ½ polévkové lžíce" },
       { name: "rajčatový protlak", syn: 14, mamka: 8, unit: "g", note: "⅔ polévkové lžíce / ⅓ polévkové lžíce" },
-      { name: "sůl", syn: 1, mamk1: 1, unit: "špetka" },
+      { name: "sůl", syn: 1, mamka: 1, unit: "špetka" },
       { name: "černý pepř", syn: 0, mamka: 1, unit: "špetka" }
     ],
     nutrition: {
@@ -268,7 +252,6 @@ export const recipesV: Recipe[] = [
     id: "12v",
     category: Category.VECERE,
     title: "Cottage s tuňákem, rajčaty a pečivem",
-    image: recipeImages["12v"],
     instructions: "V misce smícháme cottage, tuňáka ve vlastní šťávě, na kolečka nakrájenou jarní cibulku, sůl a semínka. Hotovou směs podáváme s pečivem a nakrájenými rajčaty.",
     ingredients: [
       { name: "sýr cottage", syn: 148, mamka: 82, unit: "g", note: "1 kelímek / ½ kelímku" },
@@ -290,7 +273,6 @@ export const recipesV: Recipe[] = [
     id: "13v",
     category: Category.VECERE,
     title: "Grilované maso se zeleninou a pečivem",
-    image: recipeImages["13v"],
     instructions: "Plátek masa osolíme a opepříme. Na zahřáté pánvi s trochou oleje orestujeme z obou stran tak, aby bylo dobře propečené. Zeleninu nakrájíme na větší kousky a také orestujeme, aby trochu změkla. Maso podáváme s grilovanou zeleninou a pečivem.",
     ingredients: [
       { name: "krůtí maso", syn: 167, mamka: 93, unit: "g" },
@@ -311,7 +293,6 @@ export const recipesV: Recipe[] = [
     id: "14v",
     category: Category.VECERE,
     title: "Rýžové chlebíčky s pomazánkou z tresky",
-    image: recipeImages["14v"],
     instructions: "Tresku ochutíme solí a čerstvými bylinkami, orestujeme na oleji z obou stran a necháme vychladnout. Poté rybu rozdrobíme a smícháme s tvarohem. Podáváme s rýžovými chlebíčky.",
     ingredients: [
       { name: "rýžové chlebíčky", syn: 56, mamka: 31, unit: "g", note: "5 ½ plátky / 3 plátky" },
@@ -332,7 +313,6 @@ export const recipesV: Recipe[] = [
     id: "15v",
     category: Category.VECERE,
     title: "Drůbeží nugety pečené v troubě se zeleninovými hranolkami",
-    image: recipeImages["15v"],
     instructions: "Maso osolíme a obalíme v našlehaném bílku. Následně obalíme v mouce a pečeme v předehřáté troubě cca 15-20 minut. Pečeme společně s na hranolky nakrájenou zeleninou, česnekem a podáváme jako přílohu.",
     ingredients: [
       { name: "krůtí maso", syn: 126, mamka: 70, unit: "g" },
@@ -354,7 +334,6 @@ export const recipesV: Recipe[] = [
     id: "16v",
     category: Category.VECERE,
     title: "Drůbeží špízy se zeleninou",
-    image: recipeImages["16v"],
     instructions: "Drůbeží prsa omyjeme a nakrájíme na stejně velké kostky, osolíme a opepříme. Oloupeme žampiony a nakrájíme na čtvrtiny. Zeleninu nakrájíme na stejně velké kousky. Postupně vše střídavě napichujeme na špejli. Špíz vložíme do pekáče, pokapeme olivovým olejem a pečeme zhruba 40 minut na 200 °C. Podáváme s vařenými bramborami.",
     ingredients: [
       { name: "krůtí prsa bez kosti a kůže", syn: 144, mamka: 80, unit: "g" },
@@ -377,7 +356,6 @@ export const recipesV: Recipe[] = [
     id: "17v",
     category: Category.VECERE,
     title: "Sýrový talíř se zeleninou a pečivem",
-    image: recipeImages["17v"],
     instructions: "Všechnu zeleninu očistíme, spolu se sýry nakrájíme na malé kousky a narovnáme na talíř. Podáváme s pečivem.",
     ingredients: [
       { name: "olomoucké tvarůžky", syn: 54, mamka: 30, unit: "g" },
@@ -399,7 +377,6 @@ export const recipesV: Recipe[] = [
     id: "18v",
     category: Category.VECERE,
     title: "Houska se šunkou, ředkvičkami a ledovým salátem",
-    image: recipeImages["18v"],
     instructions: "Housku rozkrojíme, namažeme žervé, obložíme šunkou a podáváme s nakrájenou zeleninou.",
     ingredients: [
       { name: "špaldová houska", syn: 81, mamka: 45, unit: "g", note: "1 3/4 ks / 1 ks" },
@@ -419,7 +396,6 @@ export const recipesV: Recipe[] = [
     id: "19v",
     category: Category.VECERE,
     title: "Brokolicový krém s vejcem",
-    image: recipeImages["19v"],
     instructions: "Na oleji orestujeme cibulku s česnekem a přidáme pokrájenou brokolici. Poté zalijeme vývarem, osolíme a vaříme cca 20 min na mírném plameni. Následně rozmixujeme na hladký krém, do kterého zašleháme vajíčko a ještě chvilku povaříme.",
     ingredients: [
       { name: "brokolice", syn: 305, mamka: 305, unit: "g", note: "1/2 ks / 1/2 ks" },
@@ -441,7 +417,6 @@ export const recipesV: Recipe[] = [
     id: "20v",
     category: Category.VECERE,
     title: "Mrkvovo-šunková pomazánka",
-    image: recipeImages["20v"],
     instructions: "Šunku nasekáme na jemné nudličky, mrkev nastrouháme a vše orestujeme na oleji. Po vychladnutí smícháme s tvarohem a jarní cibulkou, dochutíme solí a podáváme s pečivem.",
     ingredients: [
       { name: "hovězí šunka", syn: 121, mamka: 67, unit: "g", note: "8 plátků / 4 1/2 plátky" },
@@ -463,7 +438,6 @@ export const recipesV: Recipe[] = [
     id: "21v",
     category: Category.VECERE,
     title: "Omeleta s paprikou a pečivem",
-    image: recipeImages["21v"],
     instructions: "Bílky a žloutky rozkvedláme s mlékem. Cibuli oloupeme, papriku očistíme a obobí nakrájíme na malé kostičky. Ty pak vhodíme na rozpálený olej a krátce osmahneme. Přidáme rozkvedlaná vejce a necháme ztuhnout. Omeletu obrátíme a osmažíme dozlatova. Podáváme s pečivem.",
     ingredients: [
       { name: "slepičí vejce", syn: 90, mamka: 50, unit: "g", note: "1 3/4 ks / 1 ks" },
@@ -485,7 +459,6 @@ export const recipesV: Recipe[] = [
     id: "22v",
     category: Category.VECERE,
     title: "Masové placky s bramborami a fazolkami",
-    image: recipeImages["22v"],
     instructions: "Prolisovaný česnek a cibuli nakrájenou najemno promícháme s masem. Osolíme, opepříme a utvoříme placky. Pomažeme je olejem, vložíme do pekáčku, podlijeme trochou vody a pečeme ve vyhřáté troubě. Mezitím uvaříme brambory a podusíme fazolky. Vše pak společně podáváme.",
     ingredients: [
       { name: "brambory (k podávání)", syn: 180, mamka: 100, unit: "g", note: "1 1/3 ks / 3/4 ks" },
@@ -508,7 +481,6 @@ export const recipesV: Recipe[] = [
     id: "23v",
     category: Category.VECERE,
     title: "Pečená treska s batátovým pyré a semínky",
-    image: recipeImages["23v"],
     instructions: "Tresku omyjeme, osušíme, osolíme a opepříme a vložíme do trouby na pečící papír. Zakápneme ji olejem a pečeme přibližně 20 minut na 180 °C. Batáty oloupeme, nakrájíme na kostky a uvaříme v osolené vodě doměkka. Poté je slijeme a s troškou vody rozmixujeme na hladké pyré. Semínky opražíme nasucho na pánvi. Tresku servírujeme s batátovým pyré, které posypeme praženými semínky a podáváme spolu s lístky salátu.",
     ingredients: [
       { name: "filet aljašské tresky bez kůže", syn: 230, mamka: 128, unit: "g" },
@@ -530,7 +502,6 @@ export const recipesV: Recipe[] = [
     id: "24v",
     category: Category.VECERE,
     title: "Salát s cottage sýrem, červenou řepou a šunkou",
-    image: recipeImages["24v"],
     instructions: "Cottage sýr smícháme se semínky, nakrájenou šunkou a nastrouhanou vařenou řepou. Osolíme, opepříme a nandáme na talíř s natrhaným salátem.",
     ingredients: [
       { name: "slunečnicová semínka", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 1/2 čajové lžičky" },
@@ -552,7 +523,6 @@ export const recipesV: Recipe[] = [
     id: "25v",
     category: Category.VECERE,
     title: "Krůtí maso na kari, zeleninové hranolky",
-    image: recipeImages["25v"],
     instructions: "Krůtí maso nakrájíme na nudličky, osolíme, opepříme a na trošce oleje orestujeme. Přidáme kari koření a zalijeme smetanou. Chvíli povaříme. Celer a mrkev nakrájíme na hranolky, pokapeme olejem, medem a přidáme koření a bylinky dle chuti. Pečeme v troubě dozlatova. Podáváme s masem a salátem.",
     ingredients: [
       { name: "krůtí maso", syn: 144, mamka: 80, unit: "g" },
@@ -577,7 +547,6 @@ export const recipesV: Recipe[] = [
     id: "26v",
     category: Category.VECERE,
     title: "Drůbeží plátek se směsí dušené zeleniny",
-    image: recipeImages["26v"],
     instructions: "Na části oleje osmahneme směs zeleniny, osolíme, podlijeme vodou a necháme dusit. Plátek masa osolíme, opepříme a opečeme z obou stran na pánvi s druhou částí oleje. Podlijeme trochou vody a dusíme do změknutí. Podáváme maso společně se zeleninou.",
     ingredients: [
       { name: "směs mrkev, hrášek, kukuřice", syn: 172, mamka: 172, unit: "g" },
@@ -596,7 +565,6 @@ export const recipesV: Recipe[] = [
     id: "27v",
     category: Category.VECERE,
     title: "Obložený talíř s vajíčkem, knäckebrot",
-    image: recipeImages["27v"],
     instructions: "Uvaříme vejce natvrdo (trvá to asi 10 minut). Na talíř naservírujeme na čtvrtiny nakrájená vajíčka, šunku, sýr, zeleninu a podáváme s knäckebrotem.",
     ingredients: [
       { name: "vejce vařené natvrdo", syn: 81, mamka: 45, unit: "g", note: "1 3/4 ks / 1 ks" },

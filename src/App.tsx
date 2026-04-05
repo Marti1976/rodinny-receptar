@@ -46,8 +46,6 @@ import { APP_VERSION, APP_PASSWORD_HASH } from './constants';
 import Fuse from 'fuse.js';
 import { ingredientSynonyms } from './data/synonyms';
 
-import { iconImages } from "./iconImages";
-
 const NOISE_WORDS = ['sůl', 'pepř', 'voda', 'olej', 'máslo na smažení', 'sul', 'pepr', 'maslo na smazeni', 'máslo', 'maslo'];
 
 function normalizeText(text: string): string {
@@ -286,7 +284,6 @@ export default function App() {
               setSelectedRecipe(categoryRecipes[prevIndex]);
             }}
             viewport={effectiveViewport}
-            isPlaceholder={isPlaceholder}
             getCategoryBg={getCategoryBg}
           />
         ) : isGalleryOpen ? (
@@ -296,7 +293,6 @@ export default function App() {
             onSelectRecipe={setSelectedGalleryRecipe}
             onClose={() => { setIsGalleryOpen(false); setSelectedGalleryRecipe(null); }}
             viewport={effectiveViewport}
-            isPlaceholder={isPlaceholder}
             getCategoryBg={getCategoryBg}
             setGalleryCategory={setGalleryCategory}
             isExtraCategory={isExtraCategory}
@@ -324,7 +320,6 @@ export default function App() {
             onBack={() => setSelectedCategory(null)}
             onSelectRecipe={setSelectedRecipe}
             viewport={effectiveViewport}
-            isPlaceholder={isPlaceholder}
             getCategoryBg={getCategoryBg}
             onOpenGallery={() => {
               setGalleryMode('extra');
@@ -628,14 +623,14 @@ function Dashboard({ onSelectCategory, onLogout, onOpenGallery, onOpenExtra, onS
             <div className="grid grid-cols-3 gap-1.5">
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.MO1} alt="Lžička" className="w-5 h-5 brightness-0 invert object-contain" referrerPolicy="no-referrer" />
+                  <img src="/icons/MO1.png" alt="Lžička" className="w-5 h-5 brightness-0 invert object-contain" referrerPolicy="no-referrer" />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Lžička</span>
                 <span className="text-xs font-black">5 ml</span>
               </div>
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.MO2} alt="Lžíce" className="w-6 h-6 brightness-0 invert object-contain" referrerPolicy="no-referrer" />
+                  <img src="/icons/MO2.png" alt="Lžíce" className="w-6 h-6 brightness-0 invert object-contain" referrerPolicy="no-referrer" />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Lžíce</span>
                 <span className="text-xs font-black">15 ml</span>
@@ -823,7 +818,7 @@ function ProfileCard({ label, color, energy, distribution, viewport }: { label: 
   );
 }
 
-function RecipeList({ category, onBack, onSelectRecipe, viewport, isPlaceholder, getCategoryBg, onOpenGallery, isExtraCategory }: { category: Category, onBack: () => void, onSelectRecipe: (r: Recipe) => void, viewport: string, isPlaceholder: (img: string | undefined) => boolean, getCategoryBg: (c: Category) => string, onOpenGallery: () => void, isExtraCategory: (c: Category | null) => boolean }) {
+function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg, onOpenGallery, isExtraCategory }: { category: Category, onBack: () => void, onSelectRecipe: (r: Recipe) => void, viewport: string, getCategoryBg: (c: Category) => string, onOpenGallery: () => void, isExtraCategory: (c: Category | null) => boolean }) {
   const [searchQuery, setSearchQuery] = useState('');
   const isIngredientSearch = searchQuery.includes(';');
   
@@ -939,7 +934,6 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, isPlaceholder,
                 <RecipeImage 
                   id={recipe.id}
                   category={recipe.category}
-                  base64Image={recipe.image}
                   alt={recipe.title}
                   className="w-full h-full object-cover object-center"
                 />
@@ -1041,7 +1035,7 @@ function formatNum(num: number | string | undefined): string {
   return n.toLocaleString('cs-CZ', { maximumFractionDigits: 2 }).replace(/\s/g, '');
 }
 
-function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, isPlaceholder, getCategoryBg }: { recipe: Recipe, onBack: () => void, onNext: () => void, onPrev: () => void, viewport: string, isPlaceholder: (img: string | undefined) => boolean, getCategoryBg: (c: Category) => string }) {
+function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg }: { recipe: Recipe, onBack: () => void, onNext: () => void, onPrev: () => void, viewport: string, getCategoryBg: (c: Category) => string }) {
   const isMobileP = viewport === 'mobile-p';
   
   const handlePrint = () => {
@@ -1072,7 +1066,6 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, isPlaceholder,
           <RecipeImage 
             id={recipe.id}
             category={recipe.category}
-            base64Image={recipe.image}
             alt={recipe.title}
             className="w-full h-auto block"
           />
@@ -1502,13 +1495,12 @@ function ViewportSwitcher({ current, onChange }: { current: any, onChange: (v: a
   );
 }
 
-function Gallery({ category, selectedRecipe, onSelectRecipe, onClose, viewport, isPlaceholder, getCategoryBg, setGalleryCategory, isExtraCategory, galleryMode }: { 
+function Gallery({ category, selectedRecipe, onSelectRecipe, onClose, viewport, getCategoryBg, setGalleryCategory, isExtraCategory, galleryMode }: { 
   category: Category, 
   selectedRecipe: Recipe | null, 
   onSelectRecipe: (r: Recipe | null) => void, 
   onClose: () => void,
   viewport: string,
-  isPlaceholder: (img: string | undefined) => boolean,
   getCategoryBg: (c: Category) => string,
   setGalleryCategory: (c: Category) => void,
   isExtraCategory: (c: Category | null) => boolean,
@@ -1533,12 +1525,6 @@ function Gallery({ category, selectedRecipe, onSelectRecipe, onClose, viewport, 
   const filteredRecipes = [...recipes, ...recipesExtra]
     .filter(r => r.category === category)
     .sort(sortRecipes);
-
-  const getCleanBase64 = (img: string | undefined) => {
-    if (!img) return '';
-    const parts = img.split(',');
-    return parts.length > 1 ? parts[1] : img;
-  };
 
   return (
     <motion.div 
@@ -1576,13 +1562,12 @@ function Gallery({ category, selectedRecipe, onSelectRecipe, onClose, viewport, 
                   onClick={() => onSelectRecipe(recipe)}
                   className="aspect-square rounded-[32px] border border-slate-100 overflow-hidden flex items-center justify-center transition-all active:scale-95 group relative bg-slate-100 shadow-inner"
                 >
-                  <RecipeImage 
-                    id={recipe.id}
-                    category={recipe.category}
-                    base64Image={recipe.image}
-                    alt={recipe.title}
-                    className="w-full h-full object-cover"
-                  />
+                <RecipeImage 
+                  id={recipe.id}
+                  category={recipe.category}
+                  alt={recipe.title}
+                  className="w-full h-full object-cover"
+                />
                 </button>
               </div>
             ))}
@@ -1606,17 +1591,9 @@ function Gallery({ category, selectedRecipe, onSelectRecipe, onClose, viewport, 
               <RecipeImage 
                 id={selectedRecipe.id}
                 category={selectedRecipe.category}
-                base64Image={selectedRecipe.image}
                 alt={selectedRecipe.title}
                 className="max-w-full max-h-full object-contain"
               />
-            </div>
-
-            <div className="bg-slate-900 rounded-3xl p-6 text-white overflow-hidden">
-              <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Base64 Data:</h4>
-              <div className="bg-black/30 p-4 rounded-xl font-mono text-[10px] break-all max-h-32 overflow-y-auto text-blue-300 border border-white/5">
-                {getCleanBase64(selectedRecipe.image)}
-              </div>
             </div>
           </div>
         )}

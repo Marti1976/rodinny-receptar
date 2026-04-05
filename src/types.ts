@@ -38,7 +38,6 @@ export interface Recipe {
   id: string; // Changed to string to support suffixes like 1s, 2o
   category: Category;
   title: string;
-  image?: string;
   instructions: string;
   ingredients: Ingredient[];
   nutrition?: {

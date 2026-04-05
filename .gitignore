@@ -3,13 +3,12 @@ build/
 .vscode/
 .idea/
 dist/
-CTI_ME/
-import/
 coverage/
 .DS_Store
 *.log
 .env*
 !.env.example
 
-# Ignore README.md everywhere
-/README.md
+# Ignore TEXT file
+CTI_ME/
+import/

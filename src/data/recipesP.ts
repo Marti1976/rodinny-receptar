@@ -1,9 +1,4 @@
 import { Category, Recipe } from "../types";
-import { recipesImages } from "./recipesImages";
-
-const recipeImages: Record<string, string> = {
-  ...recipesImages
-};
 
 export const recipesP: Recipe[] = [
     // ✅ Zkontrolováno.
@@ -11,7 +6,6 @@ export const recipesP: Recipe[] = [
     id: "1p",
     category: Category.PRESNIDAVKA,
     title: "Knäckebrot se sýrem, šunkou a zeleninou",
-    image: recipeImages["1p"],
     instructions: "Knäckebrot obložíme sýrem a šunkou. Podáváme společně se zeleninou.",
     ingredients: [
       { name: "žitný knäckebrot", syn: 31, mamka: 17, unit: "g", note: "3 plátky / 1.5 plátku" },
@@ -30,7 +24,6 @@ export const recipesP: Recipe[] = [
     id: "2p",
     category: Category.PRESNIDAVKA,
     title: "Rajčatový salát s mozzarellou a pečivem",
-    image: recipeImages["2p"],
     instructions: "Do misky nakrájíme rajčata, natrháme mozzarellu, přidáme sekanou bazalku a dochutíme solí a pepřem. Podáváme spolu s pečivem.",
     ingredients: [
       { name: "mozzarella light", syn: 66, mamka: 38, unit: "g", note: "⅔ ks / 1/3 ks" },
@@ -51,7 +44,6 @@ export const recipesP: Recipe[] = [
     id: "3p",
     category: Category.PRESNIDAVKA,
     title: "Ředkvičky s tvarohem a knäckebrotem",
-    image: recipeImages["3p"],
     instructions: "Ředkvičky omyjeme, nastrouháme a promícháme s tvarohem naředěným jogurtem, ochutíme kmínem a solí. Podáváme s pečivem.",
     ingredients: [
       { name: "ředkvičky", syn: 137, mamka: 137, unit: "g", note: "1 svazek" },
@@ -72,7 +64,6 @@ export const recipesP: Recipe[] = [
     id: "4p",
     category: Category.PRESNIDAVKA,
     title: "Chléb s máslem a šunkou, mrkev",
-    image: recipeImages["4p"],
     instructions: "Chléb namažeme máslem, obložíme šunkou a podáváme s mrkví nakrájenou na kolečka.",
     ingredients: [
       { name: "celozrnný chléb", syn: 42, mamka: 23, unit: "g", note: "¾ krajíce / 1/2 krajíce" },
@@ -91,7 +82,6 @@ export const recipesP: Recipe[] = [
     id: "5p",
     category: Category.PRESNIDAVKA,
     title: "Toast s tofu, rajčaty a bazalkou",
-    image: recipeImages["5p"],
     instructions: "Toast obložíme tofu a rajčaty. Ochutíme bazalkou a špetkou soli.",
     ingredients: [
       { name: "tofu", syn: 96, mamka: 53, unit: "g", note: "½ ks / 1/4 ks" },
@@ -111,7 +101,6 @@ export const recipesP: Recipe[] = [
     id: "6p",
     category: Category.PRESNIDAVKA,
     title: "Jablko s mrkví, ořechy a strouhaným tvarohem",
-    image: recipeImages["6p"],
     instructions: "Mrkev s jablkem nastrouháme and dobře promícháme. Směs posypeme nasekanými ořechy, nastrouhaným tvarohem a podáváme.",
     ingredients: [
       { name: "jablko", syn: 124, mamka: 80, unit: "g", note: "¾ ks / 1/2 ks" },
@@ -130,7 +119,6 @@ export const recipesP: Recipe[] = [
     id: "7p",
     category: Category.PRESNIDAVKA,
     title: "Chléb se šunkou a zeleninovým cottage sýrem",
-    image: recipeImages["7p"],
     instructions: "Zeleninu nakrájíme na drobné kostičky a smícháme se sýrem cottage, pepřem a nasekanou bazalkou. Podáváme spolu s chlebem a šunkou.",
     ingredients: [
       { name: "sýr cottage", syn: 103, mamka: 57, unit: "g", note: "⅔ kelímku / 1/3 kelímku" },
@@ -151,7 +139,6 @@ export const recipesP: Recipe[] = [
     id: "8p",
     category: Category.PRESNIDAVKA,
     title: "Kompletní svačina na cesty",
-    image: recipeImages["8p"],
     instructions: "Jablko nakrájíme na měsíčky a dáme spolu s ořechy do krabičky. Protein dáme do shakeru nebo malé lahvičky a před konzumací jen zalijeme vodou a promícháme.",
     ingredients: [
       { name: "syrovátkový protein", syn: 19, mamka: 11, unit: "g" },
@@ -169,7 +156,6 @@ export const recipesP: Recipe[] = [
     id: "9p",
     category: Category.PRESNIDAVKA,
     title: "Jablko se šunkou a ořechy",
-    image: recipeImages["9p"],
     instructions: "Jablko nakrájíme na měsíčky a podáváme spolu se šunkou a ořechy.",
     ingredients: [
       { name: "hovězí šunka", syn: 80, mamka: 44, unit: "g", note: "5 ½ plátky / 3 plátky" },
@@ -187,7 +173,6 @@ export const recipesP: Recipe[] = [
     id: "10p",
     category: Category.PRESNIDAVKA,
     title: "Tvaroh s ovocem a mandlemi",
-    image: recipeImages["10p"],
     instructions: "Banán rozmačkáme vidličkou a smícháme spolu s tvarohem, medem a skořicí. Vzniklý krém ozdobíme omytým ovocem spolu s nasekanými mandlemi a podáváme.",
     ingredients: [
       { name: "odtučněný tvaroh (měkký)", syn: 132, mamka: 73, unit: "g", note: "5 ½ polévkové lžíce / 3 polévkové lžíce" },
@@ -208,7 +193,6 @@ export const recipesP: Recipe[] = [
     id: "11p",
     category: Category.PRESNIDAVKA,
     title: "Tvaroh s kousky čokolády a ovocem",
-    image: recipeImages["11p"],
     instructions: "Čokoládu nasekáme na malé kousky, ovoce nakrájíme na kostičky a oboje vmícháme do tvarohu.",
     ingredients: [
       { name: "hořká čokoláda 70% kakao", syn: 18, mamka: 11, unit: "g", note: "¼ ks / 1/4 ks" },
@@ -226,7 +210,6 @@ export const recipesP: Recipe[] = [
     id: "12p",
     category: Category.PRESNIDAVKA,
     title: "Jablko s mandlemi a řeckým jogurtem",
-    image: recipeImages["12p"],
     instructions: "Jablko nakrájíme na kousky, smícháme s jogurtem a posypeme sekanými mandlemi.",
     ingredients: [
       { name: "jablko", syn: 180, mamka: 95, unit: "g", note: "1 ks / 1/2 ks" },
@@ -244,7 +227,6 @@ export const recipesP: Recipe[] = [
     id: "13p",
     category: Category.PRESNIDAVKA,
     title: "Mango se strouhaným tvarohem a semínky",
-    image: recipeImages["13p"],
     instructions: "Tvaroh nastrouháme a přidáme na kousky nakrájené mango a semena dýně.",
     ingredients: [
       { name: "mango", syn: 167, mamka: 167, unit: "g", note: "⅔ ks" },
@@ -262,7 +244,6 @@ export const recipesP: Recipe[] = [
     id: "14p",
     category: Category.PRESNIDAVKA,
     title: "Sýrová rolka se šunkou a knäckebrotem",
-    image: recipeImages["14p"],
     instructions: "Sýr potřeme lučinou, položíme na něj šunku a zatočíme. Podáváme s čerstvou nakrájenou zeleninou a s knäckebrotem.",
     ingredients: [
       { name: "plátový sýr 30%", syn: 29, mamka: 16, unit: "g", note: "2 plátky / 1 plátek" },
@@ -282,7 +263,6 @@ export const recipesP: Recipe[] = [
     id: "15p",
     category: Category.PRESNIDAVKA,
     title: "Tvarohovo smetanový dip s řapíkatým celerem",
-    image: recipeImages["15p"],
     instructions: "Tvaroh smícháme se zakysanou smetanou, lehce osolíme, opepříme, můžeme přimíchat bylinky a česnek dle chuti. Podáváme s omytým a nakrájeným řapíkatým celerem a očištěnou mrkví.",
     ingredients: [
       { name: "polotučný tvaroh", syn: 96, mamka: 53, unit: "g", note: "4 polévkové lžíce / 2 polévkové lžíce" },
@@ -305,7 +285,6 @@ export const recipesP: Recipe[] = [
     id: "16p",
     category: Category.PRESNIDAVKA,
     title: "Svačinový salátek",
-    image: recipeImages["16p"],
     instructions: "Všechny ingredience nakrájíme na malé kousky a smícháme. V krabičce je salátek vhodnou svačinkou do práce i na cesty.",
     ingredients: [
       { name: "krůtí šunka", syn: 61, mamka: 34, unit: "g", note: "3 plátky" },
@@ -324,7 +303,6 @@ export const recipesP: Recipe[] = [
     id: "17p",
     category: Category.PRESNIDAVKA,
     title: "Bílý jogurt, nakrájená zelenina",
-    image: recipeImages["17p"],
     instructions: "Bílý jogurt smícháme s tvarohem. Zeleninu omyjeme, očistíme a nakrájíme. Podáváme společně.",
     ingredients: [
       { name: "bílý jogurt 3,5% tuku", syn: 227, mamka: 126, unit: "g", note: "3/4 kelímku" },
@@ -343,7 +321,6 @@ export const recipesP: Recipe[] = [
     id: "18p",
     category: Category.PRESNIDAVKA,
     title: "Lehký zeleninový salát se šunkou",
-    image: recipeImages["18p"],
     instructions: "Papriku a mrkev omyjeme, očistíme a nakrájíme na kostičky. Ledový salát omyjeme a natrháme. Společně s kukuřicí zeleninu vložíme do mísy a pokapeme olejem. Nakrájíme šunku, přidáme k zelenině a podáváme.",
     ingredients: [
       { name: "červená paprika", syn: 65, mamka: 65, unit: "g", note: "1/3 ks" },
@@ -364,7 +341,6 @@ export const recipesP: Recipe[] = [
     id: "19p",
     category: Category.PRESNIDAVKA,
     title: "Sýrová rolka se šunkou, zelenina",
-    image: recipeImages["19p"],
     instructions: "Sýr potřeme lučinou, položíme na něj šunku a zatočíme. Podáváme s čerstvou nakrájenou zeleninou.",
     ingredients: [
       { name: "plátkový sýr 30% tuku", syn: 31, mamka: 17, unit: "g", note: "1 plátek / 1/2 plátku" },
@@ -384,7 +360,6 @@ export const recipesP: Recipe[] = [
     id: "20p",
     category: Category.PRESNIDAVKA,
     title: "Plátkový sýr s mrkví a rajčaty",
-    image: recipeImages["20p"],
     instructions: "Mrkev omyjeme, očistíme a nakrájíme na hranolky. Rajčata omyjeme a nakrájíme na měsíčky. Urovnáme na talíř nebo do misky, ze sýru vytvoříme rolky a společně podáváme.",
     ingredients: [
       { name: "plátkový sýr 30% tuku", syn: 49, mamka: 27, unit: "g", note: "1 1/2 plátku / 1 plátek" },
@@ -402,7 +377,6 @@ export const recipesP: Recipe[] = [
     id: "21p",
     category: Category.PRESNIDAVKA,
     title: "Eidam s paprikou",
-    image: recipeImages["21p"],
     instructions: "Papriku nakrájíme na proužky a podáváme se sýrem eidamem.",
     ingredients: [
       { name: "sýr eidam 30% tuku", syn: 49, mamka: 27, unit: "g", note: "2 plátky / 1 plátek" },
@@ -419,7 +393,6 @@ export const recipesP: Recipe[] = [
     id: "22p",
     category: Category.PRESNIDAVKA,
     title: "Jogurt s tvarohem a mandarinkou",
-    image: recipeImages["22p"],
     instructions: "Jogurt smícháme s tvarohem. Přidáme měsíčky mandarinky a podáváme.",
     ingredients: [
       { name: "bílý jogurt 3,5% tuku", syn: 108, mamka: 60, unit: "g", note: "4 1/2 polévkové lžíce" },
@@ -437,7 +410,6 @@ export const recipesP: Recipe[] = [
     id: "23p",
     category: Category.PRESNIDAVKA,
     title: "Jednoduchá brokolicová pomazánka se zeleninou",
-    image: recipeImages["23p"],
     instructions: "Brokolici lehce spaříme a nadrobno nasekáme. Vmícháme sýr a osolíme. Podáváme s nakrájenou zeleninou.",
     ingredients: [
       { name: "brokolice", syn: 114, mamka: 114, unit: "g", note: "1/4 ks" },
@@ -456,7 +428,6 @@ export const recipesP: Recipe[] = [
     id: "24p",
     category: Category.PRESNIDAVKA,
     title: "Malinový chia koktejl s tvarohem",
-    image: recipeImages["24p"],
     instructions: "Všechny ingredience rozmixujeme v mixéru dohladka. Pokud je nápoj příliš hustý, můžeme jej ještě trochu naředit vodou a znovu rozmixovat. Ihned podáváme.",
     ingredients: [
       { name: "polotučné mléko", syn: 329, mamka: 183, unit: "ml", note: "1 šálek / 1/2 šálku" },
@@ -475,7 +446,6 @@ export const recipesP: Recipe[] = [
     id: "25p",
     category: Category.PRESNIDAVKA,
     title: "Okurka s bílým jogurtem",
-    image: recipeImages["25p"],
     instructions: "Okurku očistíme a nakrájíme na kolečka či proužky a podáváme s jogurtem.",
     ingredients: [
       { name: "salátová okurka", syn: 300, mamka: 300, unit: "g", note: "1 ks" },
@@ -492,7 +462,6 @@ export const recipesP: Recipe[] = [
     id: "26p",
     category: Category.PRESNIDAVKA,
     title: "Pestrá svačina na cesty",
-    image: recipeImages["26p"],
     instructions: "Vejce uvaříme natvrdo a spolu se šunkou a nakrájenou zeleninou můžeme zabalit do krabičky na cesty.",
     ingredients: [
       { name: "slepičí vejce", syn: 81, mamka: 45, unit: "g", note: "1 ks" },
@@ -511,7 +480,6 @@ export const recipesP: Recipe[] = [
     id: "27p",
     category: Category.PRESNIDAVKA,
     title: "Kefírové mléko se semínky",
-    image: recipeImages["27p"],
     instructions: "Do kefíru pouze nasypeme semínka, promícháme a podáváme.",
     ingredients: [
       { name: "kefírové mléko", syn: 495, mamka: 275, unit: "ml", note: "2 šálky" },
@@ -528,7 +496,6 @@ export const recipesP: Recipe[] = [
     id: "28p",
     category: Category.PRESNIDAVKA,
     title: "Cottage s nastrouhaným jablkem",
-    image: recipeImages["28p"],
     instructions: "Do misky dáme cottage a přidáme nastrouhané jablko. Takto podáváme.",
     ingredients: [
       { name: "sýr cottage", syn: 142, mamka: 79, unit: "g", note: "4 polévkové lžíce" },
@@ -545,7 +512,6 @@ export const recipesP: Recipe[] = [
     id: "29p",
     category: Category.PRESNIDAVKA,
     title: "Tvaroh s banánem a chia semínky",
-    image: recipeImages["29p"],
     instructions: "Ovoce nakrájíme na plátky a všechny ingredience smícháme. Necháme nejlépe přes noc odležet v lednici.",
     ingredients: [
       { name: "polotučný tvaroh", syn: 130, mamka: 72, unit: "g", note: "3 polévkové lžíce" },
@@ -563,7 +529,6 @@ export const recipesP: Recipe[] = [
     id: "30p",
     category: Category.PRESNIDAVKA,
     title: "Mléčný koktejl s jahodami a chia semínky",
-    image: recipeImages["30p"],
     instructions: "Mléko rozmixujeme s jahodami a chia semínky. Můžeme přidat vodu dle potřeby a podáváme.",
     ingredients: [
       { name: "polotučné mléko", syn: 387, mamka: 215, unit: "ml", note: "1 1/2 šálku" },
@@ -582,7 +547,6 @@ export const recipesP: Recipe[] = [
     id: "31p",
     category: Category.PRESNIDAVKA,
     title: "Tvaroh s borůvkami",
-    image: recipeImages["31p"],
     instructions: "Tvaroh smícháme s ovocem a podáváme.",
     ingredients: [
       { name: "polotučný tvaroh", syn: 140, mamka: 78, unit: "g", note: "3 polévkové lžíce" },
@@ -599,7 +563,6 @@ export const recipesP: Recipe[] = [
     id: "32p",
     category: Category.PRESNIDAVKA,
     title: "Toust se šunkou a zeleninou",
-    image: recipeImages["32p"],
     instructions: "Toust namažeme pomazánkovým máslem, poklademe šunku a podáváme s čerstvou zeleninou.",
     ingredients: [
       { name: "celozrnný toast", syn: 36, mamka: 20, unit: "g" },
@@ -618,7 +581,6 @@ export const recipesP: Recipe[] = [
     id: "33p",
     category: Category.PRESNIDAVKA,
     title: "Čokoláda s hroznovým vínem a tvarohem",
-    image: recipeImages["33p"],
     instructions: "Tvaroh smícháme s nakrájenými hrozny a posypeme nastrouhanou čokoládou.",
     ingredients: [
       { name: "hroznové víno", syn: 90, mamka: 50, unit: "g" },
@@ -636,7 +598,6 @@ export const recipesP: Recipe[] = [
     id: "34p",
     category: Category.PRESNIDAVKA,
     title: "Kefír s chia a lesním ovocem",
-    image: recipeImages["34p"],
     instructions: "Bílý kefír smícháme s chia semínky a necháme 5 minut odstát. Lesní ovoce podáváme zvlášť nebo společně rozmixované.",
     ingredients: [
       { name: "kefírové mléko", syn: 504, mamka: 280, unit: "ml", note: "2 šálky" },
@@ -654,7 +615,6 @@ export const recipesP: Recipe[] = [
     id: "35p",
     category: Category.PRESNIDAVKA,
     title: "Kostky eidamu, hroznové víno",
-    image: recipeImages["35p"],
     instructions: "Sýr nakrájíme na kostky a podáváme s kuličkami hroznového vína.",
     ingredients: [
       { name: "sýr eidam 30%", syn: 58, mamka: 32, unit: "g", note: "2 plátky" },
@@ -671,7 +631,6 @@ export const recipesP: Recipe[] = [
     id: "36p",
     category: Category.PRESNIDAVKA,
     title: "Hruškové kostičky se sýrem",
-    image: recipeImages["36p"],
     instructions: "Sýr i hrušku nakrájíme na drobné kostky, promícháme a ihned podáváme.",
     ingredients: [
       { name: "sýr eidam 30%", syn: 58, mamka: 32, unit: "g", note: "2 plátky" },
@@ -688,7 +647,6 @@ export const recipesP: Recipe[] = [
     id: "37p",
     category: Category.PRESNIDAVKA,
     title: "Tvaroh s hruškou a ořechy",
-    image: recipeImages["37p"],
     instructions: "Hrušku nastrouháme a smícháme s tvarohem. Ozdobíme sekanými ořechy a podáváme.",
     ingredients: [
       { name: "odtučněný tvaroh měkký", syn: 139, mamka: 77, unit: "g", note: "3 polévkové lžíce" },
@@ -706,7 +664,6 @@ export const recipesP: Recipe[] = [
     id: "38p",
     category: Category.PRESNIDAVKA,
     title: "Jogurt s ovocem a skořicí",
-    image: recipeImages["38p"],
     instructions: "V misce našleháme jogurt s tvarohem a skořicí. Vmícháme omyté ovoce pokrájené na kostičky.",
     ingredients: [
       { name: "mandarinky", syn: 61, mamka: 61, unit: "g", note: "3/4 ks" },
@@ -725,7 +682,6 @@ export const recipesP: Recipe[] = [
     id: "39p",
     category: Category.PRESNIDAVKA,
     title: "Paprika se sýrem a ořechy",
-    image: recipeImages["39p"],
     instructions: "Papriku umyjeme a nakrájíme na kostičky. Smícháme jí s nakrájeným sýrem a sekanými ořechy a podáváme.",
     ingredients: [
       { name: "červená paprika", syn: 210, mamka: 210, unit: "g", note: "1 1/2 ks" },
@@ -743,7 +699,6 @@ export const recipesP: Recipe[] = [
     id: "40p",
     category: Category.PRESNIDAVKA,
     title: "Proteinový nápoj s banánem a kešu",
-    image: recipeImages["40p"],
     instructions: "Banán oloupeme, nakrájíme na kolečka a vložíme do mixéru. Všechny ingredience pak společně rozmixujeme. Pokud je nápoj příliš hustý, naředíme jej ještě trochou vody.",
     ingredients: [
       { name: "syrovátkový protein", syn: 19, mamka: 11, unit: "g" },
@@ -761,7 +716,6 @@ export const recipesP: Recipe[] = [
     id: "41p",
     category: Category.PRESNIDAVKA,
     title: "Čokoládový termix s ovocem",
-    image: recipeImages["41p"],
     instructions: "Čokoládu rozpustíme v mikrovlnné troubě nebo ve vodní lázni a vyšleháme s tvarohem. Podáváme s na kostičky nakrájeným ovocem.",
     ingredients: [
       { name: "odtučněný tvaroh (měkký)", syn: 139, mamka: 77, unit: "g", note: "½ balení / 1/4 balení" },

@@ -4,12 +4,11 @@ import { Category } from '../types';
 interface RecipeImageProps {
   id: string;
   category: Category;
-  base64Image?: string;
   className?: string;
   alt?: string;
 }
 
-const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, base64Image, className = "", alt = "" }) => {
+const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "", alt = "" }) => {
   const [imgSrc, setImgSrc] = useState<string | null>(null);
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -35,26 +34,11 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, base64Image, cl
     // Reset state when id or category changes
     setHasError(false);
     setIsLoaded(false);
-
-    // PRIORITY 1: Base64 (if valid and not a placeholder)
-    if (base64Image && base64Image.startsWith('data:') && !base64Image.includes('VÁŠ_KÓD')) {
-      setImgSrc(base64Image);
-    } 
-    // PRIORITY 2: External JPG
-    else {
-      setImgSrc(externalPath);
-    }
-  }, [id, category, externalPath, base64Image]);
+    setImgSrc(externalPath);
+  }, [id, category, externalPath]);
 
   const handleError = () => {
-    // If Base64 failed, try external JPG as fallback
-    if (imgSrc === base64Image) {
-      setImgSrc(externalPath);
-    } 
-    // If everything failed, show background
-    else {
-      setHasError(true);
-    }
+    setHasError(true);
   };
 
   const handleLoad = () => {

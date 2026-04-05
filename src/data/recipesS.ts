@@ -1,16 +1,10 @@
 import { Category, Recipe } from "../types";
-import { recipesImages } from "./recipesImages";
-
-const recipeImages: Record<string, string> = {
-  ...recipesImages
-};
 
 export const recipesS: Recipe[] = [
   {
     id: "1s",
     category: Category.SNIDANE,
     title: "Špaldový chléb se šunkou, sýrem a zeleninou",
-    image: recipeImages["1s"],
     instructions: "Chléb obložíme šunkou, sýrem a zeleninou.",
     ingredients: [
       { name: "Špaldový chléb", syn: 120, mamka: 71, unit: "g", note: "2 ½ krajíce / 1 ½ krajíce", alternatives: "žitný chléb 85/50g, knäckebrot plátky 65/37g" },
@@ -30,7 +24,6 @@ export const recipesS: Recipe[] = [
     id: "2s",
     category: Category.SNIDANE,
     title: "Čokoládová kaše s proteinem a arašídovým máslem",
-    image: recipeImages["2s"],
     instructions: "Vločky povaříme ve vodě. Chvíli před tím, než bude kaše hotová, vhodíme k ní do kastrolku čokoládu, aby se roztekla. Do hotové kaše přimícháme ještě protein na doslazení. Kaši pak ještě ozdobíme nakrájeným ovocem, arašídovým máslem a podáváme.",
     ingredients: [
       { name: "Ovesné vločky", syn: 63, mamka: 35, unit: "g", note: "6 ½ polévkové lžíce" },
@@ -51,7 +44,6 @@ export const recipesS: Recipe[] = [
     id: "3s",
     category: Category.SNIDANE,
     title: "Bagetka s parmskou šunkou, rajčaty a mozzarellou",
-    image: recipeImages["3s"],
     instructions: "Bagetu rozkrojíme, obložíme parmskou šunkou, nakrájenými rajčaty, mozzarellou a ozdobíme rukolou.",
     ingredients: [
       { name: "Žitná bageta", syn: 120, mamka: 67, unit: "g", note: "¾ ks" },
@@ -71,7 +63,6 @@ export const recipesS: Recipe[] = [
     id: "4s",
     category: Category.SNIDANE,
     title: "Pohankové palačinky s javorovým sirupem a borůvkami",
-    image: recipeImages["4s"],
     instructions: "V míse vyšleháme vejce, mléko, mouku se špetkou soli. Necháme v lednici na chvíli odstát. Pánev potřeme olejem a smažíme palačinky z obou stran. Hotové palačinky dáme na talíř, ozdobíme omytými borůvkami, tvarohem a pokapeme javorovým sirupem.",
     ingredients: [
       { name: "Borůvky", syn: 150, mamka: 150, unit: "g" },
@@ -94,7 +85,6 @@ export const recipesS: Recipe[] = [
     id: "5s",
     category: Category.SNIDANE,
     title: "Tuňáková pomazánka s vajíčkem a ředkvičkami",
-    image: recipeImages["5s"],
     instructions: "Nejprve uvaříme vejce natvrdo a necháme vychladnout. Tuňáka necháme okapat a rozmačkáme v misce. Smícháme s hořčicí, máslem, žervé a najemno nakrájeným vejcem. Pomazánku dochutíme solí, pepřem a podáváme s pečivem a omytými ředkvičkami.",
     ingredients: [
       { name: "Ředkvičky", syn: 120, mamka: 120, unit: "g", note: "¾ svazku" },
@@ -118,7 +108,6 @@ export const recipesS: Recipe[] = [
     id: "6s",
     category: Category.SNIDANE,
     title: "Vločková kaše s ovocem, chia semínky a mandlemi",
-    image: recipeImages["6s"],
     instructions: "Vločky spolu s chia semínky necháme namočit ve vodě přes noc v kastrůlku v lednici. Ráno povaříme do zhoustnutí. Do lehce vychladlé kaše zamícháme tvaroh. Posypeme mandlemi a ozdobíme pokrájeným ovocem.",
     ingredients: [
       { name: "Ovesné vločky", syn: 80, mamka: 44, unit: "g", note: "8 polévkových lžic / 4 ½ polévkové lžíce" },
@@ -138,7 +127,6 @@ export const recipesS: Recipe[] = [
     id: "7s",
     category: Category.SNIDANE,
     title: "Lehký anglický \"ham and eggs\"",
-    image: recipeImages["7s"],
     instructions: "Šunku opečeme na pánvi do křupava a položíme na talíř. Na tuku na stejné pánvi usmažíme vajíčka (buď jako míchaná nebo sázená). Ochutíme solí a pepřem a podáváme se zeleninou a pečivem.",
     ingredients: [
       { name: "Kuřecí šunka", syn: 39, mamka: 22, unit: "g" },
@@ -160,7 +148,6 @@ export const recipesS: Recipe[] = [
     id: "8s",
     category: Category.SNIDANE,
     title: "Vločkové lívance s tvarohem a ovocem",
-    image: recipeImages["8s"],
     instructions: "Vejce smícháme s pomletými vločkami, vodou a skořicí. Směs postupně lijeme na pánev a nasucho smažíme lívance dozlatova. Na talíři ozdobíme tvarohem, který dle potřeby zakápneme čekankovým sirupem a navrch dozdobíme ovocem.",
     ingredients: [
       { name: "Jablko", syn: 153, mamka: 73, unit: "g", note: "1 ks / ½ ks" },
@@ -182,7 +169,6 @@ export const recipesS: Recipe[] = [
     id: "9s",
     category: Category.SNIDANE,
     title: "Ovesná kaše s borůvkami a tvarohem",
-    image: recipeImages["9s"],
     instructions: "Vločky si přes noc namočíme do mléka v kastrůlku. Ráno je povaříme případně s trochou vody do kašovité konzistence. Poté přidáme tvaroh a posypeme semínky. Dozdobíme omytými borůvkami a podáváme.",
     ingredients: [
       { name: "Ovesné vločky", syn: 66, mamka: 37, unit: "g", note: "6 ½ polévkové lžíce / 3 ½ polévkové lžíce" },
@@ -202,7 +188,6 @@ export const recipesS: Recipe[] = [
     id: "10s",
     category: Category.SNIDANE,
     title: "Vločková kaše se sušeným ovocem, jogurtem a kešu ořechy",
-    image: recipeImages["10s"],
     instructions: "Vločky dáme do misky a spaříme vroucí vodou. Přidáme sušené ovoce, vmícháme jogurt, protein a posypeme kešu ořechy.",
     ingredients: [
       { name: "Ovesné vločky", syn: 39, mamka: 22, unit: "g", note: "4 polévkové lžíce / 2 polévkové lžíce" },
@@ -223,7 +208,6 @@ export const recipesS: Recipe[] = [
     id: "11s",
     category: Category.SNIDANE,
     title: "Houska se šunkou a sýrem, zelenina",
-    image: recipeImages["11s"],
     instructions: "Housku rozřízneme, namažeme sýrem, obložíme šunkou a plátkovým sýrem. Do housky vložíme i list salátu a zbytek očištěné zeleniny podáváme zvlášť.",
     ingredients: [
       { name: "Žitná houska", syn: 107, mamka: 67, unit: "g", note: "2 ks / 1 ½ ks" },
@@ -244,7 +228,6 @@ export const recipesS: Recipe[] = [
     id: "12s",
     category: Category.SNIDANE,
     title: "Banánové proteinové placičky",
-    image: recipeImages["12s"],
     instructions: "Zralý banán rozmačkáme s moukou, vločkami, vejcem a proteinovým práškem. Ze směsi vytvoříme placičky, které z obou stran osmažíme na přepuštěném másle a podáváme.",
     ingredients: [
       { name: "Ovesné vločky", syn: 62, mamka: 34, unit: "g", note: "6 polévkových lžic / 3 ½ polévkové lžíce" },
@@ -265,7 +248,6 @@ export const recipesS: Recipe[] = [
     id: "13s",
     category: Category.SNIDANE,
     title: "Vajíčkovo-tvarohová pomazánka s pečivem",
-    image: recipeImages["13s"],
     instructions: "Vejce uvaříme natvrdo. V míse rozmícháme tvaroh, cibulku a olivový olej. Přidáme rozkrájená vejce a okořeníme. Podáváme s pečivem.",
     ingredients: [
       { name: "Slepičí vejce", syn: 130, mamka: 72, unit: "g", note: "2 ½ ks / 1 ½ ks" },
@@ -287,7 +269,6 @@ export const recipesS: Recipe[] = [
     id: '14s',
     category: Category.SNIDANE,
     title: 'Jablečný koláč',
-    image: recipeImages['14s'],
     instructions: 'Jablka nastrouháme, přidáme do nich vejce, rozpuštěný olej. Postupně přidáváme mouku, kypřící prášek nebo jedlou sodu. Nakonec vmícháme tvaroh. Dochutíme skořicí a medem. Pečeme na 180 st. cca 30 minut.',
     ingredients: [
       { name: 'Jablko', syn: 170, mamka: 94, unit: 'g', note: '1 ks / ½ ks' },
@@ -310,7 +291,6 @@ export const recipesS: Recipe[] = [
     id: '15s',
     category: Category.SNIDANE,
     title: 'Pečivo s cottage a zeleninou',
-    image: recipeImages['15s'],
     instructions: 'Pečivo namažeme cottage sýrem a podáváme s očištěnou pokrájnou zeleninou.',
     ingredients: [
       { name: 'Sýr cottage', syn: 200, mamka: 111, unit: 'g', note: '1 ½ kelímku / ¾ kelímku' },
@@ -328,7 +308,6 @@ export const recipesS: Recipe[] = [
     id: '16s',
     category: Category.SNIDANE,
     title: 'Tvaroh s vločkami, semínky a ovocem',
-    image: recipeImages['16s'],
     instructions: "Banán v misce rozmačkáme vidličkou a promícháme spolu s tvarohem. Ochucený tvaroh posypeme zbylými ingrediencemi a podáváme.",
     ingredients: [
       { name: "Polotučný tvaroh", syn: 243, mamka: 135, unit: "g", note: "10 polévkových lžic / 5 ½ polévkové lžíce" },
@@ -348,7 +327,6 @@ export const recipesS: Recipe[] = [
     id: '17s',
     category: Category.SNIDANE,
     title: 'Chléb s vejcem, šunkou a zeleninou',
-    image: recipeImages['17s'],
     instructions: "Vejce uvaříme naměkko, lžičkou odstraníme horní část skořápky a vejce osolíme. Podáváme s chlebem, šunkou a omytou nakrájenou zeleninou.",
     ingredients: [
       { name: "Slepičí vejce", syn: 193, mamka: 107, unit: "g", note: "3 ½ ks / 2 ks" },
@@ -368,7 +346,6 @@ export const recipesS: Recipe[] = [
     id: '18s',
     category: Category.SNIDANE,
     title: 'Vločky s tvarohem a skořicovým jablkem',
-    image: recipeImages['18s'],
     instructions: "Vločky dáme do misky spolu s nasekanými ořechy a zalijeme trochou vařící vody, aby hladina sahala lehce pod hranu vloček. Necháme odstát, aby se veškerá voda vsákla. Mezitím si nastrouháme jablko a smícháme se skořicí. Vločky podáváme spolu s tvarohem a ochuceným jablkem. Směs můžeme i zamíchat.",
     ingredients: [
       { name: "Ovesné vločky", syn: 68, mamka: 38, unit: "g", note: "7 polévkových lžic / 4 polévkové lžíce" },
@@ -388,7 +365,6 @@ export const recipesS: Recipe[] = [
     id: '19s',
     category: Category.SNIDANE,
     title: 'Toust a míchaná vajíčka',
-    image: recipeImages['19s'],
     instructions: "Vejce osolíme, opepříme a umícháme na teflonové pánvi nasucho. Podáváme s opečeným chlebem a očištěnou pokrájenou zeleninou.",
     ingredients: [
       { name: "Slepičí vejce", syn: 223, mamka: 124, unit: "g", note: "4 ½ ks / 2 ½ ks" },
@@ -408,7 +384,6 @@ export const recipesS: Recipe[] = [
     id: '20s',
     category: Category.SNIDANE,
     title: 'Knäckebrot s vajíčkovou pomazánkou',
-    image: recipeImages['20s'],
     instructions: "Vajíčka uvaříme natvrdo, vidličkou rozmačkáme, smícháme s tvarohem, hořčicí, osolíme a opepříme. Podáváme s knäckebrotem a se zeleninou.",
     ingredients: [
       { name: "Vejce vařené natvrdo", syn: 119, mamka: 66, unit: "g", note: "2 ½ ks / 1 ½ ks" },
@@ -430,7 +405,6 @@ export const recipesS: Recipe[] = [
     id: '21s',
     category: Category.SNIDANE,
     title: 'Chléb s máslem, tvarůžky a zeleninou',
-    image: recipeImages['21s'],
     instructions: "Chléb namažeme máslem a poklademe pokrájeným sýrem. Podáváme spolu s očištěnou a pokrájenou zeleninou.",
     ingredients: [
       { name: "Celozrnný chléb", syn: 139, mamka: 77, unit: "g", note: "2 ½ krajíce / 1 ½ krajíce" },
@@ -450,7 +424,6 @@ export const recipesS: Recipe[] = [
     id: '22s',
     category: Category.SNIDANE,
     title: 'Pečivo s máslem, šunkou a sýrem',
-    image: recipeImages['22s'],
     instructions: 'Pečivo rozřízneme, namažeme máslem a poklademe šunkou a sýrem.',
     ingredients: [
       { name: 'Žitný dalamánek', syn: 126, mamka: 70, unit: 'g', note: '2 ks / 1 ks' },
@@ -469,7 +442,6 @@ export const recipesS: Recipe[] = [
     id: '23s',
     category: Category.SNIDANE,
     title: 'Bílý jogurt s vločkami, ořechy a jablkem',
-    image: recipeImages['23s'],
     instructions: 'Jogurt promícháme s vločkami, ořechy a na kostičky nakrájeným jablkem a podáváme.',
     ingredients: [
       { name: 'Řecký jogurt 0% tuku', syn: 317, mamka: 176, unit: 'g', note: '2 ½ ks / 1 ½ ks' },
@@ -488,7 +460,6 @@ export const recipesS: Recipe[] = [
     id: '24s',
     category: Category.SNIDANE,
     title: 'Skyr s cereáliemi, oříšky a ovocem',
-    image: recipeImages['24s'],
     instructions: 'Skyr smícháme s cereáliemi a oříšky. Podáváme s nakrájeným ovocem.',
     ingredients: [
       { name: 'Hroznové víno', syn: 70, mamka: 70, unit: 'g' },
@@ -507,7 +478,6 @@ export const recipesS: Recipe[] = [
     id: '25s',
     category: Category.SNIDANE,
     title: 'Tousty se šunkou a sýrem, čerstvá zelenina',
-    image: recipeImages['25s'],
     instructions: 'Tousty zapečeme se šunkou a sýrem v toustovači nebo nasucho na pánvi a podáváme s čerstvou nakrájenou zeleninou.',
     ingredients: [
       { name: 'Salátová okurka', syn: 50, mamka: 50, unit: 'g', note: '¼ ks / ¼ ks' },
@@ -527,7 +497,6 @@ export const recipesS: Recipe[] = [
     id: '26s',
     category: Category.SNIDANE,
     title: 'Pečivo s lučinou, sýrem a zeleninou',
-    image: recipeImages['26s'],
     instructions: 'Pečivo namažeme lučinou, obložíme sýrem a pokrájenou zeleninou.',
     ingredients: [
       { name: 'Pohankový chléb', syn: 88, mamka: 49, unit: 'g', note: '2 krajíce / 1 krajíc' },
@@ -546,7 +515,6 @@ export const recipesS: Recipe[] = [
     id: '27s',
     category: Category.SNIDANE,
     title: 'Míchaná vajíčka se šunkou, zelenina, pečivo',
-    image: recipeImages['27s'],
     instructions: 'Vajíčka rozšleháme v misce a nalijeme na nepřilnavou pánev, osolíme, opepříme a mícháme do požadované konzistence. Ještě před koncem přidáme pokrájenou šunku. Podáváme s očištěnou pokrájenou zeleninou a pečivem.',
     ingredients: [
       { name: 'Slepičí vejce', syn: 189, mamka: 105, unit: 'g', note: "3 ½ ks / 2 ks" },
@@ -567,7 +535,6 @@ export const recipesS: Recipe[] = [
     id: "28s",
     category: Category.SNIDANE,
     title: "Chléb s marmeládou a proteinový shake",
-    image: recipeImages["28s"],
     instructions: "Chléb namažeme máslem a marmeládou. Tvaroh a proteinový prášek smícháme, doplníme vodou a rozmixujeme. Podáváme spolu.",
     ingredients: [
       { name: "Třešňová marmeláda (75% ovoce)", syn: 36, mamka: 20, unit: "g" },
