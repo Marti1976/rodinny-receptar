@@ -10,3 +10,7 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Ignore README.md everywhere
+README.md
+**/README.md
