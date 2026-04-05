@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #2563EB;
+  --color-brand-secondary: #F43F5E;
+}
+
+body {
+  background-color: #F1F5F9;
+  color: #0F172A;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 10px;
+  border: 2px solid #f8fafc;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0.5cm;
+  }
+
+  body {
+    background-color: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    display: block !important;
+    min-height: auto !important;
+    height: auto !important;
+    /* Use zoom to help fit everything on one page if needed */
+    zoom: 0.95;
+  }
+
+  /* Reset all web-specific layouts for print */
+  .print-container .grid,
+  .print-container .flex,
+  .print-container section {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    break-inside: avoid !important;
+  }
+
+  /* Specific spacing for print elements */
+  .print-only h1 { margin-bottom: 0.5rem; }
+  .print-only h3 { margin-top: 1rem; margin-bottom: 0.5rem; }
+  
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 1rem !important;
+  }
+
+  th, td {
+    border: 1px solid #ddd !important;
+    padding: 4pt 6pt !important;
+    font-size: 10pt !important;
+  }
+
+  .print-hide-image {
+    display: none !important;
+  }
+}
+

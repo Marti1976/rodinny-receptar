@@ -1,0 +1,12 @@
+node_modules/
+build/
+.vscode/
+.idea/
+dist/
+CTI_ME/
+import/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
