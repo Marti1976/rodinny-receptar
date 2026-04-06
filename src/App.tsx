@@ -218,7 +218,7 @@ export default function App() {
         >
           <div className="flex flex-col items-center mb-8">
             <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-200">
-              <img referrerPolicy="no-referrer" src="/icons/zamek.png" alt="Zámek" className="w-8 h-8 invert" />
+              <img referrerPolicy="no-referrer" src={iconImages.zamek} alt="Zámek" className="w-8 h-8 invert" />
             </div>
             <h1 className="text-2xl font-bold text-slate-800">Rodinný Receptář</h1>
             <p className="text-slate-500 text-sm mt-1">Zadejte heslo pro vstup</p>
@@ -978,7 +978,6 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg,
           ))
         ) : (
           <div className="col-span-full text-center py-12">
-            <img referrerPolicy="no-referrer" src="/icons/presnidavka.png" alt="Prázdné" className="w-12 h-12 mx-auto opacity-10 mb-4" />
             <p className="text-slate-400">Žádné recepty nenalezeny.</p>
           </div>
         )}

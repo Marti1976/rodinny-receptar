@@ -28,7 +28,7 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
   };
 
   const folder = getFolderName(category);
-  const externalPath = `/${folder}/${id}.jpg`;
+  const externalPath = `./${folder}/${id}.jpg`;
 
   useEffect(() => {
     // Reset state when id or category changes
