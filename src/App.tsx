@@ -43,6 +43,7 @@ import RecipeImage from './components/RecipeImage';
 const recipes = [...recipesS, ...recipesO, ...recipesP, ...recipesV];
 const recipesExtra = [...recipesEXT, ...recipesPEC, ...recipesZAV];
 import { APP_VERSION, APP_PASSWORD_HASH } from './constants';
+import { iconImages } from './iconImages';
 import Fuse from 'fuse.js';
 import { ingredientSynonyms } from './data/synonyms';
 
@@ -191,8 +192,6 @@ export default function App() {
       setSelectedGalleryRecipe(null);
     }
   }, [effectiveViewport, isGalleryOpen]);
-
-  const isPlaceholder = (img: string | undefined) => !img || img.includes("VÁŠ_KÓD") || img === "data:image/svg+xml;base64," || img === "";
 
   const getCategoryBg = (category: Category) => {
     switch (category) {
@@ -623,43 +622,42 @@ function Dashboard({ onSelectCategory, onLogout, onOpenGallery, onOpenExtra, onS
             <div className="grid grid-cols-3 gap-1.5">
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src="/icons/MO1.png" alt="Lžička" className="w-5 h-5 brightness-0 invert object-contain" referrerPolicy="no-referrer" />
+                  <img src={iconImages.moLzicka} alt="Lžička" className="w-5 h-5 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Lžička</span>
                 <span className="text-xs font-black">5 ml</span>
               </div>
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src="/icons/MO2.png" alt="Lžíce" className="w-6 h-6 brightness-0 invert object-contain" referrerPolicy="no-referrer" />
+                  <img src={iconImages.moLzice} alt="Lžíce" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Lžíce</span>
                 <span className="text-xs font-black">15 ml</span>
               </div>
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center gap-0.5">
-                  <Coffee className="w-4 h-4 text-white" strokeWidth={3} />
-                  <GlassWater className="w-4 h-4 text-white" strokeWidth={3} />
+                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
+                  <img src={iconImages.moSalek} alt="Šálek" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5 leading-none">Šálek, kelímek</span>
                 <span className="text-xs font-black">150 ml</span>
               </div>
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <Hand className="w-5 h-5 text-white" strokeWidth={3} />
+                  <img src={iconImages.moSpetka} alt="Špetka" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Špetka</span>
                 <span className="text-xs font-black">~0.5g</span>
               </div>
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <CupSoda className="w-5 h-5 text-white" strokeWidth={3} />
+                  <img src={iconImages.moHrnek} alt="Hrnek" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Hrnek</span>
                 <span className="text-xs font-black">250 ml</span>
               </div>
               <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <Soup className="w-5 h-5 text-white" strokeWidth={3} />
+                  <img src={iconImages.moMiska} alt="Miska" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
                 </div>
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Miska</span>
                 <span className="text-xs font-black">450 ml</span>
@@ -687,9 +685,9 @@ function Dashboard({ onSelectCategory, onLogout, onOpenGallery, onOpenExtra, onS
             <div className="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 flex justify-between items-center">
               <div>
                 <span className="text-xs font-black text-slate-700 uppercase tracking-wider block">Zelenina</span>
-                <p className="text-[9px] text-slate-600 font-bold">Stejná porce pro oba</p>
+                <p className="text-[9px] text-slate-600 font-bold">Větší porce pro SYN</p>
               </div>
-              <span className="text-2xl font-black text-blue-600">1 : 1</span>
+              <span className="text-2xl font-black text-blue-600">1.2 : 1</span>
             </div>
             <p className="text-[11px] text-slate-600 mt-1 italic leading-tight font-medium">
               * SYN má cca o 65% vyšší celkový energetický příjem než MAMKA.
