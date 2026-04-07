@@ -28,7 +28,8 @@ import {
   ImageOff,
   Printer,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  RefreshCw
 } from 'lucide-react';
 import { recipesS } from './data/recipesS';
 import { recipesO } from './data/recipesO';
@@ -127,21 +128,51 @@ export default function App() {
   const [selectedGalleryRecipe, setSelectedGalleryRecipe] = useState<Recipe | null>(null);
   const [viewport, setViewport] = useState<'auto' | 'mobile-p' | 'mobile-l' | 'tablet-p' | 'tablet-l' | 'pc'>('auto');
   const [showUpdatePrompt, setShowUpdatePrompt] = useState(false);
+  const [swRegistration, setSwRegistration] = useState<ServiceWorkerRegistration | null>(null);
 
   useEffect(() => {
+    // 1. Version check via LocalStorage (legacy fallback)
     const storedVersion = localStorage.getItem('receptar_cache_version');
+    console.log('Current App Version:', APP_CACHE_VERSION);
+    console.log('Stored Cache Version:', storedVersion);
+
     if (storedVersion && storedVersion !== APP_CACHE_VERSION) {
+      console.log('New version detected via constants! Showing prompt.');
       setShowUpdatePrompt(true);
-      localStorage.setItem('receptar_cache_version', APP_CACHE_VERSION);
-      
-      // Auto-reload after 2.5 seconds
-      const timer = setTimeout(() => {
-        window.location.reload();
-      }, 2500);
-      
-      return () => clearTimeout(timer);
     } else if (!storedVersion) {
       localStorage.setItem('receptar_cache_version', APP_CACHE_VERSION);
+    }
+
+    // 2. Service Worker Update Detection (Modern way)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then(registration => {
+        setSwRegistration(registration);
+        
+        // Check for updates immediately on load
+        registration.update();
+
+        // Listener for new service worker waiting to take over
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                console.log('New Service Worker installed and waiting!');
+                setShowUpdatePrompt(true);
+              }
+            });
+          }
+        });
+      });
+
+      // Handle controller change (reload when new SW takes over)
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!refreshing) {
+          refreshing = true;
+          window.location.reload();
+        }
+      });
     }
   }, []);
 
@@ -483,12 +514,30 @@ export default function App() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            className="fixed bottom-24 left-1/2 -translate-x-1/2 z-[100] bg-white border-2 border-red-100 px-6 py-3 rounded-2xl shadow-2xl flex items-center gap-3 whitespace-nowrap"
+            className="fixed bottom-24 left-1/2 -translate-x-1/2 z-[100] bg-blue-600 text-white px-6 py-4 rounded-3xl shadow-2xl flex flex-col items-center gap-3 min-w-[280px] border-4 border-white"
           >
-            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-            <span className="text-red-600 font-black uppercase text-sm tracking-widest">
-              Je dostupná nová verze
-            </span>
+            <div className="flex items-center gap-3">
+              <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
+              <span className="font-black uppercase text-sm tracking-widest">
+                Nová verze {APP_VERSION}
+              </span>
+            </div>
+            <button
+              onClick={() => {
+                localStorage.setItem('receptar_cache_version', APP_CACHE_VERSION);
+                if (swRegistration && swRegistration.waiting) {
+                  // Tell the waiting service worker to skipWaiting
+                  swRegistration.waiting.postMessage({ type: 'SKIP_WAITING' });
+                } else {
+                  // Fallback to simple reload
+                  window.location.reload();
+                }
+              }}
+              className="w-full bg-white text-blue-600 py-3 px-6 rounded-2xl font-black flex items-center justify-center gap-2 active:scale-95 transition-all shadow-lg"
+            >
+              <RefreshCw className="w-5 h-5" />
+              AKTUALIZOVAT
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

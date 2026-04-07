@@ -13,23 +13,8 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // Map category to folder name
-  const getFolderName = (cat: Category): string => {
-    switch (cat) {
-      case Category.SNIDANE: return 'iconsS';
-      case Category.OBED: return 'iconsO';
-      case Category.PRESNIDAVKA: return 'iconsP';
-      case Category.VECERE: return 'iconsV';
-      case Category.EXTRA: return 'iconseEXT';
-      case Category.PECENI: return 'iconsePEC';
-      case Category.ZAVAROVANI: return 'iconseZAV';
-      default: return 'iconseEXT';
-    }
-  };
-
-  const folder = getFolderName(category);
   const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
-  const externalPath = `${baseUrl}${folder}/${id}.jpg`;
+  const externalPath = `${baseUrl}icons/${id}.jpg`;
 
   useEffect(() => {
     // Reset state when id or category changes

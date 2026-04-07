@@ -1,7 +1,7 @@
 {
   "name": "rodinny-receptar",
   "private": true,
-  "version": "0.50.3",
+  "version": "0.51.2",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
