@@ -28,7 +28,8 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
   };
 
   const folder = getFolderName(category);
-  const externalPath = `${folder}/${id}.jpg`;
+  const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+  const externalPath = `${baseUrl}${folder}/${id}.jpg`;
 
   useEffect(() => {
     // Reset state when id or category changes
@@ -59,8 +60,9 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
   };
 
   // Determine sizing logic to prevent collapse
-  const isDetailView = className.includes('h-auto');
-  const containerClasses = isDetailView 
+  // If it's not a small thumbnail (w-full h-full), we ensure a minimum height
+  const isThumbnail = className.includes('w-full h-full') && !className.includes('max-w-full');
+  const containerClasses = !isThumbnail 
     ? `min-h-[250px] aspect-video w-full relative overflow-hidden ${getCategoryBg(category)}` 
     : `w-full h-full relative overflow-hidden ${getCategoryBg(category)} ${className.replace('w-full', '').replace('h-full', '')}`;
 
@@ -77,6 +79,7 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'} ${className}`}
           onLoad={handleLoad}
           onError={handleError}
+          crossOrigin="use-credentials"
           referrerPolicy="no-referrer"
         />
       )}

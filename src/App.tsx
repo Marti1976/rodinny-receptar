@@ -42,7 +42,7 @@ import RecipeImage from './components/RecipeImage';
 
 const recipes = [...recipesS, ...recipesO, ...recipesP, ...recipesV];
 const recipesExtra = [...recipesEXT, ...recipesPEC, ...recipesZAV];
-import { APP_VERSION, APP_PASSWORD_HASH } from './constants';
+import { APP_VERSION, APP_CACHE_VERSION, APP_PASSWORD_HASH } from './constants';
 import { iconImages } from './iconImages';
 import Fuse from 'fuse.js';
 import { ingredientSynonyms } from './data/synonyms';
@@ -126,6 +126,24 @@ export default function App() {
   const [galleryCategory, setGalleryCategory] = useState<Category>(Category.SNIDANE);
   const [selectedGalleryRecipe, setSelectedGalleryRecipe] = useState<Recipe | null>(null);
   const [viewport, setViewport] = useState<'auto' | 'mobile-p' | 'mobile-l' | 'tablet-p' | 'tablet-l' | 'pc'>('auto');
+  const [showUpdatePrompt, setShowUpdatePrompt] = useState(false);
+
+  useEffect(() => {
+    const storedVersion = localStorage.getItem('receptar_cache_version');
+    if (storedVersion && storedVersion !== APP_CACHE_VERSION) {
+      setShowUpdatePrompt(true);
+      localStorage.setItem('receptar_cache_version', APP_CACHE_VERSION);
+      
+      // Auto-reload after 2.5 seconds
+      const timer = setTimeout(() => {
+        window.location.reload();
+      }, 2500);
+      
+      return () => clearTimeout(timer);
+    } else if (!storedVersion) {
+      localStorage.setItem('receptar_cache_version', APP_CACHE_VERSION);
+    }
+  }, []);
 
   const isExtraCategory = (c: Category | null) => 
     c === Category.EXTRA || c === Category.PECENI || c === Category.ZAVAROVANI;
@@ -458,6 +476,22 @@ export default function App() {
           </>
         )}
       </nav>
+
+      <AnimatePresence>
+        {showUpdatePrompt && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            className="fixed bottom-24 left-1/2 -translate-x-1/2 z-[100] bg-white border-2 border-red-100 px-6 py-3 rounded-2xl shadow-2xl flex items-center gap-3 whitespace-nowrap"
+          >
+            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+            <span className="text-red-600 font-black uppercase text-sm tracking-widest">
+              Je dostupná nová verze
+            </span>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -615,50 +649,32 @@ function Dashboard({ onSelectCategory, onLogout, onOpenGallery, onOpenExtra, onS
       </div>
 
       <div className={`grid gap-4 mb-4 ${viewport === 'tablet-l' || viewport === 'pc' ? 'grid-cols-2' : 'grid-cols-1'}`}>
-        <div className="bg-blue-600 p-3 rounded-3xl shadow-lg shadow-blue-100 text-white relative overflow-hidden">
+        <div className="bg-blue-600 p-2 rounded-3xl shadow-lg shadow-blue-100 text-white relative overflow-hidden">
           <div className="relative z-10">
             <h3 className="font-bold text-lg mb-0.5">Měření a odhady</h3>
             <p className="text-blue-50 text-xs mb-2">Jak správně dávkovat bez váhy?</p>
             <div className="grid grid-cols-3 gap-1.5">
-              <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.moLzicka} alt="Lžička" className="w-5 h-5 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
-                </div>
+              <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Lžička</span>
                 <span className="text-xs font-black">5 ml</span>
               </div>
-              <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.moLzice} alt="Lžíce" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
-                </div>
+              <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Lžíce</span>
                 <span className="text-xs font-black">15 ml</span>
               </div>
-              <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.moSalek} alt="Šálek" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
-                </div>
+              <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5 leading-none">Šálek, kelímek</span>
                 <span className="text-xs font-black">150 ml</span>
               </div>
-              <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.moSpetka} alt="Špetka" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
-                </div>
+              <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Špetka</span>
                 <span className="text-xs font-black">~0.5g</span>
               </div>
-              <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.moHrnek} alt="Hrnek" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
-                </div>
+              <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Hrnek</span>
                 <span className="text-xs font-black">250 ml</span>
               </div>
-              <div className="bg-white/20 p-1.5 rounded-xl text-center border border-white/10 flex flex-col items-center">
-                <div className="w-7 h-7 mb-0.5 flex items-center justify-center">
-                  <img src={iconImages.moMiska} alt="Miska" className="w-6 h-6 object-contain opacity-100" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.display = 'none'} />
-                </div>
+              <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
                 <span className="block text-[8px] font-black uppercase opacity-70 mb-0.5">Miska</span>
                 <span className="text-xs font-black">450 ml</span>
               </div>
@@ -669,20 +685,20 @@ function Dashboard({ onSelectCategory, onLogout, onOpenGallery, onOpenExtra, onS
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-3xl shadow-sm border border-slate-100">
-          <div className="flex items-center gap-3 mb-3 text-blue-600">
+        <div className="bg-white p-2.5 rounded-3xl shadow-sm border border-slate-100">
+          <div className="flex items-center gap-3 mb-2 text-blue-600">
             <Scale className="w-6 h-6" />
             <h3 className="font-black text-xl">Naše poměry</h3>
           </div>
-          <div className="space-y-1.5">
-            <div className="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 flex justify-between items-center">
+          <div className="space-y-1">
+            <div className="p-1.5 bg-slate-50 rounded-2xl border border-slate-100 flex justify-between items-center">
               <div>
                 <span className="text-xs font-black text-slate-700 uppercase tracking-wider block">Hlavní suroviny</span>
                 <p className="text-[9px] text-slate-600 font-bold">Poměr váhy SYN vs MAMKA</p>
               </div>
               <span className="text-2xl font-black text-blue-600">1.8 : 1</span>
             </div>
-            <div className="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 flex justify-between items-center">
+            <div className="p-1.5 bg-slate-50 rounded-2xl border border-slate-100 flex justify-between items-center">
               <div>
                 <span className="text-xs font-black text-slate-700 uppercase tracking-wider block">Zelenina</span>
                 <p className="text-[9px] text-slate-600 font-bold">Větší porce pro SYN</p>
