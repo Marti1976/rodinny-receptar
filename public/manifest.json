@@ -3,11 +3,12 @@
   "short_name": "Receptář",
   "name": "Rodinný Receptář",
   "description": "Sdílený dietní receptář pro Syna a Mamku.",
-  "start_url": "./index.html",
+  "start_url": "./index.html?v=0.52",
   "scope": "./",
   "display": "standalone",
-  "theme_color": "#2DD4BF",
-  "background_color": "#F8FAFC",
+  "theme_color": "#2563eb",
+  "background_color": "#f1f5f9",
+  "version": "0.52",
   "orientation": "portrait",
   "icons": [
     {

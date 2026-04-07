@@ -1,17 +1,14 @@
-const CACHE_NAME = 'RECEPTAR_v0.51_A2';
+const CACHE_NAME = 'RECEPTAR_v0.52';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './manifest.json?v=0.51_A2',
+  './manifest.json?v=0.52',
   './icons/icons32.png',
   './icons/icons64.png',
   './icons/icons128.png',
   './icons/icons192.png',
   './icons/icons256.png',
-  './icons/icons512.png',
-  './icons/1s.jpg',
-  './icons/1o.jpg',
-  './icons/e1.jpg'
+  './icons/icons512.png'
 ];
 
 self.addEventListener('install', event => {

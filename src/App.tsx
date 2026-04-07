@@ -700,7 +700,10 @@ function Dashboard({ onSelectCategory, onLogout, onOpenGallery, onOpenExtra, onS
       <div className={`grid gap-4 mb-4 ${viewport === 'tablet-l' || viewport === 'pc' ? 'grid-cols-2' : 'grid-cols-1'}`}>
         <div className="bg-blue-600 p-2 rounded-3xl shadow-lg shadow-blue-100 text-white relative overflow-hidden">
           <div className="relative z-10">
-            <h3 className="font-bold text-lg mb-0.5">Měření a odhady</h3>
+            <div className="flex items-center gap-2 mb-0.5">
+              <ChefHat className="w-5 h-5" />
+              <h3 className="font-bold text-lg">Měření a odhady</h3>
+            </div>
             <p className="text-blue-50 text-xs mb-2">Jak správně dávkovat bez váhy?</p>
             <div className="grid grid-cols-3 gap-1.5">
               <div className="bg-white/20 p-1 rounded-xl text-center border border-white/10 flex flex-col items-center">
