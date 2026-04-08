@@ -8,6 +8,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: "Drůbeží maso na kari s rýží",
     instructions: "Cibuli a pórek pokrájíme a necháme zpěnit na oleji. Jakmile pomalu chytá barvu, přidáme kari koření a na kostky pokrájené a osolené drůbeží maso. Opékáme dozlatova. Po chvíli přidáme vodu a necháme dusit. Nakonec můžeme dochutit smetanou. Rýži uvaříme dle návodu a podáváme s masovou směsí.",
+    favorites:"", 
+    printed:"",
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 183, mamka: 98, unit: "g" },
       { name: "kari koření", syn: 1, mamka: 1, unit: "špetka" },
@@ -32,6 +34,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Těstoviny s kuřecím masem a špenátem',
     instructions: 'Těstoviny uvaříme dle návodu al dente. Cibuli nakrájíme najemno, česnek na plátky a oboje opékáme dozlatova na pánvi s rozpáleným olejem. Maso nakrájíme na malé kousky, přidáme do pánve a opečeme, aby se zatáhlo a začalo zlátnout. Poté přidáme špenát, ricottu, osolíme, opepříme a krátce vše podusíme. Podáváme s těstovinami.',
+    favorites:"", 
+    printed:"",    
     ingredients: [
       { name: 'celozrnné těstoviny', syn: 100, mamka: 56, unit: 'g' },
       { name: 'kuřecí prsa bez kůže', syn: 130, mamka: 72, unit: 'g' },
@@ -56,6 +60,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Tortilla s prsíčky a zeleninou',
     instructions: 'Nejprve omyjeme a osušíme maso. Nakrájíme ho na malé kostičky a krátce restujeme na teflonové pánvi. Připravíme si dresink smícháním všech ingrediencí v misce. Zeleninu očistíme a nakrájíme na tenké proužky. Tortillu potřeme dresinkem, přidáme maso, zeleninu a zatočíme.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'krůtí prsa bez kosti a kůže', syn: 140, mamka: 78, unit: 'g' },
       { name: 'špaldová tortilla', syn: 109, mamka: 61, unit: 'g', note: '2 ks' },
@@ -81,6 +87,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Obložené restované drůbeží prsíčko s kuskusem',
     instructions: 'Kuskus připravíme podle návodu na obalu. Poté si osolíme očištěné maso a orestujeme ho na většině oleje. Mezitím nakrájíme na plátky rajče, mozzarellu a připravíme pár lístků bazalky. Jak bude maso z obou stran opečené, tak navrch položíme střídavě plátek rajčete, mozzarelly a lístek bazalky. Když se začne mozzarella zlehka rozpouštět, sejmeme maso z plotny. Kuskus ještě dochutíme olivovým olejem, špetkou soli a podáváme jako přílohu k masu.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'celozrnný kuskus', syn: 115, mamka: 64, unit: 'g' },
       { name: 'kuřecí prsa bez kůže', syn: 117, mamka: 65, unit: 'g' },
@@ -103,6 +111,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: "Grilovaný steak, dušená zelenina, rýže",
     instructions: "Maso omyjeme, osušíme a na chvilku necháme odležet potřené olejem se solí a pepřem. Poté maso ugrilujeme na grilu, popřípadě na grilovací pánvi. Zeleninu omyjeme, nakrájíme na menší kousky a dusíme na páře doměkka. Rýži uvaříme dle návodu. Na talíř servírujeme ugrilované maso spolu se zeleninou s máslem a uvařenou rýží.",
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: "libový hovězí roštěnec bez kosti", syn: 196, mamka: 109, unit: "g" },
       { name: "olivový olej", syn: 12, mamka: 7, unit: "ml", note: "1 polévková lžíce" },
@@ -126,6 +136,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Vepřové maso v mrkvi, doch. muškát. oříškem, vařený brambor',
     instructions: 'Mrkev očistíme a nakrájíme na kolečka. Na malé části másla orestujeme maso, které osolíme a opepříme, následně přidáme mrkev i zbytek másla, podlijeme trochou vody a dusíme do měkka, dochutíme strouhaným muškátovým oříškem a případně citrónovou šťávou. V mezičase si oškrábeme brambory, které uvaříme a podáváme jako přílohu k masu s mrkví.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'brambory', syn: 355, mamka: 197, unit: 'g', note: '1 ½ ks' },
       { name: 'mrkev', syn: 197, mamka: 197, unit: 'g', note: '2 ks' },
@@ -150,6 +162,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Čočkovo-mrkvové karbanátky s cuketou a semínky',
     instructions: 'Čočku uvaříme podle návodu. Mezitím si nastrouháme očištěnou zeleninu. Osolíme, opepříme, přidáme vejce, uvařenou čočku, semínka a mouku. Restujeme na olivovém oleji dozlatova.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'červená čočka', syn: 118, mamka: 66, unit: 'g' },
       { name: 'olivový olej', syn: 8, mamka: 4, unit: 'ml', note: '1 ½ čajové lžičky' },
@@ -174,6 +188,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Drůbeží nudličky a těstoviny s rajčatovou omáčkou',
     instructions: 'Maso nakrájíme na nudličky, osolíme, opepříme a orestujeme v pánvi na zahřátém oleji. Přidáme nakrájená rajčata, protlak a podusíme 20 minut. Mezitím uvaříme těstoviny podle návodu na obalu, slijeme a promícháme se směsí na pánvi. Posypeme strouhaným sýrem a bazalkou.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'celozrnné špagety (syrové)', syn: 100, mamka: 56, unit: 'g' },
       { name: 'kuřecí stehenní řízek bez kůže a kosti', syn: 160, mamka: 89, unit: 'g' },
@@ -198,6 +214,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Vepřové na zelenině s rýží',
     instructions: 'Do hrnce naskládáme na kolečka nakrájenou cibuli. Maso nakrájíme na kostičky, osolíme, opepříme a dáme na cibuli. Papriku nakrájíme na proužky a položíme na maso. Následně nakrájíme rajčata na osminky a položíme na papriku. Osolíme, opepříme a pokapeme olejem. Hrnec přikryjeme pokličkou a vaříme asi 80 minut, dokud není maso měkké. Nepodléváme ani nemícháme. Mezitím uvaříme rýži podle návodu na obalu. Hotové jídlo podáváme s rýží.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'libová vepřová kýta', syn: 200, mamka: 111, unit: 'g' },
       { name: 'cibule', syn: 50, mamka: 50, unit: 'g', note: '⅔ ks' },
@@ -221,6 +239,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Svíčková omáčka, těstoviny',
     instructions: 'Mrkev, petržel a celer oškrábeme. Cibuli oloupeme. Jednu mrkev nakrájíme na špalíčky a vše ostatní na drobné kostičky. Maso očistíme od tuku a prošpikujeme špalíčky mrkve. Maso zprudka orestujeme na oleji ze všech stran. Dáme ho stranou a pak orestujeme kořenovou zeleninu. Do pekáče vložíme maso, zeleninu, osolíme, zalijeme vodou, vložíme sítko s kořením. Pečeme v troubě. Hotové maso vyndáme z pekáče, zeleninu rozmixujeme na pyré, zalijeme vývarem a společně krátce povaříme. Přidáme smetanu, dochutíme solí, pepřem, octem, citrónovou šťávou a ještě pár minut provaříme. Těstoviny uvaříme dle návodu a podáváme s omáčkou a masem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'hovězí maso', syn: 141, mamka: 78, unit: 'g' },
       { name: 'mrkev', syn: 144, mamka: 144, unit: 'g', note: '1 ½ ks' },
@@ -252,6 +272,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Pečené kuře s jablečným zelím a pohankou',
     instructions: 'Zelí nakrájíme na nudličky, jablko nastrouháme nahrubo a vše společně s kuřecím stehnem vložíme do pekáčku. Lehce podlijeme vodou, osolíme, okmínujeme a dáme péct do trouby vyhřáté na 170 °C. Pečeme tak dlouho, dokud maso nezezlátne. Podáváme s uvařenou pohankou.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'kuřecí maso', syn: 192, mamka: 87, unit: 'g' },
       { name: 'červené hlávkové zelí', syn: 200, mamka: 156, unit: 'g' },
@@ -274,6 +296,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Brokolice s drůbežím masem a rýží',
     instructions: 'Maso nakrájíme na nudličky, osolíme a orestujeme na oleji. Brokolici rozebereme na růžičky a uvaříme v páře doměkka. Rýži uvaříme dle návodu na obalu. Vše smícháme dohromady a podáváme.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'krůtí maso', syn: 179, mamka: 102, unit: 'g' },
       { name: 'brokolice', syn: 80, mamka: 183, unit: 'g', note: '¼ ks' },
@@ -295,6 +319,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Pikantní stripsy se zeleninovým salátem',
     instructions: 'Maso nakrájíme na proužky, osolíme, opepříme a obalíme v kukuřičných lupíncích. Pečeme v troubě vyhřáté na 180 °C dozlatova. Mezitím si připravíme salát z nakrájené zeleniny, kterou dochutíme olivovým olejem a citronovou šťávou. Podáváme s uvařenými bramborami.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'krůtí prsa bez kosti a kůže', syn: 148, mamka: 89, unit: 'g' },
       { name: 'kukuřičná mouka', syn: 65, mamka: 22, unit: 'g' },
@@ -320,6 +346,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Beluga čočka s vejcem a šunkou',
     instructions: 'Čočku uvaříme podle návodu na obalu. Vejce uvaříme natvrdo. Šunku nakrájíme na kostičky a orestujeme na pánvi na oleji. Poté vše smícháme dohromady, přidáme nakrájenou zeleninu a podáváme s pečivem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'slepičí vejce', syn: 56, mamka: 27, unit: 'g', note: '1 ks' },
       { name: 'černá čočka – Beluga', syn: 150, mamka: 56, unit: 'g', note: '3 hrsti' },
@@ -344,6 +372,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Tortilla s krůtím masem, jogurtem a salátem',
     instructions: 'Maso nakrájíme na nudličky, osolíme a orestujeme na pánvi na oleji. Tortillu nahřejeme, potřeme jogurtem, poklademe nakrájenou zeleninou a masem. Zabalíme a podáváme.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'krůtí prsa bez kosti a kůže', syn: 147, mamka: 78, unit: 'g' },
       { name: 'špaldová tortilla', syn: 120, mamka: 69, unit: 'g', note: '2 ½ ks' },
@@ -368,6 +398,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Tortilla s kuřecím masem, zeleninou a dipem',
     instructions: 'Maso nakrájíme na nudličky, osolíme a orestujeme na pánvi na oleji. Tortillu nahřejeme, potřeme jogurtem, poklademe nakrájenou zeleninou a masem. Zabalíme a podáváme.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'pšeničná tortilla', syn: 124, mamka: 69, unit: 'g', note: '2 ks' },
       { name: 'kuřecí prsa bez kůže', syn: 140, mamka: 78, unit: 'g' },
@@ -391,6 +423,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Cuketa s mletým masem a rýží',
     instructions: 'Cuketu nakrájíme na větší kostičky a restujeme na cibulce na oleji. Mleté maso nasucho orestujeme na teflonové pánvi. Poté vmícháme do cuketové směsi a rozmícháme s trochou protlaku. Osolíme, opepříme a přidáme bylinky. Podáváme s rýží uvařenou podle návodu na obalu.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'cuketa', syn: 80, mamka: 80, unit: 'g', note: '¼ ks' },
       { name: 'cibule', syn: 34, mamka: 34, unit: 'g', note: '½ ks' },
@@ -415,6 +449,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Pórková polévka s vejcem',
     instructions: 'Pórek omyjeme, nakrájíme na nudličky a orestujeme na oleji. Po chvilce přidáme vývar a chvilku povaříme, popřípadě dochutíme solí. Nakonec přidáme rozšlehané vejce. Podáváme s pečivem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'slepičí vejce', syn: 187, mamka: 104, unit: 'g', note: '2 ks' },
       { name: 'pórek', syn: 200, mamka: 200, unit: 'g', note: '⅓ ks' },
@@ -436,6 +472,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Čína z drůbežího masa se zeleninou a rýží',
     instructions: 'Rýži propláchneme a uvaříme v osolené vodě dle návodu na obalu. Maso nakrájíme na kostičky, osolíme a opepříme a orestujeme na oleji dozlatova. Pak maso vyndáme do misky a na té samé pánvi orestujeme zeleninu tak, aby zůstala ještě trochu křupavá. Zeleninu smícháme s masem a sojovou omáčkou and podáváme spolu s vařenou rýží.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'kuřecí maso', syn: 175, mamka: 97, unit: 'g' },
       { name: 'sójová omáčka', syn: 27, mamka: 15, unit: 'g', note: '1 polévková lžíce' },
@@ -463,6 +501,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Rajčatová polévka se špenátem',
     instructions: 'Na oleji zpěníme cibulku, přidáme sterilovaná rajčata a chvilku povaříme. Dochutíme solí, pepřem a česnekem. Poté do polévky přilijeme zeleninový vývar a vaříme asi 15min. Polévku rozmixujeme do hladkého krému a nakonec přidáme nasekané listy čerstvého baby špenátu, nakrájenou mozzarellu a ozdobíme petrželkou. Podáváme s pečivem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'sterilovaná rajčata', syn: 250, mamka: 250, unit: 'g', note: 'loupaná, krájená' },
       { name: 'cibule', syn: 53, mamka: 53, unit: 'g', note: '¾ ks' },
@@ -492,6 +532,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Těstovinový salát s grilovaným kuřetem',
     instructions: 'Těstoviny uvaříme podle návodu na obalu a scedíme. Do mísy dáme zakysanou smetanu a na malé kostičky nakrájenou zeleninu. Poté přidáme i těstoviny, dobře promícháme a případně dochutíme solí a pepřem. Maso omyjeme a osušíme. V grilovací pánvi rozpálíme olej a z obou stran na něm maso opečeme doměkka a aby bylo celé propečené. Poté jej také můžeme dochutit a podáváme spolu s vlažným těstovinovým salátem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'kuřecí prsa bez kůže', syn: 144, mamka: 82, unit: 'g' },
       { name: 'olivový olej', syn: 15, mamka: 7, unit: 'ml', note: '1 ½ polévkové lžíce / 1 ½ čajové lžičky' },
@@ -516,6 +558,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Lehký salát',
     instructions: 'Těstoviny uvaříme v osolené vodě al dente a necháme vychladnout. Poté dáme do mísy, přidáme na kostičky nakrájené rajče, okurku a sýr. Osolíme, opepříme a promícháme s jogurtem. Zdobíme na kostičky nakrájeným vejcem a pažitkou.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'celozrnné těstoviny', syn: 94, mamka: 52, unit: 'g' },
       { name: 'rajčata', syn: 80, mamka: 80, unit: 'g', note: '1 ks' },
@@ -540,6 +584,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Přírodní plátek s fazolkami a bramborovo-batátovou kaší',
     instructions: 'Brambory uvaříme spolu s batáty v osolené vodě doměkka a poté šťouchadlem rozmělníme na hustou kaši. Fazolky podusíme v páře nebo ve vodě do změknutí. Mezitím na druhé pánvi rozehřejeme olej, vložíme omytý a očištěný plátek masa, osolíme, opepříme a restujeme dozlatova. Hotové maso podáváme s fazolkami a kaší.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'kuřecí prsa s kůží a kostí', syn: 194, mamka: 108, unit: 'g' },
       { name: 'olivový olej', syn: 14, mamka: 8, unit: 'ml', note: '1 ½ čajové lžičky' },
@@ -562,6 +608,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Lečo se šunkou a vejcem',
     instructions: 'Na pánvi rozehřejeme olej, přidáme nadrobno nakrájenou cibulku, poté na nudličky nakrájenou šunku a na kostičky nakrájenou zeleninu. Přikryjeme pokličkou a dusíme. Nakonec zalijeme vajíčkem, promícháme, osolíme a opepříme dle chuti. Podáváme s chlebem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'krůtí šunka', syn: 155, mamka: 86, unit: 'g', note: '7 plátků' },
       { name: 'slepičí vejce', syn: 90, mamka: 50, unit: 'g', note: '1 ks' },
@@ -587,6 +635,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Čočka s vejcem a dušenou zeleninou',
     instructions: 'Čočku propláchneme pod tekoucí vodou a namočíme jí přes noc. Druhý den vodu slijeme a v nové vodě uvaříme doměkka. Cibuli oloupeme, nakrájíme na kostičky a orestujeme na tuku. Přidáme čočku, dochutíme solí, pepřem, česnekem a libečkem. Brokolici rozdělíme na růžičky a připravíme na páře. Dochutíme solí. Vejce uvaříme natvrdo. Na talíř naservírujeme čočku, brokolici a přidáme rozkrojené vejce.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'slepičí vejce', syn: 95, mamka: 53, unit: 'g', note: '1 ks' },
       { name: 'hnědá čočka (v suchém stavu)', syn: 104, mamka: 58, unit: 'g', note: '7 ½ polévkové lžíce' },
@@ -611,6 +661,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Pečené kuře s červeným zelím a bramborami',
     instructions: 'Zelí nakrájíme na nudličky. Kuřecí stehno vložíme do pekáčku společně se zelím, lehce podlijeme vodou, přiklopíme víkem a dáme péct do trouby vyhřáté na 170 °C. Pečeme tak dlouho, dokud maso nezezlátne. Podáváme s bramborami vařenými ve slupce pokapanými přepuštěným máslem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'kuřecí stehenní řízek bez kosti a kůže', syn: 234, mamka: 130, unit: 'g' },
       { name: 'červené zelí hlávkové', syn: 250, mamka: 250, unit: 'g', note: '2 ½ šálku' },
@@ -632,6 +684,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Těstoviny zapečené s brokolicí a sýrem',
     instructions: 'Těstoviny uvaříme podle návodu na obalu. Brokolici rozebranou na růžičky vhodíme do osolené vroucí vody a krátce povaříme na skus. Sýr nastrouháme. Uvařené těstoviny promícháme s brokolicí, kořením a polovinou strouhaného sýra. Přendáme do vymazané zapékací mísy. Rozšleháme vejce se zbylým sýrem a přelijeme na těstovinovou směs. Pečeme v předehřáté troubě na 180 °C cca 20 minut.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'celozrnné špagety (syrové)', syn: 112, mamka: 62, unit: 'g' },
       { name: 'brokolice', syn: 118, mamka: 118, unit: 'g', note: '¼ ks' },
@@ -654,6 +708,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Guláš s těstovinami',
     instructions: 'Na rozehřátém tuku v pánvi orestujeme na kostičky nakrájenou cibulku. Přidáme omyté, osušené a na kostičky nakrájené maso, které necháme zatáhnout, ochutíme kořením a solí. Směs podlijeme horkou vodou a dusíme doměkka. Těstoviny uvaříme dle návodu na obale a podáváme jako přílohu ke guláši.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'semolinové těstoviny bezvaječné', syn: 101, mamka: 56, unit: 'g' },
       { name: 'krůtí stehenní řízek bez kosti a kůže', syn: 218, mamka: 121, unit: 'g' },
@@ -676,6 +732,8 @@ export const recipesO: Recipe[] = [
     category: Category.OBED,
     title: 'Losos s dušeným špenátem, brambory',
     instructions: 'Plátek lososa osolíme, opepříme a zakapeme citronovou šťávou. Cibuli a česnek oloupeme a nakrájíme na jemné kostičky, přidáme dušený špenát, promícháme a necháme prohřát. V pánvi na oleji propečeme lososa z obou stran a podáváme s vařeným bramborem.',
+    favorites:"", 
+    printed:"",   
     ingredients: [
       { name: 'losos filet bez kůže', syn: 171, mamka: 95, unit: 'g' },
       { name: 'dušený špenát', syn: 160, mamka: 160, unit: 'g', note: '1 ½ šálku' },

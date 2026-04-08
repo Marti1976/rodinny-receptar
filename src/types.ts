@@ -3,9 +3,9 @@ export enum Category {
   OBED = "Oběd",
   PRESNIDAVKA = "Přesnídávka",
   VECERE = "Večeře",
-  EXTRA = "Extra",
-  PECENI = "Pečení",
-  ZAVAROVANI = "Zavařování"
+  EXTRA = "Extra (Vánoce, Velikonoce)",
+  PECENI = "Pečení (Bez Vánoc, Velikonoc)",
+  ZAVAROVANI = "Zavařování (Marmelády, štávy adt.)"
 }
 
 export interface Ingredient {
@@ -39,6 +39,8 @@ export interface Recipe {
   category: Category;
   title: string;
   instructions: string;
+  favorites?: string;
+  printed?: string;
   ingredients: Ingredient[];
   nutrition?: {
     syn?: NutritionValues;

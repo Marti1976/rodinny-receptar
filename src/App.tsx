@@ -903,8 +903,8 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg,
   };
 
   const sortRecipes = (a: Recipe, b: Recipe) => {
-    const aFav = favorites.includes(a.id);
-    const bFav = favorites.includes(b.id);
+    const aFav = favorites.includes(a.id) || a.favorites === "X";
+    const bFav = favorites.includes(b.id) || b.favorites === "X";
     
     if (aFav && !bFav) return -1;
     if (!aFav && bFav) return 1;
@@ -972,12 +972,31 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg,
             />
           </div>
           {category === Category.EXTRA && viewport === 'pc' && (
-            <button 
-              onClick={onOpenGallery}
-              className="p-3 bg-rose-600 rounded-2xl text-white shadow-lg shadow-rose-100 active:bg-rose-700 transition-all active:scale-95 shrink-0"
-            >
-              <ImageIcon className="w-6 h-6" />
-            </button>
+            <>
+              <button 
+                onClick={onOpenGallery}
+                className="p-3 bg-rose-600 rounded-2xl text-white shadow-lg shadow-rose-100 active:bg-rose-700 transition-all active:scale-95 shrink-0"
+                title="Galerie"
+              >
+                <ImageIcon className="w-6 h-6" />
+              </button>
+              <button 
+                onClick={() => {
+                  const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+                  const printUrl = `${baseUrl}print/formular.pdf`;
+                  const printWindow = window.open(printUrl, '_blank');
+                  if (printWindow) {
+                    printWindow.onload = () => {
+                      printWindow.print();
+                    };
+                  }
+                }}
+                className="p-3 bg-blue-600 rounded-2xl text-white shadow-lg shadow-blue-100 active:bg-blue-700 transition-all active:scale-95 shrink-0"
+                title="Tisknout formulář"
+              >
+                <Printer className="w-6 h-6" />
+              </button>
+            </>
           )}
         </div>
       </div>
@@ -1034,12 +1053,23 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg,
                       <span className="text-slate-300 italic">Bez nutričních hodnot</span>
                     )}
                   </div>
-                  <button 
-                    onClick={(e) => toggleFavorite(e, recipe.id)}
-                    className={`p-1.5 rounded-lg transition-all active:scale-90 z-20 shrink-0 ${favorites.includes(recipe.id) ? 'text-amber-500 bg-amber-50' : 'text-slate-300 hover:text-slate-400'}`}
-                  >
-                    <Star className={`w-4 h-4 ${favorites.includes(recipe.id) ? 'fill-current' : ''}`} />
-                  </button>
+                  <div className="flex items-center gap-0.5 shrink-0 z-20">
+                    {recipe.printed === "X" && (
+                      <span className="text-[12px] font-bold text-blue-600 px-0.5" title="Vytištěno">
+                        t
+                      </span>
+                    )}
+                    <button 
+                      onClick={(e) => toggleFavorite(e, recipe.id)}
+                      className={`p-1.5 rounded-lg transition-all active:scale-90 ${
+                        favorites.includes(recipe.id) || recipe.favorites === "X" 
+                          ? 'text-amber-500 bg-amber-50' 
+                          : 'text-slate-300 hover:text-slate-400'
+                      }`}
+                    >
+                      <Star className={`w-4 h-4 ${favorites.includes(recipe.id) || recipe.favorites === "X" ? 'fill-current' : ''}`} />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1097,6 +1127,12 @@ function formatNum(num: number | string | undefined): string {
   if (num === undefined || num === null) return '0';
   const n = typeof num === 'string' ? parseFloat(num.replace(',', '.')) : num;
   if (isNaN(n)) return String(num);
+  
+  // Handle common fractions for display
+  if (n === 0.5) return '1/2';
+  if (n === 0.25) return '1/4';
+  if (n === 0.75) return '3/4';
+  
   return n.toLocaleString('cs-CZ', { maximumFractionDigits: 2 }).replace(/\s/g, '');
 }
 
@@ -1364,10 +1400,11 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
         {/* Header */}
         <div className="border-b-2 border-black pb-2 mb-4 flex justify-between items-end">
           <div>
-            <div className="flex items-center gap-2 mb-1">
+            <div className="flex items-center gap-2 mb-4">
               <span className="font-black text-lg border-2 border-black px-2 py-0.5 rounded-lg">{recipe.id}</span>
               <span className="font-black text-xs uppercase tracking-widest bg-slate-100 px-2 py-1 rounded border border-slate-300">{recipe.category}</span>
             </div>
+            <div className="h-4" />
             <h1 className="text-2xl font-black leading-tight uppercase">{recipe.title}</h1>
           </div>
           <div className="text-right">
@@ -1381,7 +1418,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
             {recipe.nutrition.extra ? (
               <div className="flex justify-between items-center text-sm">
                 <div className="flex items-center gap-4">
-                  <span className="text-slate-500 uppercase text-[10px] font-black">HODNOTY ({recipe.nutrition.extra.unit}):</span>
+                  <span className="text-slate-500 uppercase text-[10px] font-black">HODNOTY ({recipe.nutrition.extra.unit}):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                   <span className="font-black">{formatNum(recipe.nutrition.extra.values.kj)} KJ / {formatNum(recipe.nutrition.extra.values.kcal)} KCAL</span>
                 </div>
                 <div className="border-l border-slate-300 pl-4 w-[70%]">
@@ -1390,7 +1427,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
                       <tr>
                         <td className="p-0 border-none w-1/3 text-left">Bílkoviny: {formatNum(recipe.nutrition.extra.values.p)}g</td>
                         <td className="p-0 border-none w-1/3 text-left">Sacharidy: {formatNum(recipe.nutrition.extra.values.s)}g</td>
-                        <td className="p-0 border-none w-1/3 text-right">Tuky: {formatNum(recipe.nutrition.extra.values.t)}g</td>
+                        <td className="p-0 border-none w-1/3 text-left">Tuky: {formatNum(recipe.nutrition.extra.values.t)}g</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1400,7 +1437,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
               <div className="space-y-2.5">
                 <div className="flex justify-between items-center text-sm">
                   <div className="flex items-center gap-4">
-                    <span className="text-blue-600 uppercase text-[10px] font-black w-10">SYN:</span>
+                    <span className="text-blue-600 uppercase text-[10px] font-black w-auto">SYN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     <span className="font-black">{formatNum(recipe.nutrition.syn?.kj)} KJ / {formatNum(recipe.nutrition.syn?.kcal)} KCAL</span>
                   </div>
                   <div className="border-l border-slate-300 pl-4 w-[70%]">
@@ -1409,7 +1446,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
                         <tr>
                           <td className="p-0 border-none w-1/3 text-left">Bílkoviny: {formatNum(recipe.nutrition.syn?.p)}g</td>
                           <td className="p-0 border-none w-1/3 text-left">Sacharidy: {formatNum(recipe.nutrition.syn?.s)}g</td>
-                          <td className="p-0 border-none w-1/3 text-right">Tuky: {formatNum(recipe.nutrition.syn?.t)}g</td>
+                          <td className="p-0 border-none w-1/3 text-left">Tuky: {formatNum(recipe.nutrition.syn?.t)}g</td>
                         </tr>
                       </tbody>
                     </table>
@@ -1418,7 +1455,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
                 <div className="h-px bg-slate-200 mx-2" />
                 <div className="flex justify-between items-center text-sm">
                   <div className="flex items-center gap-4">
-                    <span className="text-rose-500 uppercase text-[10px] font-black w-10">MAMKA:</span>
+                    <span className="text-rose-500 uppercase text-[10px] font-black w-auto">MAMKA:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     <span className="font-black">{formatNum(recipe.nutrition.mamka?.kj)} KJ / {formatNum(recipe.nutrition.mamka?.kcal)} KCAL</span>
                   </div>
                   <div className="border-l border-slate-300 pl-4 w-[70%]">
@@ -1427,7 +1464,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
                         <tr>
                           <td className="p-0 border-none w-1/3 text-left">Bílkoviny: {formatNum(recipe.nutrition.mamka?.p)}g</td>
                           <td className="p-0 border-none w-1/3 text-left">Sacharidy: {formatNum(recipe.nutrition.mamka?.s)}g</td>
-                          <td className="p-0 border-none w-1/3 text-right">Tuky: {formatNum(recipe.nutrition.mamka?.t)}g</td>
+                          <td className="p-0 border-none w-1/3 text-left">Tuky: {formatNum(recipe.nutrition.mamka?.t)}g</td>
                         </tr>
                       </tbody>
                     </table>
@@ -1444,7 +1481,7 @@ function RecipeDetail({ recipe, onBack, onNext, onPrev, viewport, getCategoryBg 
           <table className="w-full text-xs border-collapse border border-slate-200">
             <thead>
               <tr className="bg-slate-100">
-                <th className="border border-slate-200 p-1 text-left">Surovina</th>
+                <th className="border border-slate-200 p-1 text-left">SUROVINA</th>
                 {hasExtraIngredients ? (
                   <th className="border border-slate-200 p-1 text-center w-24">EXTRA</th>
                 ) : (

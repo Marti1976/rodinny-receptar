@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { Category } from '../types';
 
 interface RecipeImageProps {
@@ -8,26 +8,35 @@ interface RecipeImageProps {
   alt?: string;
 }
 
-const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "", alt = "" }) => {
-  const [imgSrc, setImgSrc] = useState<string | null>(null);
-  const [hasError, setHasError] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+// Global cache to remember which images have already been loaded in this session
+const loadedImagesCache = new Set<string>();
 
+const RecipeImage: React.FC<RecipeImageProps> = memo(({ id, category, className = "", alt = "" }) => {
+  const [hasError, setHasError] = useState(false);
+  
   const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
   const externalPath = `${baseUrl}icons/${id}.jpg`;
 
+  // Initialize isLoaded from cache to prevent fade-in animation if already loaded
+  const [isLoaded, setIsLoaded] = useState(() => loadedImagesCache.has(externalPath));
+
+  // Reset state only when the actual image source changes
   useEffect(() => {
-    // Reset state when id or category changes
-    setHasError(false);
-    setIsLoaded(false);
-    setImgSrc(externalPath);
-  }, [id, category, externalPath]);
+    if (!loadedImagesCache.has(externalPath)) {
+      setHasError(false);
+      setIsLoaded(false);
+    } else {
+      setHasError(false);
+      setIsLoaded(true);
+    }
+  }, [externalPath]);
 
   const handleError = () => {
     setHasError(true);
   };
 
   const handleLoad = () => {
+    loadedImagesCache.add(externalPath);
     setIsLoaded(true);
   };
 
@@ -44,8 +53,6 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
     }
   };
 
-  // Determine sizing logic to prevent collapse
-  // If it's not a small thumbnail (w-full h-full), we ensure a minimum height
   const isThumbnail = className.includes('w-full h-full') && !className.includes('max-w-full');
   const containerClasses = !isThumbnail 
     ? `min-h-[250px] aspect-video w-full relative overflow-hidden ${getCategoryBg(category)}` 
@@ -53,13 +60,11 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
 
   return (
     <div className={containerClasses}>
-      {/* Background is always there as a base layer, no text anymore */}
       <div className={`absolute inset-0 ${getCategoryBg(category)}`} />
       
-      {/* Image layer - fades in when loaded */}
-      {!hasError && imgSrc && (
+      {!hasError && (
         <img
-          src={imgSrc}
+          src={externalPath}
           alt={alt}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'} ${className}`}
           onLoad={handleLoad}
@@ -70,6 +75,6 @@ const RecipeImage: React.FC<RecipeImageProps> = ({ id, category, className = "",
       )}
     </div>
   );
-};
+});
 
 export default RecipeImage;

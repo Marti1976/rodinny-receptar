@@ -1,8 +1,8 @@
-const CACHE_NAME = 'RECEPTAR_v0.52';
+const CACHE_NAME = 'RECEPTAR_v0.53.7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './manifest.json?v=0.52',
+  './manifest.json?v=0.53.7',
   './icons/icons32.png',
   './icons/icons64.png',
   './icons/icons128.png',
