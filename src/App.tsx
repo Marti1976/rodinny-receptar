@@ -55,12 +55,18 @@ function normalizeText(text: string): string {
 }
 
 function searchByIngredients(recipes: Recipe[], query: string, currentCategory: Category | null) {
+  const isGlobal = query.startsWith(';');
   const parts = query.split(';');
   const catPart = normalizeText(parts[0]);
   const ingPart = parts[1] ? parts[1].trim() : '';
   
-  let targetCategory: Category | null = currentCategory;
-  if (catPart) {
+  // If query is just ";", return all recipes from all categories
+  if (query === ';') {
+    return recipes.map(r => ({ ...r, searchScore: 0, isSynonymMatch: false }));
+  }
+
+  let targetCategory: Category | null = isGlobal ? null : currentCategory;
+  if (catPart && !isGlobal) {
     const catMap: Record<string, Category> = {
       'snidane': Category.SNIDANE,
       'obed': Category.OBED,
@@ -81,15 +87,28 @@ function searchByIngredients(recipes: Recipe[], query: string, currentCategory: 
 
   if (searchIngredients.length === 0) return [];
 
-  return recipes.filter(r => {
+  const results = recipes.filter(r => {
     if (targetCategory && r.category !== targetCategory) return false;
     
-    return searchIngredients.every(searchIng => {
+    let totalScore = 0;
+    let hasSynonymMatch = false;
+
+    const matchesAll = searchIngredients.every(searchIng => {
       const normalizedSearch = normalizeText(searchIng);
       
-      // Collect all relevant terms (original + synonyms)
-      const searchTerms = new Set<string>([normalizedSearch]);
-      
+      // Check for direct match first (2 points)
+      const directMatch = r.ingredients.some(ing => 
+        normalizeText(ing.name).includes(normalizedSearch) || 
+        normalizeText(ing.alternatives || '').includes(normalizedSearch)
+      );
+
+      if (directMatch) {
+        totalScore += 2;
+        return true;
+      }
+
+      // Check for synonym match (1 point)
+      const searchTerms = new Set<string>();
       for (const [official, list] of Object.entries(ingredientSynonyms)) {
         const officialNorm = normalizeText(official);
         const listNorm = list.map(s => normalizeText(s));
@@ -100,20 +119,33 @@ function searchByIngredients(recipes: Recipe[], query: string, currentCategory: 
         }
       }
 
-      // Check if any of the terms match any ingredient in the recipe
-      return r.ingredients.some(ing => {
+      const synonymMatch = r.ingredients.some(ing => {
         const ingNameNorm = normalizeText(ing.name);
         const ingAltNorm = normalizeText(ing.alternatives || '');
-        
-        // Direct inclusion check (fast & reliable)
         for (const term of searchTerms) {
           if (ingNameNorm.includes(term) || ingAltNorm.includes(term)) return true;
         }
-
         return false;
       });
+
+      if (synonymMatch) {
+        totalScore += 1;
+        hasSynonymMatch = true;
+        return true;
+      }
+
+      return false;
     });
+
+    if (matchesAll) {
+      r.searchScore = totalScore;
+      r.isSynonymMatch = hasSynonymMatch;
+      return true;
+    }
+    return false;
   });
+
+  return results.sort((a, b) => (b.searchScore || 0) - (a.searchScore || 0));
 }
 
 export default function App() {
@@ -929,7 +961,15 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg,
     : [...recipes, ...recipesExtra]
         .filter(r => r.category === category)
         .filter(r => r.title.toLowerCase().includes(searchQuery.toLowerCase()))
-  ).sort(sortRecipes);
+        .map(r => ({ ...r, searchScore: 0, isSynonymMatch: false }))
+  ).sort((a, b) => {
+    // If it's ingredient search, we already sorted by score in searchByIngredients
+    // But we still want favorites at the top if scores are equal or it's normal search
+    if (isIngredientSearch && (b.searchScore || 0) !== (a.searchScore || 0)) {
+      return (b.searchScore || 0) - (a.searchScore || 0);
+    }
+    return sortRecipes(a, b);
+  });
 
   const getGridCols = () => {
     switch (viewport) {
@@ -1013,7 +1053,9 @@ function RecipeList({ category, onBack, onSelectRecipe, viewport, getCategoryBg,
             <div 
               key={recipe.id}
               onClick={() => onSelectRecipe(recipe)}
-              className="w-full bg-white p-2.5 rounded-2xl flex items-stretch gap-3 shadow-sm border border-slate-100 transition-all active:scale-[0.98] relative group cursor-pointer"
+              className={`w-full bg-white p-2.5 rounded-2xl flex items-stretch gap-3 shadow-sm border border-slate-100 transition-all active:scale-[0.98] relative group cursor-pointer ${
+                recipe.isSynonymMatch ? 'ring-2 ring-rose-500 ring-offset-2 shadow-lg shadow-rose-100' : ''
+              }`}
             >
               <div className={`relative w-20 h-20 rounded-xl overflow-hidden shadow-inner flex items-center justify-center shrink-0 border-2 border-slate-100 ${getCategoryBg(recipe.category)}`}>
                 <RecipeImage 

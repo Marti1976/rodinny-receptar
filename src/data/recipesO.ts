@@ -751,6 +751,123 @@ export const recipesO: Recipe[] = [
       originSyn: '',
       originMamka: 'X'
     }
-  }
+  },
   // ⚠️ Konec Kontroly.
+  {
+    id: "30o",
+    category: Category.OBED,
+    title: "Tortilla s prsíčky a zeleninou",
+    instructions: "Nejprve omyjeme a osušíme maso. Nakrájíme ho na malé kostičky a krátce restujeme na teflonové pánvi. Připravíme si dresink smícháním všech ingrediencí v misce. Zeleninu očistíme a nakrájíme na tenké proužky. Tortillu potřeme dresinkem, přidáme maso, zeleninu a zatočíme.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "krůtí prsa bez k.k.", syn: 140, mamka: 77, unit: "g" },
+      { name: "špaldové tortilly", syn: 109, mamka: 60, unit: "g", note: "2 ks / 1 ks" },
+      { name: "mrkve", syn: 70, mamka: 39, unit: "g", note: "¾ ks / ¾ ks" },
+      { name: "salátové okurky", syn: 70, mamka: 39, unit: "g", note: "¼ ks / ¼ ks" },
+      { name: "jogurtu 3,5%", syn: 77, mamka: 42, unit: "g", note: "6 pol.lžíce / 3 pol.lžíce" },
+      { name: "olivového extra panenského oleje", syn: 13, mamka: 7.2, unit: "ml", note: "1 pol.lžíce / 0.6 pol.lžíce" },
+      { name: "kopr", syn: 3, mamka: 1.7, unit: "g", note: "1 čaj.lžíce / 1 čaj.lžíce" },
+      { name: "plnotučná hořtice", syn: 8, mamka: 4.4, unit: "g", note: "1 čaj.lžíce / 1 čaj.lžíce" },
+      { name: "špetka černého pepře a soli", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 2998, kcal: 717, p: 48.9, s: 66.7, t: 26.3 },
+      mamka: { kj: 1649, kcal: 394, p: 26.9, s: 36.7, t: 14.5 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "31o",
+    category: Category.OBED,
+    title: "Drůbeží maso na kari s rýží",
+    instructions: "Cibuli a pórek pokrájíme a necháme zpěnit na oleji. Jakmile pomalu chytá barvu, přidáme koření a na kostky pokrájené a osolené drůbeží maso. Opékáme dozlatova. Po chvíli přidáme vodu a necháme dusit. Nakonec můžeme dochutit smetanou. Rýži uvaříme dle návodu a podáváme s masovou směsí.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "kuřecí prso bez k.", syn: 183, mamka: 98, unit: "g" },
+      { name: "řepkový olej", syn: 20, mamka: 10, unit: "ml", note: "1.5 pol.lžíce / 0.8 pol.lžíce" },
+      { name: "cibule", syn: 60, mamka: 60, unit: "g", note: "1 ks / 1 ks" },
+      { name: "smetany na vaření s 10% tuku", syn: 35, mamka: 18, unit: "g" },
+      { name: "pórku", syn: 47, mamka: 40, unit: "g" },
+      { name: "basmati rýže", syn: 89, mamka: 49, unit: "g", note: "7.5 pol.lžíce / 4.5 pol.lžíce" },
+      { name: "špetka kary, soli a pepře", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 3205, kcal: 766, p: 52.2, s: 76.2, t: 26.9 },
+      mamka: { kj: 1774, kcal: 424, p: 28.8, s: 44.0, t: 14.0 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "32o",
+    category: Category.OBED,
+    title: "Lečo se šunkou a vejcem",
+    instructions: "Na pánvi rozehřejeme olej, přidáme nadrobno nakrájenou cibulku, poté na nudličky nakrájenou šunku a na kostičky nakrájenou zeleninu. Přikryjeme pokličkou a dusíme. Nakonec zalijeme vajíčkem, promícháme, osolíme a opepříme dle chuti. Podáváme s chlebem.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "krutí šunka", syn: 150, mamka: 86, unit: "g" },
+      { name: "žluté papriky", syn: 90, mamka: 50, unit: "g", note: "1 ks / 1 ks" },
+      { name: "rajče", syn: 50, mamka: 43, unit: "g" },
+      { name: "slepičí vejce", syn: 80, mamka: 80, unit: "g" },
+      { name: "cibule", syn: 136, mamka: 136, unit: "g" },
+      { name: "řepkový olej", syn: 12, mamka: 7, unit: "ml" },
+      { name: "žitný chléb", syn: 120, mamka: 67, unit: "g" },
+      { name: "špetka soli a černého pepře", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 3176, kcal: 760, p: 51.3, s: 80.0, t: 24.5 },
+      mamka: { kj: 1815, kcal: 434, p: 29.3, s: 45.7, t: 14.0 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "33o",
+    category: Category.OBED,
+    title: "Cuketa s mletým masem a rýží",
+    instructions: "Cuketu nakrájíme na větší kostičky a restujeme na cibulce na oleji. Mleté maso nasucho orestujeme na teflonové pánvi. Poté vmícháme do cuketové směsi a rozmícháme s trochou protlaku. Osolíme, opepříme a přidáme bylinky. Podáváme s rýží uvařenou podle návodu na obalu.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "hovězí mleté maso", syn: 165, mamka: 94, unit: "g" },
+      { name: "cuketa", syn: 140, mamka: 80, unit: "g" },
+      { name: "rýže loupaná", syn: 60, mamka: 34, unit: "g" },
+      { name: "cibule", syn: 44, mamka: 25, unit: "g" },
+      { name: "olivový olej", syn: 11, mamka: 6, unit: "ml", note: "1.5 čaj.lžíce / 1 čaj.lžíce" },
+      { name: "rajčatový protlak", syn: 79, mamka: 45, unit: "g" },
+      { name: "petrželová nať", syn: 11, mamka: 6, unit: "g", note: "1.5 čaj.lžíce / 1 čaj.lžíce" },
+      { name: "špetka soli a černého pepře", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 3126, kcal: 747, p: 50.4, s: 78.6, t: 24.5 },
+      mamka: { kj: 1786, kcal: 427, p: 28.8, s: 44.9, t: 14.0 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "34o",
+    category: Category.OBED,
+    title: "Pečené kuře s červeným zelím a bramborami",
+    instructions: "Zelí nakrájíme na nudličky. Kuřecí stehno vložíme do pekáčku společně se zelím, lehce podlijeme vodou, přiklopíme víkem a dáme péct do trouby vyhřáté na 170 °C. Pečeme tak dlouho, dokud maso nezezlátne. Podáváme s bramborami vařenými ve slupce pokapanými přepuštěným máslem.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "kuřecí stehno horní bez kosti a kůže", syn: 208, mamka: 130, unit: "g" },
+      { name: "červeného hlávkového zelí", syn: 200, mamka: 150, unit: "g" },
+      { name: "vařené brambory ve slupce", syn: 200, mamka: 150, unit: "g" },
+      { name: "ghí máslo", syn: 8, mamka: 5, unit: "g" },
+      { name: "špetka kmínu, soli a pepře", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 2925, kcal: 699, p: 48.0, s: 67.0, t: 24.8 },
+      mamka: { kj: 1828, kcal: 437, p: 30.0, s: 41.9, t: 15.5 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  }
 ];

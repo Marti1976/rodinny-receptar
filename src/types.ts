@@ -42,6 +42,8 @@ export interface Recipe {
   favorites?: string;
   printed?: string;
   ingredients: Ingredient[];
+  isSynonymMatch?: boolean;
+  searchScore?: number;
   nutrition?: {
     syn?: NutritionValues;
     mamka?: NutritionValues;

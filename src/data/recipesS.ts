@@ -605,5 +605,55 @@ export const recipesS: Recipe[] = [
       originSyn: 'X',
       originMamka: ''
     }
+  },
+  {
+    id: "29s",
+    category: Category.SNIDANE,
+    title: "Hustá česnečka",
+    instructions: "Brambory očistíme a nakrájíme na malé kousky a uvaříme v osolené vodě doměkka. Přidáme pepř, nadrobno nakrájenou šunku, zeleninu a na závěr rozklepneme vajíčko. Na talíř dáme stroužek česneku, následně zalijeme polévkou a pak přidáme sýr a podáváme s pečivem. Lze nasucho i opéct pečivo a přidat jako krutony.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "slepičí vejce", syn: 116, mamka: 64, unit: "g", note: "2 ks / 1 ks" },
+      { name: "žitný chleba", syn: 62, mamka: 34, unit: "g", note: "1 krajíce / 1/2 krajíc" },
+      { name: "česnek", syn: 5, mamka: 2.8, unit: "g", note: "1 stroužek / 1/2 stroužku" },
+      { name: "vepřová šunka", syn: 48, mamka: 26, unit: "g", alternatives: "hovězí šunky 55/30g" },
+      { name: "sýr (bezlaktozový nebo hodně bílkovin)", syn: 48, mamka: 26, unit: "g" },
+      { name: "cibule šalotka", syn: 200, mamka: 110, unit: "g" },
+      { name: "brambor", syn: 109, mamka: 60, unit: "g" },
+      { name: "černého pepře", syn: 1, mamka: 1, unit: "šp" },
+      { name: "soli", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 2752, kcal: 658, p: 43.0, s: 67.0, t: 22.0 },
+      mamka: { kj: 1514, kcal: 362, p: 23.7, s: 36.9, t: 12.1 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "30s",
+    category: Category.SNIDANE,
+    title: "Mandlové francouzské tousty",
+    instructions: "Mléko, čekankový sirup, mandle, vejce a skořici dáme do mixéru a důkladně promixujeme. Následně přelijeme do hlubokého talíře a obalujeme tousty z obou stran. Smažíme na ghí másle.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "celozrnné tousty", syn: 99, mamka: 54, unit: "g" },
+      { name: "polotučné mléko", syn: 119, mamka: 65, unit: "ml" },
+      { name: "čekankový sirup", syn: 8, mamka: 4.4, unit: "ml" },
+      { name: "plátky mandlí", syn: 10, mamka: 5.5, unit: "g" },
+      { name: "řecký jogurt", syn: 140, mamka: 77, unit: "g" },
+      { name: "jahody", syn: 50, mamka: 28, unit: "g" },
+      { name: "slepičí vajíčko", syn: 50, mamka: 28, unit: "g" },
+      { name: "ghí máslo", syn: 5, mamka: 2.8, unit: "g" },
+      { name: "špetka skořice", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 2472, kcal: 591, p: 36.0, s: 57.0, t: 21.0 },
+      mamka: { kj: 1360, kcal: 325, p: 19.8, s: 31.4, t: 11.6 },
+      originSyn: "X",
+      originMamka: "X"
+    }
   }
 ];

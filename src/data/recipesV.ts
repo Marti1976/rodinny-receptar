@@ -635,6 +635,68 @@ export const recipesV: Recipe[] = [
       originSyn: '',
       originMamka: 'X'
     }
-  }
+  },
   // ⚠️ Konec Kontroly.
+  {
+    id: "28v",
+    category: Category.VECERE,
+    title: "Knäckebrot s tuňákem",
+    instructions: "Lze vše zvlášt nebo smíchat tuňáka s olejem a pom. Máslem a udělat pomazánku a tu namazat na chleba. Podáváme se zeleninou.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "žitný knäckebrot", syn: 53, mamka: 30, unit: "g" },
+      { name: "tuňák ve vlastní šťávě", syn: 145, mamka: 83, unit: "g" },
+      { name: "olivový olej (nebo pod. z konzervy)", syn: 8.8, mamka: 5, unit: "ml" },
+      { name: "pomazánkové máslo", syn: 18, mamka: 10, unit: "g" },
+      { name: "červená paprika", syn: 140, mamka: 80, unit: "g" }
+    ],
+    nutrition: {
+      syn: { kj: 2156, kcal: 515, p: 40.3, s: 43.8, t: 17.5 },
+      mamka: { kj: 1232, kcal: 294, p: 23.0, s: 25.0, t: 10.0 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "29v",
+    category: Category.VECERE,
+    title: "Cherry rajčátka s mozzarellou, šunkou a pečivem",
+    instructions: "Rajčátka rozkrájíme na polovinu. Sýr natrháme na menší kousky a prokládáme se šnunkou a rajčaty. Podáváme s pečivem.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "cherry rajče", syn: 206, mamka: 129, unit: "g" },
+      { name: "žitný knäckebrot", syn: 48, mamka: 30, unit: "g" },
+      { name: "mozzarella light", syn: 106, mamka: 66, unit: "g" },
+      { name: "krůtí šunka", syn: 62, mamka: 39, unit: "g" }
+    ],
+    nutrition: {
+      syn: { kj: 1915, kcal: 458, p: 36.8, s: 40.0, t: 14.4 },
+      mamka: { kj: 1197, kcal: 286, p: 23.0, s: 25.0, t: 9.0 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  },
+  {
+    id: "30v",
+    category: Category.VECERE,
+    title: "Tortilly s vajíčkem",
+    instructions: "POZOR, POUZE PRO DVA. Jednu tortilu dáme do spod, na ní nalejeme míchané vajčko se sýrem, šunkou a kořením a vše zakryjeme druhou tortillou. Pečeme pod pokličkou, aby se vše prohřálo. Servirujeme jako dort s rajčaty.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "sýr eidam 20%", syn: 50, mamka: 30, unit: "g" },
+      { name: "vejce slepičí", syn: 70, mamka: 40, unit: "g" },
+      { name: "šunka kuřecí dušená 95%", syn: 60, mamka: 40, unit: "g" },
+      { name: "tortilla wraps vollkorn", syn: 78, mamka: 45, unit: "g" },
+      { name: "rajčata keříková", syn: 150, mamka: 100, unit: "g" }
+    ],
+    nutrition: {
+      syn: { kj: 2235, kcal: 534, p: 45.7, s: 45.3, t: 17.7 },
+      mamka: { kj: 1229, kcal: 294, p: 27.0, s: 26.0, t: 11.0 },
+      originSyn: "X",
+      originMamka: "X"
+    }
+  }
 ];
