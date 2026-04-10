@@ -1,5 +1,4 @@
 import { Category, Recipe } from "../types";
-
 export const recipesS: Recipe[] = [
   {
     id: "1s",
