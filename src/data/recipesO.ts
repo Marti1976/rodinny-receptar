@@ -1,8 +1,5 @@
 import { Category, Recipe } from "../types";
-
 export const recipesO: Recipe[] = [
-  // ✅ Zkontrolováno.
-  // ✅ 1o — SYN+MAMKA v xlsx → originSyn:'X', originMamka:'X' — vše OK
   {
     id: "1o",
     category: Category.OBED,
@@ -28,7 +25,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 2o — SYN v xlsx → originSyn:'X' — vše OK
   {
     id: '2o',
     category: Category.OBED,
@@ -54,7 +50,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 3o — SYN v xlsx → originSyn:'X' — vše OK
   {
     id: '3o',
     category: Category.OBED,
@@ -81,7 +76,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 4o — SYN v xlsx → originSyn:'X' — vše OK (mamka není v xlsx)
   {
     id: '4o',
     category: Category.OBED,
@@ -105,7 +99,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 5o — SYN v xlsx → originSyn:'X' — vše OK (mamka není v xlsx)
   {
     id: "5o",
     category: Category.OBED,
@@ -130,7 +123,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ⚠️ 6o — MAMKA v xlsx → OPRAVENO: přidána chybějící ingredience voda (mamka=70ml)
   {
     id: '6o',
     category: Category.OBED,
@@ -156,7 +148,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 7o — SYN v xlsx → originSyn:'X' — vše OK
   {
     id: '7o',
     category: Category.OBED,
@@ -182,7 +173,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 8o — SYN v xlsx → originSyn:'X' — vše OK
   {
     id: '8o',
     category: Category.OBED,
@@ -208,7 +198,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 9o — SYN v xlsx → originSyn:'X' — vše OK
   {
     id: '9o',
     category: Category.OBED,
@@ -233,7 +222,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 10o — SYN v xlsx → originSyn:'X' — vše OK
   {
     id: '10o',
     category: Category.OBED,
@@ -265,8 +253,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ⚠️ 11o — SYN v xlsx → OPRAVENO: nutrition syn + ingredience syn dle xlsx
-  // xlsx: červené hlávkové zelí=200g, jablko=75g(½ks), kmín, kuřecí maso=192g, pohanka=78g, sůl
   {
     id: '11o',
     category: Category.OBED,
@@ -289,8 +275,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ⚠️ 12o — SYN v xlsx → OPRAVENO: nutrition syn + ingredience syn dle xlsx
-  // xlsx: Basmati rýže=98g(8 lžic), krůtí maso=179g, brokolice=80g(¼ks), olivový olej=15g(1½ lžíce), sůl
   {
     id: '12o',
     category: Category.OBED,
@@ -312,8 +296,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ⚠️ 13o — SYN v xlsx → OPRAVENO: nutrition syn + ingredience syn dle xlsx (odlišná struktura!)
-  // xlsx: krůtí prsa=148g, kukuřičná mouka=65g, mletá sladká paprika, kmín, vejce=50g(1ks), ledový salát=150g, řepkový olej=17ml, celozrnný chléb=68g, sůl
   {
     id: '13o',
     category: Category.OBED,
@@ -339,8 +321,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ⚠️ 14o — SYN v xlsx → OPRAVENO: nutrition syn + ingredience syn dle xlsx (odlišná struktura!)
-  // xlsx: vejce=56g(1ks), černá čočka Beluga=150g(3 hrsti), vepřová šunka=20g, cibule=20g(¼ks), ghí=15g(¾ lžíce), sůl, černý pepř
   {
     id: '14o',
     category: Category.OBED,
@@ -364,9 +344,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ⚠️ 15o — SYN v xlsx → OPRAVENO: nutrition syn + ingredience syn dle xlsx (odlišná struktura!)
-  // xlsx: krůtí prsa=147g, špaldová tortilla=120g(2½ks), ledový salát=50g, sůl, černý pepř,
-  //        bílý jogurt=80g(6 lžic), pažitka=4g(1½ lžičky), řepkový olej=11ml(¾ lžíce), červená paprika=150g(1ks)
   {
     id: '15o',
     category: Category.OBED,
@@ -392,7 +369,6 @@ export const recipesO: Recipe[] = [
       originMamka: ''
     }
   },
-  // ✅ 16o — NENALEZENO v xlsx → beze změny
   {
     id: '16o',
     category: Category.OBED,
@@ -417,7 +393,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 17o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '17o',
     category: Category.OBED,
@@ -443,7 +418,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 18o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '18o',
     category: Category.OBED,
@@ -466,7 +440,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 19o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '19o',
     category: Category.OBED,
@@ -492,10 +465,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ⚠️ 20o — MAMKA v xlsx → OPRAVENO: nutrition mamka + ingredience mamka dle xlsx
-  // Změny: kj/kcal/t/s/p, olivový olej mamka 6→3, mozzarella mamka 61→69,
-  //        zeleninový vývar mamka 144→200, žitný chléb→celozrnný chléb mamka 33→50,
-  //        přidána ingredience petrželka (mamka=10g)
   {
     id: '20o',
     category: Category.OBED,
@@ -523,10 +492,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ⚠️ 21o — SYN+MAMKA v xlsx → OPRAVENO: nutrition syn + ingredience syn dle xlsx
-  // Změny syn: kj 3265→3055, kcal 779→730, p 51.7→48.5, s 82.3→72, t 24.8→25.6
-  // Ingredience syn: kuřecí 148→144, olivový olej 13→15(1½ lžíce), těstoviny 110→100,
-  //                  zakysaná smetana 58→47, okurka 30→64(¼ks), rajčata 46→30(⅓ks)
   {
     id: '21o',
     category: Category.OBED,
@@ -552,7 +517,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 22o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '22o',
     category: Category.OBED,
@@ -578,7 +542,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 23o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '23o',
     category: Category.OBED,
@@ -602,7 +565,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 24o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '24o',
     category: Category.OBED,
@@ -628,8 +590,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ⚠️ 25o — MAMKA v xlsx → OPRAVENO: pouze nutrition mamka (ingredience OK)
-  // Změny: kj 1787→1760, kcal 427→421, p 29.1→27.7, s 43.7→43.5, t 14.1→13.1
   {
     id: '25o',
     category: Category.OBED,
@@ -655,7 +615,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 26o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '26o',
     category: Category.OBED,
@@ -678,7 +637,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 27o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '27o',
     category: Category.OBED,
@@ -702,7 +660,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 28o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '28o',
     category: Category.OBED,
@@ -726,7 +683,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ✅ 29o — MAMKA v xlsx → originMamka:'X' — vše OK
   {
     id: '29o',
     category: Category.OBED,
@@ -752,7 +708,6 @@ export const recipesO: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ⚠️ Konec Kontroly.
   {
     id: "30o",
     category: Category.OBED,
@@ -869,5 +824,112 @@ export const recipesO: Recipe[] = [
       originSyn: "X",
       originMamka: "X"
     }
-  }
+  },
+  {
+    id: "35o",
+    category: Category.OBED,
+    title: "Boloňská omáčka s rýžovými nudlemi",
+    instructions: "Na tuku orestujeme dozlatova nadrobno nasekanou cibuli. Přidáme utřený česnek, zeleninu a po chvilce pomleté maso. Chvíli restujeme a poté vmícháme rajčatové pyré a dochutíme kořením. Podáváme s uvařenými rýžovými nudlemi, posypané strouhaným sýrem a s oblohou z čerstvé zeleniny.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "olivový olej", syn: 10, mamka: 6, unit: "g", note: "¾ polévkové lžíce" },
+      { name: "hovězí maso", syn: 143, mamka: 79, unit: "g" },
+      { name: "cibule", syn: 20, mamka: 17, unit: "g", note: "¼ ks" },
+      { name: "česnek", syn: 20, mamka: 20, unit: "g", note: "4 stroužky" },
+      { name: "rajčatový protlak", syn: 25, mamka: 21, unit: "g", note: "1 ½ polévkové lžíce" },
+      { name: "římský kmín", syn: 1, mamka: 1, unit: "šp" },
+      { name: "sůl", syn: 1, mamka: 1, unit: "šp" },
+      { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
+      { name: "sýr eidam 30%", syn: 20, mamka: 11, unit: "g", note: "1 ½ plátku" },
+      { name: "mrkev", syn: 50, mamka: 42, unit: "g", note: "½ ks" },
+      { name: "řapíkatý celer", syn: 49, mamka: 41, unit: "g", note: "¼ ks" },
+      { name: "rýžové nudle", syn: 51, mamka: 28, unit: "g" },
+      { name: "ledový salát", syn: 46, mamka: 38, unit: "g" },
+      { name: "salátová okurka", syn: 36, mamka: 30, unit: "g", note: "¼ ks" }
+    ],
+    nutrition: {
+      syn: { kj: 2792, kcal: 667, p: 48.7, s: 58.1, t: 25.3 },
+      mamka: { kj: 1504, kcal: 360, p: 26.3, s: 31.3, t: 13.7 },
+      originSyn: 'X',
+      originMamka: ''
+    }
+  },
+  {
+    id: "36o",
+    category: Category.OBED,
+    title: "Ryba s cherry rajčátky a bylinkovým olejem nebo s pestem",
+    instructions: "Těstoviny uvaříme podle návodu na obalu. Rybu opláchneme a osušíme. Filet osolíme, opepříme, pokapeme citronovou šťávou a obalíme v mouce. Na pánvi zahřejeme polovinu oleje a osmahneme cca 6 minut z každé strany dozlatova. Přendáme stranou a udržujeme v teple. Na pánvi zahřejeme zbylý olej a přidáme nasekané bylinky (popřípadě ve stejném poměru Medvědí pesto). Po 2 minutách přidáme rajčátka a dusíme 5 minut, osolíme a opepříme. Rybu podáváme s rajčátky, bylinkovým olejem, těstovinami a salátem.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "duhový pstruh", syn: 175, mamka: 97, unit: "g" },
+      { name: "citrón", syn: 30, mamka: 25, unit: "g", note: "¼ ks" },
+      { name: "sůl", syn: 1, mamka: 1, unit: "šp" },
+      { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
+      { name: "pohanková mouka", syn: 20, mamka: 11, unit: "g", note: "1 ½ polévkové lžíce" },
+      { name: "olivový olej", syn: 6, mamka: 3, unit: "ml", note: "1 čajová lžička", alternatives: "lze nahradit medvedím pestem 12/9g" },
+      { name: "šalvěj", syn: 3, mamka: 3, unit: "g", note: "½ čajové lžičky", alternatives: "v případě náhrady pestem, nepřidávat" },
+      { name: "čerstvý tymián", syn: 3, mamka: 3, unit: "g", note: "½ čajové lžičky", alternatives: "v případě náhrady pestem, nepřidávat" },
+      { name: "cherry rajčata", syn: 50, mamka: 42, unit: "g", note: "5 ks" },
+      { name: "římský salát", syn: 126, mamka: 105, unit: "g", note: "1/3 ks" },
+      { name: "syrové celozrnné špagety", syn: 78, mamka: 43, unit: "g" }
+    ],
+    nutrition: {
+      syn: { kj: 3071, kcal: 734, p: 47.6, s: 73.4, t: 26.2 },
+      mamka: { kj: 1655, kcal: 396, p: 25.6, s: 39.6, t: 14.2 },
+      originSyn: 'X',
+      originMamka: ''
+    }
+  },
+  {
+    id: "37o",
+    category: Category.OBED,
+    title: "Těstoviny s drůbežím masem a bylinkovou omáčkou",
+    instructions: "Maso nakrájené na kousky vložíme do zapékací mísy, osolíme a posypeme nastrouhanou mozzarellou. Pečeme v troubě předehřáté na 180 °C dozlatova. Těstoviny uvaříme podle návodu na obalu. Na pánvi smícháme všechny ingredience na omáčku a krátce prohřejeme. Maso podáváme s těstovinami přelité omáčkou.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "syrové celozrnné špagety", syn: 102, mamka: 57, unit: "g" },
+      { name: "kuřecí horní stehno bez kosti a kůže", syn: 140, mamka: 78, unit: "g" },
+      { name: "mozzarella light", syn: 43, mamka: 24, unit: "g", note: "1/3 ks" },
+      { name: "sůl", syn: 1, mamka: 1, unit: "šp" },
+      { name: "smetana na vaření 10%", syn: 50, mamka: 28, unit: "g" },
+      { name: "rozmarýn", syn: 4, mamka: 3, unit: "g", alternatives: "nebo jiné bylinky jako kopr 4/4g" },
+      { name: "čerstvá citronová šťáva", syn: 10, mamka: 8, unit: "g", note: "1 ½ čajové lžičky" }
+    ],
+    nutrition: {
+      syn: { kj: 2880, kcal: 688, p: 48.2, s: 70.7, t: 22.5 },
+      mamka: { kj: 1600, kcal: 382, p: 26.8, s: 39.3, t: 12.5 },
+      originSyn: 'X',
+      originMamka: ''
+    }
+  },
+  {
+    id: "38o",
+    category: Category.OBED,
+    title: "Dýňová polévka s marinovaným tofu",
+    instructions: "Dýni omyjeme a nakrájíme na 1,5 cm velké kostky. V hrnci na rozpáleném oleji pár minut orestujeme na kostičky nakrájenou cibulku. Poté přidáme dýni, sůl, pepř a koření na svíčkovou, zamícháme a podlijeme vodou tak, aby zelenina byla akorát ponořená. Dýni takto necháme přibližně 20 minut vařit. Poté přidáme marinované tofu pokrájené na kostičky a necháme 10 minut odstát na plotně. Polévku poté rozmixujeme, zjemníme mlékem, dochutíme citrónovou šťávou a znovu vrátíme na plotnu a ještě 5 minut prohřejeme. Hotovou polévku servírujeme posypanou čerstvými nasekanými bylinkami. (K obědu podáváme pro větší nasycení s žitným chlebem).",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "dýně", syn: 360, mamka: 200, unit: "g", note: "1/4 ks" },
+      { name: "tofu", syn: 241, mamka: 134, unit: "g", note: "2/3 ks" },
+      { name: "olivový olej", syn: 5, mamka: 3, unit: "ml", note: "1/2 čajové lžičky" },
+      { name: "cibule šalotka", syn: 24, mamka: 20, unit: "g", note: "2/3 ks" },
+      { name: "polotučné mléko", syn: 200, mamka: 111, unit: "ml", note: "2/3 šálku" },
+      { name: "nové koření", syn: 2, mamka: 1, unit: "šp" },
+      { name: "bobkový list", syn: 2, mamka: 1, unit: "šp" },
+      { name: "černý pepř", syn: 2, mamka: 1, unit: "šp" },
+      { name: "medvědí česnek", syn: 20, mamka: 17, unit: "g" },
+      { name: "žitný chléb", syn: 77, mamka: 43, unit: "g", note: "1 krajíček" },
+      { name: "čerstvá citronová šťáva", syn: 12, mamka: 10, unit: "ml", note: "1 1/2 čajové lžičky" }
+    ],
+    nutrition: {
+      syn: { kj: 3330, kcal: 796, p: 52, s: 81, t: 29 },
+      mamka: { kj: 1850, kcal: 442, p: 29, s: 45, t: 16 },
+      originSyn: "",
+      originMamka: "X"
+    }
+}
 ];
