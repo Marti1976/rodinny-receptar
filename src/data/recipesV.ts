@@ -1,7 +1,5 @@
 import { Category, Recipe } from "../types";
-
 export const recipesV: Recipe[] = [
-  // ✅ Zkontrolováno.
   {
     id: "1v",
     category: Category.VECERE,
@@ -636,7 +634,6 @@ export const recipesV: Recipe[] = [
       originMamka: 'X'
     }
   },
-  // ⚠️ Konec Kontroly.
   {
     id: "28v",
     category: Category.VECERE,
@@ -698,5 +695,33 @@ export const recipesV: Recipe[] = [
       originSyn: "X",
       originMamka: "X"
     }
+  },
+  {
+    id: "31v",
+    category: Category.VECERE,
+    title: "Dušená ryba s krémovou čočkou",
+    instructions: "Čočku předem namočíme do studené vody (nejméně hodiny) a necháme odmočit. Poté čočku slijeme, propláchneme a uvaříme na zkus podle návodu na obalu. Poté ji propláchneme studenou vodou. Mezitím rozehřejeme troubu na 180 °C. V hrnci rozpálíme olej a opečeme na něm očištěnou a na kostičky nakrájenou zeleninu dozlatova. Poté přidáme čočku a ochutíme balsamikem. Nakonec vmícháme smetanu a dochutíme solí a pepřem. Rybu omyjeme, osušíme, dochutíme solí a pepřem a dáme péct v alobalu do rozpálené trouby na 15 - 20 minut. Hotovou rybu podáváme s čočkou a posypanou nasekanými bylinkami.",
+    favorites: "",
+    printed: "",
+    ingredients: [
+      { name: "pangasius dolnooký (pangas)", syn: 179, mamka: 99, unit: "g" },
+      { name: "petrželová nať", syn: 4, mamka: 3, unit: "g", note: "30 špetek" },
+      { name: "vařená červená čočka", syn: 199, mamka: 111, unit: "g" },
+      { name: "cibule šalotka", syn: 20, mamka: 17, unit: "g", note: "2/3 ks" },
+      { name: "bulvový celer", syn: 30, mamka: 25, unit: "g" },
+      { name: "mrkev", syn: 30, mamka: 25, unit: "g", note: "1/4 ks" },
+      { name: "pórek", syn: 50, mamka: 42, unit: "g", note: "1/4 ks" },
+      { name: "olivový olej", syn: 9, mamka: 6, unit: "ml", note: "3/4 / 1/2 polévkové lžíce" },
+      { name: "ocet balsamiko", syn: 6, mamka: 4, unit: "ml", note: "1 / 3/4 čajová lžička" },
+      { name: "zakysaná smetana 15 %", syn: 15, mamka: 8, unit: "ml", note: "1 polévková lžíce" },
+      { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
+      { name: "sůl", syn: 1, mamka: 1, unit: "šp" }
+    ],
+    nutrition: {
+      syn: { kj: 2247, kcal: 537, p: 50, s: 49, t: 16 },
+      mamka: { kj: 1475, kcal: 352, p: 33.0, s: 32.0, t: 10.7 },
+      originSyn: "X",
+      originMamka: ""
+   }
   }
 ];
