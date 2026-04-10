@@ -1,7 +1,5 @@
 import { Category, Recipe } from "../types";
-
 export const recipesP: Recipe[] = [
-    // ✅ Zkontrolováno.
   {
     id: "1p",
     category: Category.PRESNIDAVKA,
@@ -810,6 +808,5 @@ export const recipesP: Recipe[] = [
       originSyn: 'X',
       originMamka: ''
     }
-  },
-  // ⚠️ Konec Kontroly.
+  }
 ];
