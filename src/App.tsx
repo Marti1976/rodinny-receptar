@@ -55,18 +55,14 @@ function normalizeText(text: string): string {
 }
 
 function searchByIngredients(recipes: Recipe[], query: string, currentCategory: Category | null) {
-  const isGlobal = query.startsWith(';');
   const parts = query.split(';');
   const catPart = normalizeText(parts[0]);
   const ingPart = parts[1] ? parts[1].trim() : '';
   
-  // If query is just ";", return all recipes from all categories
-  if (query === ';') {
-    return recipes.map(r => ({ ...r, searchScore: 0, isSynonymMatch: false }));
-  }
-
-  let targetCategory: Category | null = isGlobal ? null : currentCategory;
-  if (catPart && !isGlobal) {
+  let targetCategory: Category | null = currentCategory;
+  
+  // Pokud jsme na Dashboardu (currentCategory je null), umožníme filtraci pomocí prefixu (např. snidane;)
+  if (!currentCategory && catPart) {
     const catMap: Record<string, Category> = {
       'snidane': Category.SNIDANE,
       'obed': Category.OBED,
@@ -76,7 +72,14 @@ function searchByIngredients(recipes: Recipe[], query: string, currentCategory: 
       'peceni': Category.PECENI,
       'zavarovani': Category.ZAVAROVANI
     };
-    targetCategory = catMap[catPart] || targetCategory;
+    targetCategory = catMap[catPart] || null;
+  }
+
+  // Pokud je dotaz jen ";" nebo "kategorie;", vrátíme všechny recepty z cílové kategorie
+  if (!ingPart && query.includes(';')) {
+    return recipes
+      .filter(r => !targetCategory || r.category === targetCategory)
+      .map(r => ({ ...r, searchScore: 0, isSynonymMatch: false }));
   }
 
   if (!ingPart) return [];
