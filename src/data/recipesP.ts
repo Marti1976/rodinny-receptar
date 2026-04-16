@@ -789,24 +789,143 @@ export const recipesP: Recipe[] = [
       originSyn: 'X',
       originMamka: ''
     }
-  },
-  {
-    id: "41p",
-    category: Category.PRESNIDAVKA,
-    title: "Čokoládový termix s ovocem",
-    instructions: "Čokoládu rozpustíme v mikrovlnné troubě nebo ve vodní lázni a vyšleháme s tvarohem. Podáváme s na kostičky nakrájeným ovocem.",
-    favorites:"", 
-    printed:"",   
-    ingredients: [
-      { name: "odtučněný tvaroh (měkký)", syn: 139, mamka: 77, unit: "g", note: "½ balení / 1/4 balení" },
-      { name: "hořká čokoláda 70%", syn: 18, mamka: 10, unit: "g", note: "¼ ks / 1/8 ks" },
-      { name: "třešně", syn: 92, mamka: 51, unit: "g" }
-    ],
-    nutrition: {
-      syn: { kj: 1071, kcal: 256, p: 19, s: 24, t: 8 },
-      mamka: { kj: 643, kcal: 154, p: 11.4, s: 14.4, t: 4.8 },
-      originSyn: 'X',
-      originMamka: ''
-    }
-  }
+	  },
+	  {
+		id: "41p",
+		category: Category.PRESNIDAVKA,
+		title: "Čokoládový termix s ovocem",
+		instructions: "Čokoládu rozpustíme v mikrovlnné troubě nebo ve vodní lázni a vyšleháme s tvarohem. Podáváme s na kostičky nakrájeným ovocem.",
+		favorites:"", 
+		printed:"",   
+		ingredients: [
+		  { name: "odtučněný tvaroh (měkký)", syn: 139, mamka: 77, unit: "g", note: "½ balení / 1/4 balení" },
+		  { name: "hořká čokoláda 70%", syn: 18, mamka: 10, unit: "g", note: "¼ ks / 1/8 ks" },
+		  { name: "třešně", syn: 92, mamka: 51, unit: "g" }
+		],
+		nutrition: {
+		  syn: { kj: 1071, kcal: 256, p: 19, s: 24, t: 8 },
+		  mamka: { kj: 643, kcal: 154, p: 11.4, s: 14.4, t: 4.8 },
+		  originSyn: 'X',
+		  originMamka: ''
+		}
+	  },
+	  {
+	  id: "42p",
+	  category: Category.PRESNIDAVKA,
+	  title: "Gratinovaná Rajčata se Sýrem",
+	  instructions: "Omytá rajčata nakrájíme na čtvrtky, vložíme do nepřilnavé zapékací misky, posypeme kořením a hrubě nastrouhaným sýrem. V horké troubě směs zapečeme. Podáváme s pečivem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "rajčata", syn:  196, mamka:  163, unit:  "g", note:  "2 ½ ks / 2 ks" },
+		{ name:  "plátkový sýr 30%", syn:  39, mamka:  22, unit:  "g", note:  "2 ½ plátku / 1 ½ plátku" },
+		{ name:  "špaldová houska", syn:  44, mamka:  24, unit:  "g", note:  "1 ks / ½ ks" },
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp" },
+		{ name:  "sušená bazalka", syn:  1, mamka:  1, unit:  "šp" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1098, kcal:  262, p:  17, s:  27, t:  9 },
+		mamka: { kj:  623, kcal:  149, p:  9.4, s:  16.6, t:  5 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "43p",
+	  category: Category.PRESNIDAVKA,
+	  title: "Pudink s arašídovým máslem a borůvkami",
+	  instructions: "Pudink připravíme dle návodu na obalu v mléce, ke směsi pudinku ale přidáme navíc protein. Po vychladnutí ozdobíme ovocem a podáváme s arašídovým máslem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "vanilkový pudinkový prášek", syn:  10, mamka:  6, unit:  "g", note:  "1/4 balení" },
+		{ name:  "mandlový nápoj", syn:  167, mamka:  93, unit:  "ml", alternatives:  "lískooříškový nápoj (109/61ml)" },
+		{ name:  "borůvky", syn:  51, mamka:  43, unit:  "g" },
+		{ name:  "rýžový protein", syn:  17, mamka:  9, unit:  "g" },
+		{ name:  "arašídové máslo", syn:  8, mamka:  4, unit:  "g", note:  "2/3 čajové lžičky" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1011, kcal:  242, p:  17, s:  23, t:  9 },
+		mamka: { kj:  562, kcal:  134, p:  9.4, s:  12.8, t:  5 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "44p",
+	  category: Category.PRESNIDAVKA,
+	  title: "Chléb s ořechovou pomazánkou a šunkou",
+	  instructions: "V misce rozmícháme tvaroh se špetkou soli, přidáme pažitku a nasekané ořechy. Chléb namažeme ořechovou pomazánkou a poklademe šunkou. Podáváme se zeleninou.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "celozrnný chléb", syn:  50, mamka:  28, unit:  "g", note:  "1 krajíc / 0.5 krajíce" },
+		{ name:  "polotučný tvaroh", syn:  70, mamka:  39, unit:  "g", note:  "3 polévkové lžíce / 1.5 polévkové lžíce" },
+		{ name:  "vlašské ořechy", syn:  7, mamka:  4, unit:  "g", note:  "2 ½ ks / 1.5 ks" },
+		{ name:  "pažitka", syn:  4, mamka:  3, unit:  "g", note:  "1 ½ čajové lžičky / 1 čajová lžička" },
+		{ name:  "červená paprika", syn:  73, mamka:  61, unit:  "g", note:  "½ ks" },
+		{ name:  "kuřecí šunka", syn:  49, mamka:  27, unit:  "g" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1284, kcal:  307, p:  23, s:  27, t:  10 },
+		mamka: { kj:  713, kcal:  171, p:  12.8, s:  15, t:  5.6 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "45p",
+	  category: Category.PRESNIDAVKA,
+	  title: "Čokoládový Termix s Ovocem",
+	  instructions: "Čokoládu rozpustíme v mikrovlnné troubě nebo ve vodní lázni a vyšleháme s tvarohem. Podáváme s na kostičky nakrájeným ovocem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "odtučněný tvaroh (měkký)", syn:  139, mamka:  77, unit:  "g", note:  "1/2 balení" },
+		{ name:  "hořká čokoláda s obsahem kakaa 70%", syn:  18, mamka:  10, unit:  "g", note:  "1/4 ks" },
+		{ name:  "čerstvý ananas", syn:  144, mamka:  80, unit:  "g", note:  "3 plátky", alternatives:  "švestky (125/69g),  hrušky (123/68g),  jablko (128/71g)" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1098, kcal:  262, p:  19, s:  25, t:  8 },
+		mamka: { kj:  610, kcal:  146, p:  11, s:  14, t:  4 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "46p",
+	  category: Category.PRESNIDAVKA,
+	  title: "Kostky Eidamu, Hroznové Víno",
+	  instructions: "Sýr nakrájíme na kostky a podáváme s kuličkami hroznového vína.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "sýr eidam 30% t. v s.", syn:  57, mamka:  32, unit:  "g", note:  "4 plátky / 2 plátky", alternatives:  "sýr halloumi (47/26 g),  camembert (51/28 g)" },
+		{ name:  "hroznové víno", syn:  158, mamka:  132, unit:  "g" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1113, kcal:  266, p:  12, s:  25, t:  12 },
+		mamka: { kj:  732, kcal:  175, p:  7, s:  21, t:  7 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "47p",
+	  category: Category.PRESNIDAVKA,
+	  title: "Tvaroh s banánem",
+	  instructions: "Banán rozmačkáme vidličkou a promícháme s tvarohem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "polotučný tvaroh", syn:  150, mamka:  83, unit:  "g", note:  "1/2 ks" },
+		{ name:  "banán", syn:  100, mamka:  56, unit:  "g", note:  "3/4 ks" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1098, kcal:  262, p:  20, s:  27, t:  7 },
+		mamka: { kj:  610, kcal:  146, p:  11.1, s:  15, t:  3.9 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	}
 ];
