@@ -722,6 +722,495 @@ export const recipesV: Recipe[] = [
       mamka: { kj: 1475, kcal: 352, p: 33.0, s: 32.0, t: 10.7 },
       originSyn: "X",
       originMamka: ""
-   }
+	}
+	  },
+	  {
+	  id: "v32",
+	  category: Category.VECERE,
+	  title: "Vaječná Omeleta s Tvarůžky",
+	  instructions: "Na pánvi rozehřejeme ghí a rozložíme šunku. Do hrníčku rozklepneme a rozšleháme vejce, osolíme, opepříme. Vylijeme na šunku. Po chvilce přidáme nakrájené tvarůžky. Když je omeleta hotová, přendáme na talíř a podáváme se zeleninou a pečivem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "slepičí vejce", syn:  82, mamka:  50, unit:  "g", note:  "1 ½ ks / 1 ks" },
+		{ name:  "olomoucké tvarůžky", syn:  74, mamka:  40, unit:  "g" },
+		{ name:  "polníček", syn:  70, mamka:  30, unit:  "g", note:  "3 ½ hrsti / 1 ½ hrsti" },
+		{ name:  "ghí", syn:  5, mamka:  5, unit:  "g", note:  "½ čajové lžičky" },
+		{ name:  "kuřecí šunka", syn:  31, mamka:  33, unit:  "g" },
+		{ name:  "žitný chléb", syn:  90, mamka:  42, unit:  "g", note:  "2 krajíce / 1 krajíček" },
+		{ name:  "sůl", syn:  0, mamka:  0, unit:  "šp" },
+		{ name:  "černý pepř", syn:  0, mamka:  0, unit:  "šp" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2131, kcal:  509, p:  46, s:  48, t:  14 },
+		mamka: { kj:  1245, kcal:  298, p:  27, s:  22, t:  11 },
+		originSyn: "X",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "33v",
+	  category: Category.VECERE,
+	  title: "Vaječná Omeleta, Pečivo",
+	  instructions: "Vejce rozšleháme s mlékem a solí. Oloupeme a na malé kostičky nakrájíme cibuli. Na pánvi zahřejeme olej a cibuli krátce osmahneme. Přidáme rozšlehaná vejce a z obou stran osmažíme dozlatova. Podáváme s pečivem a nakrájenou omytou zeleninou.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "vaječný bílek", syn:  162, mamka:  90, unit:  "g", note:  "3 ks / 5 ks"},
+		{ name:  "slepičí vejce", syn:  81, mamka:  45, unit:  "g", note:  "3/4 ks / 1, 5 ks"},
+		{ name:  "polotučné mléko", syn:  32, mamka:  18, unit:  "ml", note:  "1 polévková lžíce"},
+		{ name:  "cibule", syn:  32, mamka:  27, unit:  "g", note:  "1/3 ks"},
+		{ name:  "olivový olej", syn:  5, mamka:  3, unit:  "ml", note:  "1/2 čajové lžičky"},
+		{ name:  "celozrnný chléb", syn:  77, mamka:  43, unit:  "g", note:  "1 krajíc"},
+		{ name:  "rajčata", syn:  60, mamka:  50, unit:  "g", note:  "1/2 ks"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2016, kcal:  482, p:  38, s:  41, t:  16 },
+		mamka: { kj:  1120, kcal:  268, p:  21, s:  23, t:  9 },
+		originSyn: "",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "34v",
+	  category: Category.VECERE,
+	  title: "Kuřecí Steak Na Asijský Způsob",
+	  instructions: "Kuřecí maso omyjeme, osolíme, opepříme a orestujeme na oleji dozlatova. Mezitím uvaříme fazolové lusky v osolené vodě a rýži dle návodu na obale. Na talíř dáme rýži, maso, lusky. Ozdobíme mátou a posypeme klíčky.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "kuřecí prsa bez kůže", syn:  179, mamka:  99, unit:  "g"},
+		{ name:  "jasmínová rýže", syn:  70, mamka:  39, unit:  "g", note:  "6 polévkových lžic"},
+		{ name:  "zelené fazolky", syn:  60, mamka:  50, unit:  "g"},
+		{ name:  "mungo klíčky", syn:  20, mamka:  17, unit:  "g", note:  "2 čajové lžičky"},
+		{ name:  "sezamový olej", syn:  11, mamka:  6, unit:  "ml"},
+		{ name:  "máta", syn:  5, mamka:  4, unit:  "g", note:  "5 lístků"},
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2345, kcal:  561, p:  47, s:  58, t:  14 },
+		mamka: { kj:  1303, kcal:  312, p:  26, s:  32, t:  8 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "35v",
+	  category: Category.VECERE,
+	  title: "Těstovinový Salát S Tuňákem",
+	  instructions: "Těstoviny uvaříme podle návodu na obalu a necháme vychladnout. Rajčata nakrájíme na kostičky a olivy na kolečka. V míse promícháme uvařené těstoviny s ostatními ingrediencemi a podáváme.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "celozrnné těstoviny", syn:  66, mamka:  37, unit:  "g"},
+		{ name:  "tuňák ve vlastní šťávě", syn:  150, mamka:  83, unit:  "g"},
+		{ name:  "černé olivy", syn:  30, mamka:  17, unit:  "g", note:  "10 ks / 6 ks"},
+		{ name:  "čerstvá citronová šťáva", syn:  10, mamka:  8, unit:  "ml", note:  "1 1/2 čajové lžičky / 1 1/4 čajové lžičky"},
+		{ name:  "černý pepř", syn:  0, mamka:  0, unit:  "šp"},
+		{ name:  "extra panenský olivový olej", syn:  10, mamka:  6, unit:  "ml", note:  "3/4 polévkové lžíce / 1/2 polévkové lžíce"},
+		{ name:  "rajčata", syn:  104, mamka:  87, unit:  "g", note:  "1 1/2 ks / 1 1/4 ks"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2258, kcal:  540, p:  45, s:  50, t:  16 },
+		mamka: { kj:  1254, kcal:  300, p:  25, s:  27.8, t:  8.9 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "36v",
+	  category: Category.VECERE,
+	  title: "Drůbeží Kapsa Se Špenátem",
+	  instructions: "Drůbeží maso omyjeme, nařízneme, osolíme a opepříme a naplníme špenátem a sýrem. Zavážeme nití, opečeme na oliji dozlatova a dopečeme v troubě na 200 °C. Mezitím si očistíme a batáty, nakrájíme na kostičky a necháme vařit v osolené vodě doměkka. Poté natrháme listy salátu a smícháme je s nahrubo nastrouhanou mrkví a vše společně podáváme.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "řepkový olej", syn:  5, mamka:  3, unit:  "ml", note:  "1 čajová lžička / 0.5 čajové lžičky" },
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp" },
+		{ name:  "kuřecí prsa bez kůže", syn:  174, mamka:  97, unit:  "g" },
+		{ name:  "listový špenát", syn:  100, mamka:  83, unit:  "g", note:  "5 hrstí / cca 4 hrstě" },
+		{ name:  "plátkový sýr 30%", syn:  31, mamka:  17, unit:  "g", note:  "2 plátky / 1 plátek" },
+		{ name:  "batáty (sladké brambory)", syn:  161, mamka:  89, unit:  "g", note:  "1/2 ks / cca 1/4 ks" },
+		{ name:  "hlávkový salát", syn:  100, mamka:  83, unit:  "g", note:  "1/4 ks / cca 1/5 ks" },
+		{ name:  "mrkev", syn:  100, mamka:  83, unit:  "g", note:  "1 ks / cca 0.8 ks" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2178, kcal:  521, p:  55, s:  43, t:  13 },
+		mamka: { kj:  1210, kcal:  289, p:  31, s:  24, t:  7 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "37v",
+	  category: Category.VECERE,
+	  title: "Vepřové Maso s Kapustou a Bramborem",
+	  instructions: "Vepřové maso nakrájíme na kostky, osolíme, opepříme a orestujeme na olivovém oleji doměkka. Poté přidáme nakrájenou kapustu, mírně podlijeme vodou a dusíme cca dalších 15 min. Mezitím si oškrábeme brambory, nakrájíme je na kostky a uvaříme v osolené vodě. Vše podáváme společně.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "brambory", syn:  176, mamka:  98, unit:  "g", note:  "1.3 ks / 0.75 ks" },
+		{ name:  "hlávková kapusta", syn:  203, mamka:  169, unit:  "g" },
+		{ name:  "olivový olej", syn:  9, mamka:  5, unit:  "ml", note:  "cca 2 lžičky / 1 lžička" },
+		{ name:  "vepřové plece", syn:  144, mamka:  80, unit:  "g" },
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1947, kcal:  466, p:  39, s:  33, t:  19.8 },
+		mamka: { kj:  1217, kcal:  291, p:  23, s:  20, t:  11 },
+		originSyn: "",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "38v",
+	  category: Category.VECERE,
+	  title: "Biftek, Pečené Brambory",
+	  instructions: "Z vhodné části masa nakrájíme asi 3 cm široké bifteky, lehce je naklepeme a opepříme. Necháme odležet. Poté je opečeme na tuku po obou stranách a osolíme. Podáváme s bramborami pečenými v alobalu v troubě.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "hovězí maso", syn:  144, mamka:  80, unit:  "g"},
+		{ name:  "ghí", syn:  9, mamka:  5, unit:  "g", note:  "cca 1 lžička / 1/2 čajové lžičky"},
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp"},
+		{ name:  "brambory", syn:  232, mamka:  129, unit:  "g", note:  "cca 2 ks / 1 ks"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2104, kcal:  502, p:  41.4, s:  37.8, t:  21.6 },
+		mamka: { kj:  1169, kcal:  279, p:  23, s:  21, t:  12 },
+		originSyn: "",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "39v",
+	  category: Category.VECERE,
+	  title: "Pečená Ryba v Alobalu, Zelenina",
+	  instructions: "Filet ryby omyjeme, osolíme, pokapeme citrónovou šťávou, zabalíme do alobalu a necháme péct přibližně 20 minut na 200 °C. Mezitím uvaříme brambory ve slupce a na tuku osmahneme a následně dusíme zeleninu doměkka. Podáváme společně s upečenou rybou.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "filet aljašské tresky bez kůže", syn:  211, mamka:  117, unit:  "g", note:  "bez kůže" },
+		{ name:  "ghí", syn:  14, mamka:  8, unit:  "g", note:  "cca 1 1/4 čajové lžičky / 3/4 čajové lžičky" },
+		{ name:  "brambory", syn:  203, mamka:  113, unit:  "g", note:  "cca 2 ks / 1 ks" },
+		{ name:  "čerstvá citronová šťáva", syn:  12, mamka:  10, unit:  "ml", note:  "cca 1 3/4 čajové lžičky / 1 1/2 čajové lžičky" },
+		{ name:  "zelené fazolky", syn:  120, mamka:  100, unit:  "g" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2030, kcal:  486, p:  41.4, s:  39.6, t:  16.2 },
+		mamka: { kj:  1128, kcal:  270, p:  23, s:  22, t:  9 },
+		originSyn: "",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "40v",
+	  category: Category.VECERE,
+	  title: "Šopský Salát se Šmakounem a Pečivem",
+	  instructions: "Zeleninu omyjeme a nakrájíme na kostičky. Balkánský sýr a šmakouna také nakrájíme. Všechny ingredience smícháme v misce. Podáváme s pečivem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "balkánský sýr,  50 % t. v s.", syn:  67, mamka:  37, unit:  "g"},
+		{ name:  "rajčata", syn:  150, mamka:  125, unit:  "g", note:  "2 ks / cca 1, 5 ks"},
+		{ name:  "salátová okurka", syn:  150, mamka:  125, unit:  "g", note:  "1/2 ks"},
+		{ name:  "žlutá paprika", syn:  50, mamka:  42, unit:  "g", note:  "1/4 ks"},
+		{ name:  "šmakoun", syn:  178, mamka:  99, unit:  "g", note:  "2 ks / 1 ks"},
+		{ name:  "žitný knäckebrot", syn:  40, mamka:  22, unit:  "g", note:  "4 plátky / 2 plátky"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2100, kcal:  502, p:  45, s:  44, t:  15 },
+		mamka: { kj:  1167, kcal:  279, p:  25, s:  24, t:  8 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "41v",
+	  category: Category.VECERE,
+	  title: "Salát s Vejcem a Provensálským Šmakounem a Cherry Rajčaty, Pečivo",
+	  instructions: "Vejce uvaříme a necháme vychladnout. Salát a rajčata opláchneme a nakrájíme, pokapeme olejem, přidáme strouhaný šmakoun a nakrájené vejce na plátky. Popřípadě dochutíme solí. Podáváme s pečivem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "vejce vařené natvrdo", syn:  88, mamka:  49, unit:  "g", note:  "2 ks / 1 ks" },
+		{ name:  "žitný knäckebrot", syn:  42, mamka:  23, unit:  "g", note:  "4 plátky / 2 plátky" },
+		{ name:  "olivový olej", syn:  3, mamka:  2, unit:  "ml", note:  "1/2 čajové lžičky" },
+		{ name:  "cherry rajčata", syn:  127, mamka:  106, unit:  "g", note:  "12 1/2 ks / 10 ks" },
+		{ name:  "listový salát", syn:  120, mamka:  100, unit:  "g" },
+		{ name:  "šmakoun s provensálským kořením", syn:  200, mamka:  111, unit:  "g", note:  "2 ks / 1 ks" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2181, kcal:  521, p:  44, s:  45, t:  15 },
+		mamka: { kj:  1212, kcal:  289, p:  24.4, s:  25, t:  8.3 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "43v",
+	  category: Category.VECERE,
+	  title: "Brambory Zapečené s Masem a Brokolicí",
+	  instructions: "Troubu předehřejeme na 180 °C. Brambory očistíme a dáme vařit do osolené vody. Poté je nakrájíme na kostky. Brokolici nejprve zbavíme košťálu a rozdělíme na malé růžičky. Uvaříme v osolené vodě, asi 10 minut. Potom ji ihned slijeme a propláchneme studenou vodou. Maso nakrájíme na malé kousky a promícháme s brokolicí, bramborami a tukem. Vložíme do zapékací misky a vše společně zapečeme v troubě dozlatova.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "brambory", syn:  207, mamka:  115, unit:  "g", note:  "1 ks"},
+		{ name:  "kuřecí prsa bez kůže", syn:  144, mamka:  80, unit:  "g"},
+		{ name:  "brokolice", syn:  150, mamka:  125, unit:  "g", note:  "1/4 ks"},
+		{ name:  "ghí", syn:  14, mamka:  8, unit:  "g", note:  "3/4 čajové lžičky"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2155, kcal:  515, p:  46.8, s:  37.8, t:  16.2 },
+		mamka: { kj:  1197, kcal:  286, p:  26, s:  21, t:  9 },
+		originSyn: "",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "44v",
+	  category: Category.VECERE,
+	  title: "Zapečená tortilla s tuňákem",
+	  instructions: "Tortillu naplníme tuňákem, kukuřicí a nastrouhaným nebo nakrájeným sýrem. Poté zarolujeme a dáme zapéct do kontaktního grilu nebo na pánev. Lze podávat ale i nastudeno.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "špaldová tortilla", syn:  80, mamka:  44, unit:  "g", note:  "1 1/2 ks / cca 1 ks", alternatives:  "kukuřičná tortilla (91/51g)" },
+		{ name:  "sýr eidam 30% t. v s.", syn:  40, mamka:  22, unit:  "g", note:  "2 1/2 plátku / cca 1 1/2 plátku", alternatives:  "camembert (36/20g)" },
+		{ name:  "sterilovaná cukrová kukuřice", syn:  46, mamka:  38, unit:  "g"},
+		{ name:  "tuňák ve vlastní šťávě", syn:  120, mamka:  67, unit:  "g"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2218, kcal:  530, p:  44, s:  49, t:  16 },
+		mamka: { kj:  1232, kcal:  294, p:  24, s:  27, t:  9 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "45v",
+	  category: Category.VECERE,
+	  title: "Míchaná Vajíčka Se Šmakounem, Pečivem A Zeleninovým Salátem",
+	  instructions: "Vejce umícháme na teflonové pánvi, promícháme s uzeným šmakounem, který jsme předem nastrouhali na hrubém struhadle. Podáváme s pečivem a zeleninovým salátem z očištěné pokrájené zeleniny a olivového oleje.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "celozrnný chléb", syn:  85, mamka:  37, unit:  "g", note:  "1 1/2 krajíce / 2/3 krajíce" },
+		{ name:  "rajčata", syn:  139, mamka:  67, unit:  "g", note:  "1 1/2 ks / 3/4 ks" },
+		{ name:  "extra panenský olivový olej", syn:  3, mamka:  3, unit:  "ml", note:  "1/2 čajové lžičky" },
+		{ name:  "salátová okurka", syn:  150, mamka:  66, unit:  "g", note:  "1/2 ks / 1/4 ks" },
+		{ name:  "uzený šmakoun", syn:  150, mamka:  75, unit:  "g", note:  "1 1/2 ks / 3/4 ks" },
+		{ name:  "slepičí vejce", syn:  81, mamka:  63, unit:  "g", note:  "1 1/2 ks / 1 ks" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2096, kcal:  501, p:  43, s:  47, t:  15 },
+		mamka: { kj:  1168, kcal:  279, p:  23, s:  22, t:  11 },
+		originSyn: "X",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "46v",
+	  category: Category.VECERE,
+	  title: "Krůtí Maso se Salátem a Ořechy",
+	  instructions: "Na trošce olivového oleje orestujeme plátek masa, osolíme a opepříme. Míchaný salát opláchneme a smícháme jej s nadrcenými vlašskými ořechy, měsíčky grapefruitu, bílým jogurtem, citronem a dochutíme solí a pepřem. Podáváme s vařenými brambory.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "krůtí maso", syn:  176, mamka:  98, unit:  "g"},
+		{ name:  "vlašské ořechy", syn:  6, mamka:  3, unit:  "g", note:  "2 ks / 1 ks"},
+		{ name:  "grapefruit", syn:  67, mamka:  56, unit:  "g", note:  "1/3 ks"},
+		{ name:  "míchaný salát", syn:  215, mamka:  179, unit:  "g", note:  "1 miska"},
+		{ name:  "bílý jogurt", syn:  21, mamka:  12, unit:  "g", note:  "1 1/2 polévkové lžíce / 1 lžíce"},
+		{ name:  "olivový olej", syn:  3, mamka:  2, unit:  "ml", note:  "1/2 čajové lžičky"},
+		{ name:  "čerstvá citronová šťáva", syn:  10, mamka:  8, unit:  "ml", note:  "1 1/2 čajové lžičky"},
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp"},
+		{ name:  "brambory vařené bez slupky", syn:  191, mamka:  106, unit:  "g"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2221, kcal:  531, p:  49, s:  50, t:  14 },
+		mamka: { kj:  1234, kcal:  295, p:  27.2, s:  27.8, t:  7.8 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "47v",
+	  category: Category.VECERE,
+	  title: "Salát s Uzeným Lososem, Mozzarellou a Pečivem",
+	  instructions: "Natrhaný salát smícháme s čerstvým baby špenátem, nakrájenými rajčaty. Poklademe kousky sýra a kousky uzeného lososa. Podáváme s pečivem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "rajčata", syn:  50, mamka:  42, unit:  "g", note:  "1/2 ks" },
+		{ name:  "listový salát", syn:  100, mamka:  83, unit:  "g" },
+		{ name:  "uzený losos", syn:  100, mamka:  56, unit:  "g" },
+		{ name:  "mozzarella light", syn:  31, mamka:  17, unit:  "g", note:  "1/4 ks" },
+		{ name:  "baby špenát", syn:  40, mamka:  33, unit:  "g" },
+		{ name:  "žitný chléb", syn:  85, mamka:  47, unit:  "g", note:  "1 1/2 krajíce / 1 krajíc" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1971, kcal:  471, p:  40, s:  45, t:  13 },
+		mamka: { kj:  1095, kcal:  262, p:  22.2, s:  25, t:  7.2 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "48v",
+	  category: Category.VECERE,
+	  title: "Cuketa s mletým masem a rýží",
+	  instructions: "Cuketu nakrájíme na větší kostičky a restujeme na cibulce na oleji. Mleté maso nasucho orestujeme na teflonové pánvi. Poté vmícháme do cuketové směsi a rozmícháme s trochou protlaku. Osolíme, opepříme a přidáme bylinky. Podáváme s rýží uvařenou podle návodu na obalu.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "černý pepř", syn:  0, mamka:  0, unit:  "šp", note:  "špetka" },
+		{ name:  "petrželová nať", syn:  10, mamka:  8, unit:  "g", note:  "100 špetek" },
+		{ name:  "cuketa", syn:  150, mamka:  125, unit:  "g", note:  "½ ks" },
+		{ name:  "cibule", syn:  20, mamka:  17, unit:  "g", note:  "¼ ks" },
+		{ name:  "olivový olej", syn:  3, mamka:  2, unit:  "ml", note:  "½ čajové lžičky" },
+		{ name:  "rajčatový protlak", syn:  13, mamka:  7, unit:  "g", note:  "1 ½ čajové lžičky" },
+		{ name:  "hovězí maso", syn:  150, mamka:  83, unit:  "g" },
+		{ name:  "loupaná rýže", syn:  47, mamka:  26, unit:  "g", note:  "4 polévkové lžíce" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2075, kcal:  496, p:  43, s:  45, t:  16 },
+		mamka: { kj:  1153, kcal:  276, p:  23.9, s:  25, t:  8.9 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "49v",
+	  category: Category.VECERE,
+	  title: "Sýrové Těstoviny Se Špenátem",
+	  instructions: "Těstoviny uvaříme dle návodu. Mezitím oloupeme cuketu a nakrájíme na malé kostičky. Pánev potřeme olejem, vložíme cuketu, osolíme a zprudka orestujeme doměkka. Poté přidáme baby špenát, česnek a vše prohřejeme. Do uvařených horkých těstovin nastrouháme sýr, přidáme směs cukety a špenátu a promícháme. Dochutíme solí, bazalkou a můžeme podávat.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "celozrnné těstoviny", syn:  53, mamka:  29, unit:  "g" },
+		{ name:  "sýr eidam 30% t. v s.", syn:  50, mamka:  28, unit:  "g", note:  "3 1/2 plátku / 2 plátky" },
+		{ name:  "cuketa", syn:  240, mamka:  200, unit:  "g", note:  "3/4 ks / cca 2/3 ks" },
+		{ name:  "baby špenát", syn:  156, mamka:  130, unit:  "g" },
+		{ name:  "česnek", syn:  20, mamka:  17, unit:  "g", note:  "4 stroužky / 3 stroužky" },
+		{ name:  "řepkový olej", syn:  5, mamka:  3, unit:  "ml", note:  "1 čajová lžička" },
+		{ name:  "bazalka", syn:  4, mamka:  3, unit:  "g" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1996, kcal:  477, p:  29, s:  48, t:  16 },
+		mamka: { kj:  1109, kcal:  265, p:  16.1, s:  26.7, t:  8.9 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "50v",
+	  category: Category.VECERE,
+	  title: "Pečené papriky plněné mletým masem, jáhly",
+	  instructions: "Cibulku zpěníme na tuku ve větší pánvi. Přidáme mleté maso a orestujeme spolu s prolisovaným česnekem, solí a pepřem. Vrch papriky ukrojíme, vydlabeme semínka a naplníme směsí z masa. Vložíme do pekáčku a zalijeme asi 2 cm vodou. Pečeme v troubě předehřáté na 200°C asi 20 minut. Jáhly připravíme dle návodu na obale. Zeleninovou omáčku připravíme z krájených rajčat, která podusíme ve vodě, osolíme a opepříme.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "libové hovězí plece bez kosti", syn:  177, mamka:  98, unit:  "g"},
+		{ name:  "červená paprika", syn:  162, mamka:  135, unit:  "g", note:  "1 ks / 1 ks"},
+		{ name:  "černý pepř", syn:  0, mamka:  0, unit:  "šp"},
+		{ name:  "cibule", syn:  20, mamka:  17, unit:  "g", note:  "1/4 ks / 1/4 ks"},
+		{ name:  "česnek", syn:  5, mamka:  4, unit:  "g", note:  "1 stroužek / 1 stroužek"},
+		{ name:  "olivový olej", syn:  7, mamka:  4, unit:  "ml", note:  "1 1/2 čajové lžičky / 1 čajová lžička"},
+		{ name:  "cherry rajčata", syn:  164, mamka:  137, unit:  "g", note:  "2/3 balíček / 1/2 balíček"},
+		{ name:  "jáhly", syn:  43, mamka:  24, unit:  "g", note:  "3 polévkové lžíce / 1.5 polévkové lžíce"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2181, kcal:  521, p:  47, s:  48, t:  14 },
+		mamka: { kj:  1212, kcal:  289, p:  26.1, s:  26.7, t:  7.8 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "51v",
+	  category: Category.VECERE,
+	  title: "Cherry Rajčátka s Mozzarellou, Šunkou a Pečivem",
+	  instructions: "Cherry rajčátka rozkrájíme na poloviny. Mozzarellu natrháme na menší kousky a prokládáme střídavě s rajčátky a šunkou. Podáváme s na kousky nalámaným pečivem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "cherry rajčata", syn:  155, mamka:  129, unit:  "g", note:  "cca 16 ks / 13 ks"},
+		{ name:  "žitný knäckebrot", syn:  54, mamka:  30, unit:  "g", note:  "cca 5 plátků / 3 plátky"},
+		{ name:  "mozzarella light", syn:  119, mamka:  66, unit:  "g", note:  "cca 1 1/5 ks / 2/3 ks"},
+		{ name:  "krůtí šunka", syn:  70, mamka:  39, unit:  "g", note:  "cca 6 plátků / 3 1/2 plátku"}
+	  ],
+	  nutrition: {
+		syn: { kj:  2155, kcal:  515, p:  41.4, s:  45, t:  16.2 },
+		mamka: { kj:  1197, kcal:  286, p:  23, s:  25, t:  9 },
+		originSyn: "",
+		originMamka: "X"
+	  }
+	},
+	{
+	  id: "52v",
+	  category: Category.VECERE,
+	  title: "Brambory zapečené se šmakounem a pórkem",
+	  instructions: "Brambory očistíme a dáme vařit do osolené vody. Pórek nakrájíme na kolečka a podusíme. Šmakouna nakrájíme na malé kousky a promícháme s pórkem a bramborami. Vložíme do zapékací misky a vše společně zapečeme posypané sýrem.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "brambory", syn:  200, mamka:  111, unit:  "g", note:  "1 ½ ks / 1 ks" },
+		{ name:  "šmakoun", syn:  80, mamka:  44, unit:  "g", note:  "¾ ks / ½ ks" },
+		{ name:  "pórek", syn:  160, mamka:  133, unit:  "g", note:  "¼ ks / ⅕ ks" },
+		{ name:  "sýr eidam 30% t. v s.", syn:  73, mamka:  41, unit:  "g", note:  "5 plátků / 3 plátky" }
+	  ],
+	  nutrition: {
+		syn: { kj:  1888, kcal:  451, p:  40, s:  41, t:  13 },
+		mamka: { kj:  1211, kcal:  289, p:  26, s:  26, t:  8 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "53v",
+	  category: Category.VECERE,
+	  title: "Čočková Polévka s Kuřecím Masem a Mrkví",
+	  instructions: "Maso nakrájíme na kostičky, osolíme, opepříme a orestujeme na oleji tak, aby se zatáhlo. Poté přidáme protlak a promícháme. Dále přidáme čočku, zalijeme vodou, přidáme na kousky nakrájenou mrkev a vaříme přibližně 15 minut. Nakonec polévku dochutíme česnekem a bylinkami.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "červená čočka", syn:  86, mamka:  48, unit:  "g" },
+		{ name:  "mrkev", syn:  70, mamka:  58, unit:  "g", note:  "3/4 ks / cca 1/2 ks" },
+		{ name:  "česnek", syn:  5, mamka:  4, unit:  "g", note:  "1 stroužek / 1 stroužek" },
+		{ name:  "sušená bazalka", syn:  1, mamka:  1, unit:  "šp" },
+		{ name:  "petrželová nať", syn:  5, mamka:  4, unit:  "g", note:  "50 špetek / 40 špetek" },
+		{ name:  "kuřecí prsa bez kůže", syn:  86, mamka:  48, unit:  "g" },
+		{ name:  "řepkový olej", syn:  14, mamka:  8, unit:  "ml", note:  "1 PL / cca 1/2 PL" },
+		{ name:  "rajčatový protlak", syn:  14, mamka:  12, unit:  "g", note:  "2/3 PL / cca 1/2 PL" },
+		{ name:  "černý pepř", syn:  1, mamka:  1, unit:  "šp" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2230, kcal:  533, p:  42, s:  43, t:  16 },
+		mamka: { kj:  1239, kcal:  296, p:  23, s:  24, t:  9 },
+		originSyn: "X",
+		originMamka: ""
+	  }
+	},
+	{
+	  id: "54v",
+	  category: Category.VECERE,
+	  title: "Knäckebrot s Tuňákem",
+	  instructions: "V misce smícháme tuňáka s olejem a pomazánkovým máslem. Namažeme na knäckebrot a podáváme se zeleninovou oblohou.",
+	  favorites: "",
+	  printed: "",
+	  ingredients: [
+		{ name:  "žitný knäckebrot", syn:  54, mamka:  30, unit:  "g", note:  "cca 5 plátků / 3 plátky" },
+		{ name:  "tuňák ve vlastní šťávě", syn:  149, mamka:  83, unit:  "g" },
+		{ name:  "extra panenský olivový olej", syn:  9, mamka:  5, unit:  "ml", note:  "cca 2 čajové lžičky / 1 čajová lžička" },
+		{ name:  "pomazánkové máslo", syn:  18, mamka:  10, unit:  "g" },
+		{ name:  "červená paprika", syn:  96, mamka:  80, unit:  "g", note:  "cca 1/2 ks" }
+	  ],
+	  nutrition: {
+		syn: { kj:  2218, kcal:  529, p:  41.4, s:  45, t:  18 },
+		mamka: { kj:  1232, kcal:  294, p:  23, s:  25, t:  10 },
+		originSyn: "",
+		originMamka: "X"
+    }
   }
 ];
