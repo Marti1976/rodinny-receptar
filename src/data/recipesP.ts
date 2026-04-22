@@ -931,7 +931,7 @@ export const recipesP: Recipe[] = [
   {
   id: "48p",
   category: Category.PRESNIDAVKA,
-  title: "Čoko-brownie bez odpadu",
+  title: "Čoko-brownie,
   instructions: "POZOR 4 porce 32% x2, 18% x2. Příprava vloček: Ovesné vločky rozmixujte na jemnou moučku. Čokoládu rozpusťte v misce (v mikrovlnce po 30s intervalech nebo ve vodní lázni) a nechte ji stát, aby nebyla horká. Základní těsto: V míse smíchejte jogurt, med, vejce a vlažnou rozpuštěnou čokoládu. Poté vmíchejte kakao a ovesnou moučku. Trik pro nadýchanost: Tekuté bílky vyšlehejte se špetkou soli do tuhého sněhu. Ten pak velmi jemně stěrkou zabalte do připraveného těsta. Pečení: Směs nalijte do menší dortové formy nebo pekáčku vystlaného papírem. Pečte při 170°C cca 30–35 minut. Chlazení: Nechte vychladnout a pak dejte do lednice. Dort musí dozrát, aby se chutě propojily a konzistence se zpevnila na brownie.",
   favorites: "X",
   printed: "",
