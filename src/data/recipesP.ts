@@ -937,7 +937,7 @@ export const recipesP: Recipe[] = [
   printed: "",
   ingredients: [
     { name:  "řecký jogurt 0% tuku", syn:  256, mamka:  144, unit:  "g" },
-    { name:  "bílky z vajec", syn:  64,  mamka:  36, unit:  "g", note: "2 ks / 1 ks", alternatives: "tekuté bílky cca 100ml"" },
+    { name:  "bílky z vajec", syn:  64,  mamka:  36, unit:  "g", note: "2 ks / 1 ks", alternatives: "tekuté bílky cca 100ml" },
     { name:  "celé vejce M", syn:  33, mamka:  22, unit:  "g", note: "1/2 ks / 1/2 ks" },
     { name:  "hořká čokoláda 70% kakaa", syn:  23, mamka: 12, unit:  "g" },
     { name:  "ovesné vločky (jemné mleté)", syn:  32, mamka: 18, unit:  "g" },
