@@ -9,14 +9,14 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 142, mamka: 80, unit: "g" },
-      { name: "rajčata", syn: 100, mamka: 30, unit: "g", note: "1 ½ ks / 0.3333333333333333 ks" },
-      { name: "salátová okurka", syn: 100, mamka: 30, unit: "g", note: "¼ ks / 0.25 ks" },
-      { name: "hlávkový salát", syn: 123, mamka: 50, unit: "g", note: "⅓ ks / 0.25 ks" },
-      { name: "červená paprika", syn: 48, mamka: 25, unit: "g", note: "¼ ks / 0.25 ks" },
-      { name: "bílý jogurt 3,5% tuku", syn: 30, mamka: 30, unit: "g", note: "2 ½ polévkové lžíce / 2 0.5 polévkové lžíce" },
+      { name: "rajčata", syn: 100, mamka: 30, unit: "g", note: "1 ½ ks / 1/3 ks" },
+      { name: "salátová okurka", syn: 100, mamka: 30, unit: "g", note: "¼ ks / 1/4 ks" },
+      { name: "hlávkový salát", syn: 123, mamka: 50, unit: "g", note: "⅓ ks / 1/4 ks" },
+      { name: "červená paprika", syn: 48, mamka: 25, unit: "g", note: "¼ ks / 1/4 ks" },
+      { name: "bílý jogurt 3,5% tuku", syn: 30, mamka: 30, unit: "g", note: "2 ½ polévkové lžíce / 2 1/2 polévkové lžíce" },
       { name: "sójová omáčka", syn: 10, mamka: 6, unit: "g", note: "⅔ polévkové lžíce / 1 čajová lžička" },
       { name: "řepkový olej", syn: 6, mamka: 5, unit: "ml", note: "1 čajová lžička / 1 čajová lžička" },
-      { name: "celozrnný chléb (příloha)", syn: 86, mamka: 41, unit: "g", note: "1 ½ krajíce / 0.75 krajíce" }
+      { name: "celozrnný chléb (příloha)", syn: 86, mamka: 41, unit: "g", note: "1 ½ krajíce / 3/4 krajíce" }
     ],
     nutrition: {
       syn:   { kj: 2157, kcal: 516, p: 47, s: 48, t: 13 },
@@ -36,7 +36,7 @@ export const recipesV: Recipe[] = [
       { name: "žitný knäckebrot", syn: 47, mamka: 30, unit: "g", note: "4 ½ plátky / 3 plátky" },
       { name: "sýr eidam 30% t.v.s.", syn: 60, mamka: 42, unit: "g", note: "4 plátky / 3 plátky" },
       { name: "vepřová šunka", syn: 80, mamka: 39, unit: "g" },
-      { name: "červená paprika", syn: 200, mamka: 106, unit: "g", note: "1 ½ ks / 0.6666666666666666 ks" }
+      { name: "červená paprika", syn: 200, mamka: 106, unit: "g", note: "1 ½ ks / 2/3 ks" }
     ],
     nutrition: {
       syn:   { kj: 2007, kcal: 480, p: 39.4, s: 44.3, t: 13.5 },
@@ -105,7 +105,7 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "kuřecí prsa bez kůže", syn: 152, mamka: 80, unit: "g" },
       { name: "pohanka", syn: 59, mamka: 30, unit: "g" },
-      { name: "řepkový olej", syn: 11, mamka: 7, unit: "ml", note: "¾ polévkové lžíce / 1 0.5 čajové lžičky" },
+      { name: "řepkový olej", syn: 11, mamka: 7, unit: "ml", note: "¾ polévkové lžíce / 1 1/2 čajové lžičky" },
       { name: "ledový salát", syn: 120, mamka: 64, unit: "g" },
       { name: "rajčata", syn: 120, mamka: 72, unit: "g", note: "1 ½ ks / 1 ks" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" },
@@ -369,11 +369,11 @@ export const recipesV: Recipe[] = [
       { name: "krůtí prsa bez kosti a kůže", syn: 144, mamka: 80, unit: "g" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "špetka" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" },
-      { name: "pórek", syn: 43, mamka: 43, unit: "g", note: "0.25 ks / 0.25 ks" },
-      { name: "žampiony", syn: 33, mamka: 33, unit: "g", note: "1 0.5 ks / 1 0.5 ks" },
-      { name: "červená paprika", syn: 52, mamka: 52, unit: "g", note: "0.25 ks / 0.25 ks" },
-      { name: "brambory", syn: 180, mamka: 100, unit: "g", note: "1 0.3333333333333333 ks / 0.75 ks" },
-      { name: "olivový olej", syn: 13, mamka: 7, unit: "g", note: "2 0.5 čajové lžičky / 1 0.5 čajové lžičky" }
+      { name: "pórek", syn: 43, mamka: 43, unit: "g", note: "1/4 ks / 1/4 ks" },
+      { name: "žampiony", syn: 33, mamka: 33, unit: "g", note: "1 1/2 ks / 1 1/2 ks" },
+      { name: "červená paprika", syn: 52, mamka: 52, unit: "g", note: "1/4 ks / 1/4 ks" },
+      { name: "brambory", syn: 180, mamka: 100, unit: "g", note: "1 1/3 ks / 3/4 ks" },
+      { name: "olivový olej", syn: 13, mamka: 7, unit: "g", note: "2 1/2 čajové lžičky / 1 1/2 čajové lžičky" }
     ],
     nutrition: {
       syn:   { kj: 1969, kcal: 470, p: 41.6, s: 38.3, t: 15.1 },
@@ -392,10 +392,10 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "olomoucké tvarůžky", syn: 54, mamka: 30, unit: "g" },
       { name: "rajčata", syn: 79, mamka: 79, unit: "g", note: "1 ks / 1 ks" },
-      { name: "červená paprika", syn: 62, mamka: 62, unit: "g", note: "0.3333333333333333 ks / 0.3333333333333333 ks" },
-      { name: "salátová okurka", syn: 56, mamka: 56, unit: "g", note: "0.25 ks / 0.25 ks" },
-      { name: "sýr eidam 30%", syn: 36, mamka: 20, unit: "g", note: "2 0.5 plátky / 1 0.5 plátky" },
-      { name: "celozrnný chléb", syn: 58, mamka: 32, unit: "g", note: "1 krajíc / 0.5 krajíce" },
+      { name: "červená paprika", syn: 62, mamka: 62, unit: "g", note: "1/3 ks / 1/3 ks" },
+      { name: "salátová okurka", syn: 56, mamka: 56, unit: "g", note: "1/4 ks / 1/4 ks" },
+      { name: "sýr eidam 30%", syn: 36, mamka: 20, unit: "g", note: "2 1/2 plátky / 1 1/2 plátky" },
+      { name: "celozrnný chléb", syn: 58, mamka: 32, unit: "g", note: "1 krajíc / 1/2 krajíce" },
       { name: "sýr gouda", syn: 27, mamka: 15, unit: "g" }
     ],
     nutrition: {
@@ -413,10 +413,10 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "špaldová houska", syn: 81, mamka: 45, unit: "g", note: "1 0.75 ks / 1 ks" },
+      { name: "špaldová houska", syn: 81, mamka: 45, unit: "g", note: "1 3/4 ks / 1 ks" },
       { name: "krůtí šunka", syn: 126, mamka: 70, unit: "g", note: "11 plátků / 6 plátků" },
       { name: "sýr žervé 50%", syn: 74, mamka: 41, unit: "g" },
-      { name: "ředkvičky", syn: 54, mamka: 54, unit: "g", note: "3 0.5 ks / 3 0.5 ks" },
+      { name: "ředkvičky", syn: 54, mamka: 54, unit: "g", note: "3 1/2 ks / 3 1/2 ks" },
       { name: "ledový salát", syn: 20, mamka: 20, unit: "g" }
     ],
     nutrition: {
@@ -434,13 +434,13 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "brokolice", syn: 305, mamka: 305, unit: "g", note: "0.5 ks / 0.5 ks" },
+      { name: "brokolice", syn: 305, mamka: 305, unit: "g", note: "1/2 ks / 1/2 ks" },
       { name: "cibule", syn: 73, mamka: 73, unit: "g", note: "1 ks / 1 ks" },
       { name: "česnek", syn: 5, mamka: 5, unit: "g", note: "1 stroužek / 1 stroužek" },
       { name: "zeleninový vývar", syn: 250, mamka: 250, unit: "ml", note: "1 hrnek / 1 hrnek" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" },
-      { name: "olivový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička / 0.5 čajové lžičky" },
-      { name: "slepičí vejce", syn: 90, mamka: 50, unit: "g", note: "1 0.75 ks / 1 ks" }
+      { name: "olivový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička / 1/2 čajové lžičky" },
+      { name: "slepičí vejce", syn: 90, mamka: 50, unit: "g", note: "1 3/4 ks / 1 ks" }
     ],
     nutrition: {
       syn:   { kj: 2191, kcal: 524, p: 41, s: 36.9, t: 17.6 },
@@ -457,12 +457,12 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "hovězí šunka", syn: 121, mamka: 67, unit: "g", note: "8 plátků / 4 0.5 plátky" },
+      { name: "hovězí šunka", syn: 121, mamka: 67, unit: "g", note: "8 plátků / 4 1/2 plátky" },
       { name: "jarní cibulka", syn: 20, mamka: 20, unit: "g", note: "1 ks / 1 ks" },
-      { name: "mrkev", syn: 60, mamka: 60, unit: "g", note: "0.6666666666666666 ks / 0.6666666666666666 ks" },
-      { name: "polotučný tvaroh", syn: 95, mamka: 53, unit: "g", note: "3 0.5 polévkové lžíce / 2 polévkové lžíce" },
-      { name: "žitný knäckebrot", syn: 54, mamka: 30, unit: "g", note: "5 0.5 plátky / 3 plátky" },
-      { name: "řepkový olej", syn: 7, mamka: 4, unit: "ml", note: "1 0.5 čajové lžičky / 0.75 čajové lžičky" },
+      { name: "mrkev", syn: 60, mamka: 60, unit: "g", note: "2/3 ks / 2/3 ks" },
+      { name: "polotučný tvaroh", syn: 95, mamka: 53, unit: "g", note: "3 1/2 polévkové lžíce / 2 polévkové lžíce" },
+      { name: "žitný knäckebrot", syn: 54, mamka: 30, unit: "g", note: "5 1/2 plátky / 3 plátky" },
+      { name: "řepkový olej", syn: 7, mamka: 4, unit: "ml", note: "1 1/2 čajové lžičky / 3/4 čajové lžičky" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" }
     ],
     nutrition: {
@@ -480,13 +480,13 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "slepičí vejce", syn: 90, mamka: 50, unit: "g", note: "1 0.75 ks / 1 ks" },
-      { name: "vaječný bílek", syn: 194, mamka: 108, unit: "g", note: "6 ks / 3 0.5 ks" },
+      { name: "slepičí vejce", syn: 90, mamka: 50, unit: "g", note: "1 3/4 ks / 1 ks" },
+      { name: "vaječný bílek", syn: 194, mamka: 108, unit: "g", note: "6 ks / 3 1/2 ks" },
       { name: "polotučné mléko", syn: 32, mamka: 18, unit: "ml", note: "2 polévkové lžíce / 1 polévková lžíce" },
-      { name: "cibule", syn: 20, mamka: 20, unit: "g", note: "0.25 ks / 0.25 ks" },
-      { name: "červená paprika", syn: 81, mamka: 81, unit: "g", note: "0.5 ks / 0.5 ks" },
-      { name: "olivový olej", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 0.5 čajové lžičky" },
-      { name: "celozrnný chléb", syn: 58, mamka: 32, unit: "g", note: "1 krajíc / 0.5 krajíce" }
+      { name: "cibule", syn: 20, mamka: 20, unit: "g", note: "1/4 ks / 1/4 ks" },
+      { name: "červená paprika", syn: 81, mamka: 81, unit: "g", note: "1/2 ks / 1/2 ks" },
+      { name: "olivový olej", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 1/2 čajové lžičky" },
+      { name: "celozrnný chléb", syn: 58, mamka: 32, unit: "g", note: "1 krajíc / 1/2 krajíce" }
     ],
     nutrition: {
       syn:   { kj: 2039, kcal: 488, p: 40.7, s: 38.3, t: 17.3 },
@@ -503,14 +503,14 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "brambory (k podávání)", syn: 180, mamka: 100, unit: "g", note: "1 0.3333333333333333 ks / 0.75 ks" },
+      { name: "brambory (k podávání)", syn: 180, mamka: 100, unit: "g", note: "1 1/3 ks / 3/4 ks" },
       { name: "zelené fazolky (k podávání)", syn: 104, mamka: 104, unit: "g" },
       { name: "hovězí maso (placky)", syn: 144, mamka: 80, unit: "g" },
       { name: "sůl (placky)", syn: 1, mamka: 1, unit: "špetka" },
       { name: "černý pepř (placky)", syn: 1, mamka: 1, unit: "špetka" },
       { name: "česnek (placky)", syn: 5, mamka: 5, unit: "g", note: "1 stroužek / 1 stroužek" },
-      { name: "cibule (placky)", syn: 32, mamka: 32, unit: "g", note: "0.5 ks / 0.5 ks" },
-      { name: "řepkový olej (placky)", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 0.5 čajové lžičky" }
+      { name: "cibule (placky)", syn: 32, mamka: 32, unit: "g", note: "1/2 ks / 1/2 ks" },
+      { name: "řepkový olej (placky)", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 1/2 čajové lžičky" }
     ],
     nutrition: {
       syn:   { kj: 2209, kcal: 527, p: 45.4, s: 42.1, t: 17.8 },
@@ -528,11 +528,11 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "filet aljašské tresky bez kůže", syn: 230, mamka: 128, unit: "g" },
-      { name: "batáty sladké brambory", syn: 184, mamka: 102, unit: "g", note: "0.5 ks / 0.25 ks" },
+      { name: "batáty sladké brambory", syn: 184, mamka: 102, unit: "g", note: "1/2 ks / 1/4 ks" },
       { name: "olivový olej", syn: 11, mamka: 6, unit: "ml", note: "2 čajové lžičky / 1 čajová lžička" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "špetka" },
-      { name: "sezamová semínka", syn: 9, mamka: 5, unit: "g", note: "1 0.5 čajové lžičky / 0.75 čajové lžičky" },
+      { name: "sezamová semínka", syn: 9, mamka: 5, unit: "g", note: "1 1/2 čajové lžičky / 3/4 čajové lžičky" },
       { name: "polníček", syn: 38, mamka: 38, unit: "g", note: "2 hrsti / 2 hrsti" }
     ],
     nutrition: {
@@ -550,13 +550,13 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "slunečnicová semínka", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 0.5 čajové lžičky" },
-      { name: "sýr cottage", syn: 202, mamka: 112, unit: "g", note: "1 kelímek / 0.6666666666666666 kelímku" },
+      { name: "slunečnicová semínka", syn: 5, mamka: 3, unit: "g", note: "1 čajová lžička / 1/2 čajové lžičky" },
+      { name: "sýr cottage", syn: 202, mamka: 112, unit: "g", note: "1 kelímek / 2/3 kelímku" },
       { name: "červená vařená řepa", syn: 153, mamka: 153, unit: "g" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "špetka" },
       { name: "polníček", syn: 37, mamka: 37, unit: "g", note: "2 hrsti / 2 hrsti" },
-      { name: "krůtí šunka", syn: 76, mamka: 42, unit: "g", note: "6 plátků / 3 0.5 plátky" }
+      { name: "krůtí šunka", syn: 76, mamka: 42, unit: "g", note: "6 plátků / 3 1/2 plátky" }
     ],
     nutrition: {
       syn:   { kj: 2079, kcal: 497, p: 42.1, s: 38.9, t: 17.5 },
@@ -574,10 +574,10 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "krůtí maso", syn: 144, mamka: 80, unit: "g" },
-      { name: "kari koření", syn: 5, mamka: 5, unit: "g", note: "1 0.5 čajové lžičky / 1 0.5 čajové lžičky" },
-      { name: "smetana 12%", syn: 38, mamka: 21, unit: "ml", note: "2 0.5 polévkové lžíce / 1 0.5 polévkové lžíce" },
-      { name: "bulvový celer", syn: 107, mamka: 107, unit: "g", note: "0.25 ks / 0.25 ks" },
-      { name: "řepkový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička / 0.5 čajové lžičky" },
+      { name: "kari koření", syn: 5, mamka: 5, unit: "g", note: "1 1/2 čajové lžičky / 1 1/2 čajové lžičky" },
+      { name: "smetana 12%", syn: 38, mamka: 21, unit: "ml", note: "2 1/2 polévkové lžíce / 1 1/2 polévkové lžíce" },
+      { name: "bulvový celer", syn: 107, mamka: 107, unit: "g", note: "1/4 ks / 1/4 ks" },
+      { name: "řepkový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička / 1/2 čajové lžičky" },
       { name: "ledový salát", syn: 83, mamka: 83, unit: "g" },
       { name: "mrkev", syn: 107, mamka: 107, unit: "g", note: "1 ks / 1 ks" },
       { name: "med", syn: 14, mamka: 8, unit: "g", note: "2 čajové lžičky / 1 čajová lžička" },
@@ -601,7 +601,7 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "směs mrkev, hrášek, kukuřice", syn: 172, mamka: 172, unit: "g" },
       { name: "kuřecí prsa bez kůže", syn: 144, mamka: 80, unit: "g" },
-      { name: "řepkový olej", syn: 13, mamka: 7, unit: "ml", note: "2 0.5 čajové lžičky / 1 0.5 čajové lžičky" },
+      { name: "řepkový olej", syn: 13, mamka: 7, unit: "ml", note: "2 1/2 čajové lžičky / 1 1/2 čajové lžičky" },
       { name: "sůl", syn: 1, mamka: 1, unit: "špetka" }
     ],
     nutrition: {
@@ -619,13 +619,13 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "vejce vařené natvrdo", syn: 81, mamka: 45, unit: "g", note: "1 0.75 ks / 1 ks" },
-      { name: "salátová okurka", syn: 50, mamka: 50, unit: "g", note: "0.25 ks / 0.25 ks" },
+      { name: "vejce vařené natvrdo", syn: 81, mamka: 45, unit: "g", note: "1 3/4 ks / 1 ks" },
+      { name: "salátová okurka", syn: 50, mamka: 50, unit: "g", note: "1/4 ks / 1/4 ks" },
       { name: "plátkový sýr 30%", syn: 31, mamka: 17, unit: "g", note: "2 plátky / 1 plátek" },
       { name: "krůtí šunka", syn: 90, mamka: 50, unit: "g", note: "7 plátků / 4 plátky" },
-      { name: "rajčata", syn: 58, mamka: 58, unit: "g", note: "0.6666666666666666 ks / 0.6666666666666666 ks" },
-      { name: "červená paprika", syn: 55, mamka: 55, unit: "g", note: "0.3333333333333333 ks / 0.3333333333333333 ks" },
-      { name: "žitný knäckebrot (k podávání)", syn: 54, mamka: 30, unit: "g", note: "5 0.5 plátky / 3 plátky" }
+      { name: "rajčata", syn: 58, mamka: 58, unit: "g", note: "2/3 ks / 2/3 ks" },
+      { name: "červená paprika", syn: 55, mamka: 55, unit: "g", note: "1/3 ks / 1/3 ks" },
+      { name: "žitný knäckebrot (k podávání)", syn: 54, mamka: 30, unit: "g", note: "5 1/2 plátky / 3 plátky" }
     ],
     nutrition: {
       syn:   { kj: 2255, kcal: 540, p: 42.3, s: 49.1, t: 16.4 },
@@ -707,12 +707,12 @@ export const recipesV: Recipe[] = [
       { name: "pangasius dolnooký (pangas)", syn: 179, mamka: 99, unit: "g" },
       { name: "petrželová nať", syn: 4, mamka: 3, unit: "g", note: "30 špetek" },
       { name: "vařená červená čočka", syn: 199, mamka: 111, unit: "g" },
-      { name: "cibule šalotka", syn: 20, mamka: 17, unit: "g", note: "0.6666666666666666 ks" },
+      { name: "cibule šalotka", syn: 20, mamka: 17, unit: "g", note: "2/3 ks" },
       { name: "bulvový celer", syn: 30, mamka: 25, unit: "g" },
-      { name: "mrkev", syn: 30, mamka: 25, unit: "g", note: "0.25 ks" },
-      { name: "pórek", syn: 50, mamka: 42, unit: "g", note: "0.25 ks" },
-      { name: "olivový olej", syn: 9, mamka: 6, unit: "ml", note: "0.75 / 0.5 polévkové lžíce" },
-      { name: "ocet balsamiko", syn: 6, mamka: 4, unit: "ml", note: "0.3333333333333333/4 čajová lžička" },
+      { name: "mrkev", syn: 30, mamka: 25, unit: "g", note: "1/4 ks" },
+      { name: "pórek", syn: 50, mamka: 42, unit: "g", note: "1/4 ks" },
+      { name: "olivový olej", syn: 9, mamka: 6, unit: "ml", note: "3/4 / 1/2 polévkové lžíce" },
+      { name: "ocet balsamiko", syn: 6, mamka: 4, unit: "ml", note: "5/6.2 čajová lžička" },
       { name: "zakysaná smetana 15 %", syn: 15, mamka: 8, unit: "ml", note: "1 polévková lžíce" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
       { name: "sůl", syn: 1, mamka: 1, unit: "šp" }
@@ -725,7 +725,7 @@ export const recipesV: Recipe[] = [
     }
   },
   {
-    id: "v32",
+    id: "32v",
     category: Category.VECERE,
     title: "Vaječná Omeleta s Tvarůžky",
     instructions: "Na pánvi rozehřejeme ghí a rozložíme šunku. Do hrníčku rozklepneme a rozšleháme vejce, osolíme, opepříme. Vylijeme na šunku. Po chvilce přidáme nakrájené tvarůžky. Když je omeleta hotová, přendáme na talíř a podáváme se zeleninou a pečivem.",
@@ -757,12 +757,12 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "vaječný bílek", syn: 162, mamka: 90, unit: "g", note: "3 ks / 5 ks" },
-      { name: "slepičí vejce", syn: 81, mamka: 45, unit: "g", note: "0.75 ks / 1, 5 ks" },
+      { name: "slepičí vejce", syn: 81, mamka: 45, unit: "g", note: "3/4 ks / 1, 5 ks" },
       { name: "polotučné mléko", syn: 32, mamka: 18, unit: "ml", note: "1 polévková lžíce" },
-      { name: "cibule", syn: 32, mamka: 27, unit: "g", note: "0.3333333333333333 ks" },
-      { name: "olivový olej", syn: 5, mamka: 3, unit: "ml", note: "0.5 čajové lžičky" },
+      { name: "cibule", syn: 32, mamka: 27, unit: "g", note: "1/3 ks" },
+      { name: "olivový olej", syn: 5, mamka: 3, unit: "ml", note: "1/2 čajové lžičky" },
       { name: "celozrnný chléb", syn: 77, mamka: 43, unit: "g", note: "1 krajíc" },
-      { name: "rajčata", syn: 60, mamka: 50, unit: "g", note: "0.5 ks" }
+      { name: "rajčata", syn: 60, mamka: 50, unit: "g", note: "1/2 ks" }
     ],
     nutrition: {
       syn:   { kj: 2016, kcal: 482, p: 38, s: 41, t: 16 },
@@ -805,10 +805,10 @@ export const recipesV: Recipe[] = [
       { name: "celozrnné těstoviny", syn: 66, mamka: 37, unit: "g" },
       { name: "tuňák ve vlastní šťávě", syn: 150, mamka: 83, unit: "g" },
       { name: "černé olivy", syn: 30, mamka: 17, unit: "g", note: "10 ks / 6 ks" },
-      { name: "čerstvá citronová šťáva", syn: 10, mamka: 8, unit: "ml", note: "1 0.5 čajové lžičky / 1 0.25 čajové lžičky" },
+      { name: "čerstvá citronová šťáva", syn: 10, mamka: 8, unit: "ml", note: "1 1/2 čajové lžičky / 1 1/4 čajové lžičky" },
       { name: "černý pepř", syn: 0, mamka: 0, unit: "šp" },
-      { name: "extra panenský olivový olej", syn: 10, mamka: 6, unit: "ml", note: "0.75 polévkové lžíce / 0.5 polévkové lžíce" },
-      { name: "rajčata", syn: 104, mamka: 87, unit: "g", note: "1 0.5 ks / 1 0.25 ks" }
+      { name: "extra panenský olivový olej", syn: 10, mamka: 6, unit: "ml", note: "3/4 polévkové lžíce / 1/2 polévkové lžíce" },
+      { name: "rajčata", syn: 104, mamka: 87, unit: "g", note: "1 1/2 ks / 1 1/4 ks" }
     ],
     nutrition: {
       syn:   { kj: 2258, kcal: 540, p: 45, s: 50, t: 16 },
@@ -825,14 +825,14 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "řepkový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička / 0.5 čajové lžičky" },
+      { name: "řepkový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička / 1/2 čajové lžičky" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
       { name: "kuřecí prsa bez kůže", syn: 174, mamka: 97, unit: "g" },
       { name: "listový špenát", syn: 100, mamka: 83, unit: "g", note: "5 hrstí / cca 4 hrstě" },
       { name: "plátkový sýr 30%", syn: 31, mamka: 17, unit: "g", note: "2 plátky / 1 plátek" },
-      { name: "batáty (sladké brambory)", syn: 161, mamka: 89, unit: "g", note: "0.5 ks / cca 0.25 ks" },
-      { name: "hlávkový salát", syn: 100, mamka: 83, unit: "g", note: "0.25 ks / cca 0.2 ks" },
-      { name: "mrkev", syn: 100, mamka: 83, unit: "g", note: "1 ks / cca 0.8 ks" }
+      { name: "batáty (sladké brambory)", syn: 161, mamka: 89, unit: "g", note: "1/2 ks / cca 1/4 ks" },
+      { name: "hlávkový salát", syn: 100, mamka: 83, unit: "g", note: "1/4 ks / cca 1/5 ks" },
+      { name: "mrkev", syn: 100, mamka: 83, unit: "g", note: "1 ks / cca 4/5 ks" }
     ],
     nutrition: {
       syn:   { kj: 2178, kcal: 521, p: 55, s: 43, t: 13 },
@@ -849,7 +849,7 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "brambory", syn: 176, mamka: 98, unit: "g", note: "1.3 ks / 0.75 ks" },
+      { name: "brambory", syn: 176, mamka: 98, unit: "g", note: "1 3/10 ks / 3/4 ks" },
       { name: "hlávková kapusta", syn: 203, mamka: 169, unit: "g" },
       { name: "olivový olej", syn: 9, mamka: 5, unit: "ml", note: "cca 2 lžičky / 1 lžička" },
       { name: "vepřové plece", syn: 144, mamka: 80, unit: "g" },
@@ -871,7 +871,7 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "hovězí maso", syn: 144, mamka: 80, unit: "g" },
-      { name: "ghí", syn: 9, mamka: 5, unit: "g", note: "cca 1 lžička / 0.5 čajové lžičky" },
+      { name: "ghí", syn: 9, mamka: 5, unit: "g", note: "cca 1 lžička / 1/2 čajové lžičky" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
       { name: "brambory", syn: 232, mamka: 129, unit: "g", note: "cca 2 ks / 1 ks" }
     ],
@@ -891,9 +891,9 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "filet aljašské tresky bez kůže", syn: 211, mamka: 117, unit: "g", note: "bez kůže" },
-      { name: "ghí", syn: 14, mamka: 8, unit: "g", note: "cca 1 0.25 čajové lžičky / 0.75 čajové lžičky" },
+      { name: "ghí", syn: 14, mamka: 8, unit: "g", note: "cca 1 1/4 čajové lžičky / 3/4 čajové lžičky" },
       { name: "brambory", syn: 203, mamka: 113, unit: "g", note: "cca 2 ks / 1 ks" },
-      { name: "čerstvá citronová šťáva", syn: 12, mamka: 10, unit: "ml", note: "cca 1 0.75 čajové lžičky / 1 0.5 čajové lžičky" },
+      { name: "čerstvá citronová šťáva", syn: 12, mamka: 10, unit: "ml", note: "cca 1 3/4 čajové lžičky / 1 1/2 čajové lžičky" },
       { name: "zelené fazolky", syn: 120, mamka: 100, unit: "g" }
     ],
     nutrition: {
@@ -913,8 +913,8 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "balkánský sýr,  50 % t. v s.", syn: 67, mamka: 37, unit: "g" },
       { name: "rajčata", syn: 150, mamka: 125, unit: "g", note: "2 ks / cca 1, 5 ks" },
-      { name: "salátová okurka", syn: 150, mamka: 125, unit: "g", note: "0.5 ks" },
-      { name: "žlutá paprika", syn: 50, mamka: 42, unit: "g", note: "0.25 ks" },
+      { name: "salátová okurka", syn: 150, mamka: 125, unit: "g", note: "1/2 ks" },
+      { name: "žlutá paprika", syn: 50, mamka: 42, unit: "g", note: "1/4 ks" },
       { name: "šmakoun", syn: 178, mamka: 99, unit: "g", note: "2 ks / 1 ks" },
       { name: "žitný knäckebrot", syn: 40, mamka: 22, unit: "g", note: "4 plátky / 2 plátky" }
     ],
@@ -935,8 +935,8 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "vejce vařené natvrdo", syn: 88, mamka: 49, unit: "g", note: "2 ks / 1 ks" },
       { name: "žitný knäckebrot", syn: 42, mamka: 23, unit: "g", note: "4 plátky / 2 plátky" },
-      { name: "olivový olej", syn: 3, mamka: 2, unit: "ml", note: "0.5 čajové lžičky" },
-      { name: "cherry rajčata", syn: 127, mamka: 106, unit: "g", note: "12 0.5 ks / 10 ks" },
+      { name: "olivový olej", syn: 3, mamka: 2, unit: "ml", note: "1/2 čajové lžičky" },
+      { name: "cherry rajčata", syn: 127, mamka: 106, unit: "g", note: "12 1/2 ks / 10 ks" },
       { name: "listový salát", syn: 120, mamka: 100, unit: "g" },
       { name: "šmakoun s provensálským kořením", syn: 200, mamka: 111, unit: "g", note: "2 ks / 1 ks" }
     ],
@@ -957,8 +957,8 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "brambory", syn: 207, mamka: 115, unit: "g", note: "1 ks" },
       { name: "kuřecí prsa bez kůže", syn: 144, mamka: 80, unit: "g" },
-      { name: "brokolice", syn: 150, mamka: 125, unit: "g", note: "0.25 ks" },
-      { name: "ghí", syn: 14, mamka: 8, unit: "g", note: "0.75 čajové lžičky" }
+      { name: "brokolice", syn: 150, mamka: 125, unit: "g", note: "1/4 ks" },
+      { name: "ghí", syn: 14, mamka: 8, unit: "g", note: "3/4 čajové lžičky" }
     ],
     nutrition: {
       syn:   { kj: 2155, kcal: 515, p: 46.8, s: 37.8, t: 16.2 },
@@ -975,8 +975,8 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "špaldová tortilla", syn: 80, mamka: 44, unit: "g", note: "1 0.5 ks / cca 1 ks", alternatives: "kukuřičná tortilla (91/51g)" },
-      { name: "sýr eidam 30% t. v s.", syn: 40, mamka: 22, unit: "g", note: "2 0.5 plátku / cca 1 0.5 plátku", alternatives: "camembert (36/20g)" },
+      { name: "špaldová tortilla", syn: 80, mamka: 44, unit: "g", note: "1 1/2 ks / cca 1 ks", alternatives: "kukuřičná tortilla (91/51g)" },
+      { name: "sýr eidam 30% t. v s.", syn: 40, mamka: 22, unit: "g", note: "2 1/2 plátku / cca 1 1/2 plátku", alternatives: "camembert (36/20g)" },
       { name: "sterilovaná cukrová kukuřice", syn: 46, mamka: 38, unit: "g" },
       { name: "tuňák ve vlastní šťávě", syn: 120, mamka: 67, unit: "g" }
     ],
@@ -995,12 +995,12 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "celozrnný chléb", syn: 85, mamka: 37, unit: "g", note: "1 0.5 krajíce / 0.6666666666666666 krajíce" },
-      { name: "rajčata", syn: 139, mamka: 67, unit: "g", note: "1 0.5 ks / 0.75 ks" },
-      { name: "extra panenský olivový olej", syn: 3, mamka: 3, unit: "ml", note: "0.5 čajové lžičky" },
-      { name: "salátová okurka", syn: 150, mamka: 66, unit: "g", note: "0.5 ks / 0.25 ks" },
-      { name: "uzený šmakoun", syn: 150, mamka: 75, unit: "g", note: "1 0.5 ks / 0.75 ks" },
-      { name: "slepičí vejce", syn: 81, mamka: 63, unit: "g", note: "1 0.5 ks / 1 ks" }
+      { name: "celozrnný chléb", syn: 85, mamka: 37, unit: "g", note: "1 1/2 krajíce / 2/3 krajíce" },
+      { name: "rajčata", syn: 139, mamka: 67, unit: "g", note: "1 1/2 ks / 3/4 ks" },
+      { name: "extra panenský olivový olej", syn: 3, mamka: 3, unit: "ml", note: "1/2 čajové lžičky" },
+      { name: "salátová okurka", syn: 150, mamka: 66, unit: "g", note: "1/2 ks / 1/4 ks" },
+      { name: "uzený šmakoun", syn: 150, mamka: 75, unit: "g", note: "1 1/2 ks / 3/4 ks" },
+      { name: "slepičí vejce", syn: 81, mamka: 63, unit: "g", note: "1 1/2 ks / 1 ks" }
     ],
     nutrition: {
       syn:   { kj: 2096, kcal: 501, p: 43, s: 47, t: 15 },
@@ -1019,11 +1019,11 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "krůtí maso", syn: 176, mamka: 98, unit: "g" },
       { name: "vlašské ořechy", syn: 6, mamka: 3, unit: "g", note: "2 ks / 1 ks" },
-      { name: "grapefruit", syn: 67, mamka: 56, unit: "g", note: "0.3333333333333333 ks" },
+      { name: "grapefruit", syn: 67, mamka: 56, unit: "g", note: "1/3 ks" },
       { name: "míchaný salát", syn: 215, mamka: 179, unit: "g", note: "1 miska" },
-      { name: "bílý jogurt", syn: 21, mamka: 12, unit: "g", note: "1 0.5 polévkové lžíce / 1 lžíce" },
-      { name: "olivový olej", syn: 3, mamka: 2, unit: "ml", note: "0.5 čajové lžičky" },
-      { name: "čerstvá citronová šťáva", syn: 10, mamka: 8, unit: "ml", note: "1 0.5 čajové lžičky" },
+      { name: "bílý jogurt", syn: 21, mamka: 12, unit: "g", note: "1 1/2 polévkové lžíce / 1 lžíce" },
+      { name: "olivový olej", syn: 3, mamka: 2, unit: "ml", note: "1/2 čajové lžičky" },
+      { name: "čerstvá citronová šťáva", syn: 10, mamka: 8, unit: "ml", note: "1 1/2 čajové lžičky" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" },
       { name: "brambory vařené bez slupky", syn: 191, mamka: 106, unit: "g" }
     ],
@@ -1042,12 +1042,12 @@ export const recipesV: Recipe[] = [
     favorites: "",
     printed: "",
     ingredients: [
-      { name: "rajčata", syn: 50, mamka: 42, unit: "g", note: "0.5 ks" },
+      { name: "rajčata", syn: 50, mamka: 42, unit: "g", note: "1/2 ks" },
       { name: "listový salát", syn: 100, mamka: 83, unit: "g" },
       { name: "uzený losos", syn: 100, mamka: 56, unit: "g" },
-      { name: "mozzarella light", syn: 31, mamka: 17, unit: "g", note: "0.25 ks" },
+      { name: "mozzarella light", syn: 31, mamka: 17, unit: "g", note: "1/4 ks" },
       { name: "baby špenát", syn: 40, mamka: 33, unit: "g" },
-      { name: "žitný chléb", syn: 85, mamka: 47, unit: "g", note: "1 0.5 krajíce / 1 krajíc" }
+      { name: "žitný chléb", syn: 85, mamka: 47, unit: "g", note: "1 1/2 krajíce / 1 krajíc" }
     ],
     nutrition: {
       syn:   { kj: 1971, kcal: 471, p: 40, s: 45, t: 13 },
@@ -1089,8 +1089,8 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "celozrnné těstoviny", syn: 53, mamka: 29, unit: "g" },
-      { name: "sýr eidam 30% t. v s.", syn: 50, mamka: 28, unit: "g", note: "3 0.5 plátku / 2 plátky" },
-      { name: "cuketa", syn: 240, mamka: 200, unit: "g", note: "0.75 ks / cca 0.6666666666666666 ks" },
+      { name: "sýr eidam 30% t. v s.", syn: 50, mamka: 28, unit: "g", note: "3 1/2 plátku / 2 plátky" },
+      { name: "cuketa", syn: 240, mamka: 200, unit: "g", note: "3/4 ks / cca 2/3 ks" },
       { name: "baby špenát", syn: 156, mamka: 130, unit: "g" },
       { name: "česnek", syn: 20, mamka: 17, unit: "g", note: "4 stroužky / 3 stroužky" },
       { name: "řepkový olej", syn: 5, mamka: 3, unit: "ml", note: "1 čajová lžička" },
@@ -1114,11 +1114,11 @@ export const recipesV: Recipe[] = [
       { name: "libové hovězí plece bez kosti", syn: 177, mamka: 98, unit: "g" },
       { name: "červená paprika", syn: 162, mamka: 135, unit: "g", note: "1 ks / 1 ks" },
       { name: "černý pepř", syn: 0, mamka: 0, unit: "šp" },
-      { name: "cibule", syn: 20, mamka: 17, unit: "g", note: "0.25 ks / 0.25 ks" },
+      { name: "cibule", syn: 20, mamka: 17, unit: "g", note: "1/4 ks / 1/4 ks" },
       { name: "česnek", syn: 5, mamka: 4, unit: "g", note: "1 stroužek / 1 stroužek" },
-      { name: "olivový olej", syn: 7, mamka: 4, unit: "ml", note: "1 0.5 čajové lžičky / 1 čajová lžička" },
-      { name: "cherry rajčata", syn: 164, mamka: 137, unit: "g", note: "0.6666666666666666 balíček / 0.5 balíček" },
-      { name: "jáhly", syn: 43, mamka: 24, unit: "g", note: "3 polévkové lžíce / 1.5 polévkové lžíce" }
+      { name: "olivový olej", syn: 7, mamka: 4, unit: "ml", note: "1 1/2 čajové lžičky / 1 čajová lžička" },
+      { name: "cherry rajčata", syn: 164, mamka: 137, unit: "g", note: "2/3 balíček / 1/2 balíček" },
+      { name: "jáhly", syn: 43, mamka: 24, unit: "g", note: "3 polévkové lžíce / 1 1/2 polévkové lžíce" }
     ],
     nutrition: {
       syn:   { kj: 2181, kcal: 521, p: 47, s: 48, t: 14 },
@@ -1137,8 +1137,8 @@ export const recipesV: Recipe[] = [
     ingredients: [
       { name: "cherry rajčata", syn: 155, mamka: 129, unit: "g", note: "cca 16 ks / 13 ks" },
       { name: "žitný knäckebrot", syn: 54, mamka: 30, unit: "g", note: "cca 5 plátků / 3 plátky" },
-      { name: "mozzarella light", syn: 119, mamka: 66, unit: "g", note: "cca 1 0.2 ks / 0.6666666666666666 ks" },
-      { name: "krůtí šunka", syn: 70, mamka: 39, unit: "g", note: "cca 6 plátků / 3 0.5 plátku" }
+      { name: "mozzarella light", syn: 119, mamka: 66, unit: "g", note: "cca 1 1/5 ks / 2/3 ks" },
+      { name: "krůtí šunka", syn: 70, mamka: 39, unit: "g", note: "cca 6 plátků / 3 1/2 plátku" }
     ],
     nutrition: {
       syn:   { kj: 2155, kcal: 515, p: 41.4, s: 45, t: 16.2 },
@@ -1176,13 +1176,13 @@ export const recipesV: Recipe[] = [
     printed: "",
     ingredients: [
       { name: "červená čočka", syn: 86, mamka: 48, unit: "g" },
-      { name: "mrkev", syn: 70, mamka: 58, unit: "g", note: "0.75 ks / cca 0.5 ks" },
+      { name: "mrkev", syn: 70, mamka: 58, unit: "g", note: "3/4 ks / cca 1/2 ks" },
       { name: "česnek", syn: 5, mamka: 4, unit: "g", note: "1 stroužek / 1 stroužek" },
       { name: "sušená bazalka", syn: 1, mamka: 1, unit: "šp" },
       { name: "petrželová nať", syn: 5, mamka: 4, unit: "g", note: "50 špetek / 40 špetek" },
       { name: "kuřecí prsa bez kůže", syn: 86, mamka: 48, unit: "g" },
-      { name: "řepkový olej", syn: 14, mamka: 8, unit: "ml", note: "1 PL / cca 0.5 PL" },
-      { name: "rajčatový protlak", syn: 14, mamka: 12, unit: "g", note: "0.6666666666666666 PL / cca 0.5 PL" },
+      { name: "řepkový olej", syn: 14, mamka: 8, unit: "ml", note: "1 PL / cca 1/2 PL" },
+      { name: "rajčatový protlak", syn: 14, mamka: 12, unit: "g", note: "2/3 PL / cca 1/2 PL" },
       { name: "černý pepř", syn: 1, mamka: 1, unit: "šp" }
     ],
     nutrition: {
@@ -1204,7 +1204,7 @@ export const recipesV: Recipe[] = [
       { name: "tuňák ve vlastní šťávě", syn: 149, mamka: 83, unit: "g" },
       { name: "extra panenský olivový olej", syn: 9, mamka: 5, unit: "ml", note: "cca 2 čajové lžičky / 1 čajová lžička" },
       { name: "pomazánkové máslo", syn: 18, mamka: 10, unit: "g" },
-      { name: "červená paprika", syn: 96, mamka: 80, unit: "g", note: "cca 0.5 ks" }
+      { name: "červená paprika", syn: 96, mamka: 80, unit: "g", note: "cca 1/2 ks" }
     ],
     nutrition: {
       syn:   { kj: 2218, kcal: 529, p: 41.4, s: 45, t: 18 },

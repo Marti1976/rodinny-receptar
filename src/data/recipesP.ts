@@ -929,26 +929,26 @@ export const recipesP: Recipe[] = [
     }
   },
   {
-  id: "48p",
-  category: Category.PRESNIDAVKA,
-  title: "Čoko-brownie",
-  instructions: "POZOR 4 porce 32% x2, 18% x2. Příprava vloček: Ovesné vločky rozmixujte na jemnou moučku. Čokoládu rozpusťte v misce (v mikrovlnce po 30s intervalech nebo ve vodní lázni) a nechte ji stát, aby nebyla horká. Základní těsto: V míse smíchejte jogurt, med, vejce a vlažnou rozpuštěnou čokoládu. Poté vmíchejte kakao a ovesnou moučku. Trik pro nadýchanost: Tekuté bílky vyšlehejte se špetkou soli do tuhého sněhu. Ten pak velmi jemně stěrkou zabalte do připraveného těsta. Pečení: Směs nalijte do menší dortové formy nebo pekáčku vystlaného papírem. Pečte při 170°C cca 30–35 minut. Chlazení: Nechte vychladnout a pak dejte do lednice. Dort musí dozrát, aby se chutě propojily a konzistence se zpevnila na brownie.",
-  favorites: "X",
-  printed: "",
-  ingredients: [
-    { name:  "řecký jogurt 0% tuku", syn:  256, mamka:  144, unit:  "g" },
-    { name:  "bílky z vajec", syn:  64,  mamka:  36, unit:  "g", note: "2 ks / 1 ks", alternatives: "tekuté bílky cca 100ml" },
-    { name:  "celé vejce M", syn:  33, mamka:  22, unit:  "g", note: "1/2 ks / 1/2 ks" },
-    { name:  "hořká čokoláda 70% kakaa", syn:  23, mamka: 12, unit:  "g" },
-    { name:  "ovesné vločky (jemné mleté)", syn:  32, mamka: 18, unit:  "g" },
-    { name:  "kakao", syn:  10, mamka:  5, unit:  "g" },
-    { name:  "med", syn:  10, mamka:  5, unit:  "g" }
-  ],
-  nutrition: {
-    syn: { kj:  1105, kcal:  264, p:  22, s:  25, t:  8.5 },
-    mamka: { kj:  611, kcal:  146, p:  12, s:  14, t:  4.8 },
-    originSyn: "X",
-    originMamka: "X"
-   }
+    id: "48p",
+    category: Category.PRESNIDAVKA,
+    title: "Čoko-brownie",
+    instructions: "POZOR 4 porce 32% x2, 18% x2. Příprava vloček: Ovesné vločky rozmixujte na jemnou moučku. Čokoládu rozpusťte v misce (v mikrovlnce po 30s intervalech nebo ve vodní lázni) a nechte ji stát, aby nebyla horká. Základní těsto: V míse smíchejte jogurt, med, vejce a vlažnou rozpuštěnou čokoládu. Poté vmíchejte kakao a ovesnou moučku. Trik pro nadýchanost: Tekuté bílky vyšlehejte se špetkou soli do tuhého sněhu. Ten pak velmi jemně stěrkou zabalte do připraveného těsta. Pečení: Směs nalijte do menší dortové formy nebo pekáčku vystlaného papírem. Pečte při 170°C cca 30–35 minut. Chlazení: Nechte vychladnout a pak dejte do lednice. Dort musí dozrát, aby se chutě propojily a konzistence se zpevnila na brownie.",
+    favorites: "X",
+    printed: "",
+    ingredients: [
+      { name: "řecký jogurt 0% tuku", syn: 256, mamka: 144, unit: "g" },
+      { name: "bílky z vajec", syn: 64, mamka: 36, unit: "g", note: "2 ks / 1 ks", alternatives: "tekuté bílky cca 100ml" },
+      { name: "celé vejce M", syn: 33, mamka: 22, unit: "g", note: "1/2 ks / 1/2 ks" },
+      { name: "hořká čokoláda 70% kakaa", syn: 23, mamka: 12, unit: "g" },
+      { name: "ovesné vločky (jemné mleté)", syn: 32, mamka: 18, unit: "g" },
+      { name: "kakao", syn: 10, mamka: 5, unit: "g" },
+      { name: "med", syn: 10, mamka: 5, unit: "g" }
+    ],
+    nutrition: {
+      syn:   { kj: 1105, kcal: 264, p: 22, s: 25, t: 8.5 },
+      mamka: { kj: 611, kcal: 146, p: 12, s: 14, t: 4.8 },
+      originSyn:   'X',
+      originMamka: 'X'
+    }
   }
 ];
